@@ -463,7 +463,7 @@ class WeChat
 			if (!$json || !empty($json['errcode'])) {
 				$this->errCode = $json['errcode'];
 				$this->errMsg = $json['errmsg'];
-				return $false;
+				return false;
 			}
 			return $json;
 		} else {
