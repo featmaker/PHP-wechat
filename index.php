@@ -88,8 +88,10 @@ $wechatObj = new WeChat($options);
 // $info = $wechatObj->getLongCount();
 // 获取图文
 // $info = $wechatObj->getMaterial('oCmCA6JW8AUym2t9uhqzeBh1UQrvEdzCMOSp53eujfY');
-// 获取视频
-// $info = $wechatObj->getMaterial('oCmCA6JW8AUym2t9uhqzeKtiYQzppXBMyn6U2k2IMmU');
+// 获取素材
+// $info = $wechatObj->getMaterial('oCmCA6JW8AUym2t9uhqzeIzNHOLe7GNsO2fvhAsuUtI');
+// header('Content-Type:image/png');
+// echo $info;
 // 删除素材
 // $info = $wechatObj->delMaterial('oCmCA6JW8AUym2t9uhqzeFd28BpCHYsj5fQZGoaVuDA');
 // 修改永久图文
@@ -107,86 +109,143 @@ $wechatObj = new WeChat($options);
 // 		];
 // $info = $wechatObj->updateNews('oCmCA6JW8AUym2t9uhqzeEHdfvJ_Z0MUoqUjOWWEOrQ',0,$data);
 
-var_dump($wechatObj->errCode);
-var_dump($wechatObj->errMsg);
-var_dump($info);
-
-
-// $data = ['@img/wallhaven-32872.png'];
-// $info = $wechatObj->uploadTmp('image',$data);
-// var_dump($info);
-// $info = $wechatObj->getTmp('aU5FxVnwxpS0DJifJSD12X-RDJr6gK9IBGBz_wsZfmysHIWPgZthz-zok8YKeTKs');
-// header( 'Content-Type: image/png' );
-// echo $info;
+//=============================菜单管理
+//菜单
+// $menu = [
+// 			'button'=>[
+// 						[
+// 							'name'=>'实验楼',
+// 							'sub_button'=>[
+// 									[
+// 										'type'=>'view',
+// 										'name'=>'主页',
+// 										'url'=>'http://www.shiyanlou.com'
+// 									],
+// 									[
+// 										'type'=>'click',
+// 										'name'=>'点我啊',
+// 										'key'=>'clickme'
+// 									],
+// 									[
+// 										'name'=>'我的位置',
+// 										'type'=>'location_select',
+// 										'key'=>'mylocation'
+// 									]
+// 							]
+// 						],
+// 						[
+// 							'name'=>'扫码',
+// 							'sub_button'=>[
+// 								[
+// 									'type'=>'scancode_waitmsg',
+// 									'name'=>'扫我有喜',
+// 									'key'=>'scammsg'
+// 								],
+// 								[
+// 									'type'=>'scancode_push',
+// 									'name'=>'扫我进入',
+// 									'key'=>'scaninto'
+// 								],
+// 								[
+// 									'type'=>'media_id',
+// 									'name'=>'看图',
+// 									'media_id'=>'oCmCA6JW8AUym2t9uhqzeIzNHOLe7GNsO2fvhAsuUtI'
+// 								],
+// 								[
+// 									'type'=>'view_limited',
+// 									'name'=>'图文信息',
+// 									'media_id'=>'oCmCA6JW8AUym2t9uhqzeBh1UQrvEdzCMOSp53eujfY'
+// 								]
+// 							]
+// 						],
+// 						[
+// 							'name'=>'拍照',
+// 							'sub_button'=>[
+// 								[
+// 									'type'=>'pic_sysphoto',
+// 									'name'=>'系统拍照',
+// 									'key'=>'photosys'
+// 								],
+// 								[
+// 									'type'=>'pic_photo_or_album',
+// 									'name'=>'选择方式',
+// 									'key'=>'photosel'
+// 								],
+// 								[
+// 									'type'=>'pic_weixin',
+// 									'name'=>'微信相册',
+// 									'key'=>'photoweixin'
+// 								]
+// 							]
+// 						]
+// 			]
+// ];
+// $info = $wechatObj->createMenu($menu);	//创建自定义菜单
+// $info = $wechatObj->delMenu();		//删除菜单
+// $info = $wechatObj->getMenuInfo();	//菜单信息
 // 
-// $data = '{
-//   "articles": [{
-//        "title": "woofs",
-//        "thumb_media_id": "oCmCA6JW8AUym2t9uhqzeIzNHOLe7GNsO2fvhAsuUtI",
-//        "author": "fuli",
-//        "digest": "fdsfsd",
-//        "show_cover_pic": 1,
-//        "content": "ffffffffffffffffs",
-//        "content_source_url": "www.baidu.com"
-//     }
-//  ]
-// }';
-// {
-// 	"articles":{
-// 		"title":"test",
-// 		"thumb_media_id":"oCmCA6JW8AUym2t9uhqzeIzNHOLe7GNsO2fvhAsuUtI",
-// 		"author":"fuli",
-// 		"digest":"dddfdsfds",
-// 		"show_cover_pic":0,
-// 		"content":"fdssssssssgaaaaaaaaaaaaeg",
-// 		"content_source_url":"http:\/\/www.baidu.com"
-// 	}
-// }
-// $data = ['articles'=>['title'=>'shiyanlou',thumb_media_id]];
-// $info = $wechatObj->addMaterial('news',['@img/wallhaven-110.jpg']);
+// var_dump($wechatObj->errCode);
+// var_dump($wechatObj->errMsg);
 // var_dump($info);
- // var_dump($info);
-// imagepng($info);
-// $wechatObj->valid();
-// $msgType = $wechatObj->getRec()->getRecType();
-// switch ($msgType) {
-// 	case 'text':
-// 		$content = $wechatObj->getRecContent();
-// 		if ($content == 'ip') {
-// 			$ip = $wechatObj->getServerIp();
-// 			$ipstr = implode("\r\n",$ip);
-// 			$wechatObj->text($ipstr)->reply();
-// 		} elseif ($content == 'ig') {
-// 			// $data = ['@img/wallhaven-110.jpg','@img/wallhaven-11829.jpg','@img/wallhaven-16301.jpg','@img/wallhaven-22670.jpg','@img/wallhaven-24695.jpg','@img/wallhaven-35475.jpg'];
-// 			// foreach ($data as $key => $value) {
-// 			// 	$info = $wechatObj->uploadImg([$value]);
-// 			// 	var_dump($info);
-// 			// }
-// 			$info = $wechatObj->getMaterial('image',0,20);
-// 			var_dump($info);
-// 		}  else {
-// 			$wechatObj->text('hello 曹大猛')->reply();
-// 		}
-// 		break;
-// 	case 'image':
-// 		$imageInfo = $wechatObj->getRecPic();
-// 		$wechatObj->image($imageInfo)->reply();
-// 		break;
-// 	case 'voice':
-// 		$voiceInfo = $wechatObj->getRecVoice();
-// 		$wechatObj->voice($voiceInfo)->reply();
-// 		break;
-// 	case 'shortvideo':
-// 		$videoInfo = $wechatObj->getRecVideo();
-// 		$videoInfo['title'] = '这是一段视频';
-// 		$videoInfo['description'] = '家乐福及数量发生发送到了法律上多久了丰盛的是';
-// 		$wechatObj->video($videoInfo)->reply();
-// 		break;
-// 	case 'uploadimg':
 
-// 		break;
-// 	default:
-// 		# code...
-// 		break;
-// }
-// $wechatObj->valid();
+$msgType = $wechatObj->getRec()->getRecType();
+switch ($msgType) {
+	case 'text':
+		$content = $wechatObj->getRecContent();
+		switch ($content) {
+			case 'ip':
+				$ip = $wechatObj->getServerIp();
+				$ipstr = implode("\r\n",$ip);
+				$wechatObj->text("微信服务器IP：\r\n".$ipstr)->reply();
+				break;
+			case 'gg':
+				$wechatObj->text("这真是一场精彩的对局!")->reply();
+				break;
+			case 'help':
+				$wechatObj->text("微信公众号使用帮助：\r\n 1.回复'ip',查看全部微信服务器IP地址 \r\n 2.回复'gg','GG' \r\n 3.回复'你是谁',详细了解我 \r\n 4.回复'关于',关于信息 \r\n 5.回复任意内容(文字，语音，图片)，回复任意内容(文字，语音，图片) \r\n 6.------TODO-----")->reply();
+				break;
+			case '你是谁':
+				$wechatObj->text("呵呵，你猜啊！")->reply();
+				break;
+			case '点歌':
+				$music = [
+						'title'=>'成全',
+						'desc'=>'这是我用(sui)心(bian)为你点播的一首歌',
+						'url'=>'http://music.163.com/#/program?id=794490893',
+						'hqurl'=>'http://music.163.com/#/program?id=794490893',
+						'thumbid'=>'oCmCA6JW8AUym2t9uhqzeIzNHOLe7GNsO2fvhAsuUtI'
+						];
+				$wechatObj->music($music)->reply();
+				break;
+			case '关于':
+				$wechatObj->text("我是微信机器人，Powered by Lifue-本条消息来自火星")->reply();
+				break;
+			default:
+				$wechatObj->text($content."(小孩子不要乱发消息哦)")->reply();
+				break;
+		}
+		break;
+	case 'image':
+		$imageInfo = $wechatObj->getRecPic();
+		$wechatObj->image($imageInfo)->reply();
+		break;
+	case 'voice':
+		$voiceInfo = $wechatObj->getRecVoice();
+		// $wechatObj->text('不要给我发语音，我听不懂')->reply();
+		$wechatObj->voice($voiceInfo)->reply();
+		break;
+	case 'shortvideo':
+		// $videoInfo = $wechatObj->getRecVideo();
+		$videoInfo['title'] = '适！';
+		$videoInfo['description'] = '这是测试时用的一个视频文件，里面有你想要的，你懂的！！';
+		$videoInfo['mediaid'] = 'oCmCA6JW8AUym2t9uhqzeKtiYQzppXBMyn6U2k2IMmU';
+		// $wechatObj->text('不要给我发短视频，我分分钟几百万上下，没有时间看！')->reply();
+		$wechatObj->video($videoInfo)->reply();
+		break;
+	case '':
+
+		break;
+	default:
+		# code...
+		break;
+}

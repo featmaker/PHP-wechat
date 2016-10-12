@@ -227,6 +227,26 @@ class WeChat
 		return $this;
 	}
 
+	//回复音乐消息
+	public function music($info)
+	{
+		$msg = [
+			'ToUserName' => $this->getRecFrom(),
+			'FromUserName'=>$this->getRecTo(),
+			'CreateTime'=>time(),
+			'MsgType'=>self::MSGTYPE_MUSIC,
+			'Music'=>[
+				'Title'=>$info['title'],
+				'Description'=>$info['desc'],
+				'MusicUrl'=>$info['url'],
+				'HQMusicUrl'=>$info['hqurl'],
+				'ThumbMediaId'=>$info['thumbid'],
+			]
+		];
+		$this->message($msg);
+		return $this;
+	}
+
 	//设置发送数据
 	public function message($msg = [],$append = false)
 	{
@@ -620,6 +640,68 @@ class WeChat
                 $this->errCode = $json['errcode'];
                 $this->errMsg = $json['errmsg'];
                 return false;
+            }
+            return $json;
+        }
+        return false;
+	}
+
+	//============菜单管理
+	//
+	//自定义菜单
+	public function createMenu($data)
+	{
+		$url = self::API_URL_PREFIX . self::MENU_CREATE_URL . 'access_token=' . $this->access_token;
+		// var_dump(json_encode($data));die;JSON_UNESCAPED_UNICODE
+		$result = $this->http_post($url, json_encode($data,JSON_UNESCAPED_UNICODE));
+        if ($result)
+        {
+            $json = json_decode($result,true);
+            if (isset($json['errcode'])) {
+                $this->errCode = $json['errcode'];
+                $this->errMsg = $json['errmsg'];
+                if ($this->errMsg == 'ok') {
+                	return true;
+                }
+                return false;
+            }
+            return $json;
+        }
+        return false;
+	}
+
+	//查询自定义菜单
+	public function getMenuInfo()
+	{
+		$url = self::API_URL_PREFIX . self::MENU_GET_URL . 'access_token=' . $this->access_token;
+		$result = $this->http_get($url);
+        if ($result)
+        {
+            $json = json_decode($result,true);
+            if (isset($json['errcode'])) {
+                $this->errCode = $json['errcode'];
+                $this->errMsg = $json['errmsg'];
+                return false;
+            }
+            return $json;
+        }
+        return false;
+	}
+
+	//删除自定义菜单
+	public function delMenu()
+	{
+		$url = self::API_URL_PREFIX . self::MENU_DELETE_URL . 'access_token=' . $this->access_token;
+		$result = $this->http_get($url);
+        if ($result)
+        {
+            $json = json_decode($result,true);
+            if (isset($json['errcode'])) {
+                $this->errCode = $json['errcode'];
+                $this->errMsg = $json['errmsg'];
+                if ($this->errMsg == 'ok') {
+                	return true;
+                }
             }
             return $json;
         }
