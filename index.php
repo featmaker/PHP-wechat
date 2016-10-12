@@ -111,82 +111,93 @@ $wechatObj = new WeChat($options);
 
 //=============================菜单管理
 //菜单
-// $menu = [
-// 			'button'=>[
-// 						[
-// 							'name'=>'实验楼',
-// 							'sub_button'=>[
-// 									[
-// 										'type'=>'view',
-// 										'name'=>'主页',
-// 										'url'=>'http://www.shiyanlou.com'
-// 									],
-// 									[
-// 										'type'=>'click',
-// 										'name'=>'点我啊',
-// 										'key'=>'clickme'
-// 									],
-// 									[
-// 										'name'=>'我的位置',
-// 										'type'=>'location_select',
-// 										'key'=>'mylocation'
-// 									]
-// 							]
-// 						],
-// 						[
-// 							'name'=>'扫码',
-// 							'sub_button'=>[
-// 								[
-// 									'type'=>'scancode_waitmsg',
-// 									'name'=>'扫我有喜',
-// 									'key'=>'scammsg'
-// 								],
-// 								[
-// 									'type'=>'scancode_push',
-// 									'name'=>'扫我进入',
-// 									'key'=>'scaninto'
-// 								],
-// 								[
-// 									'type'=>'media_id',
-// 									'name'=>'看图',
-// 									'media_id'=>'oCmCA6JW8AUym2t9uhqzeIzNHOLe7GNsO2fvhAsuUtI'
-// 								],
-// 								[
-// 									'type'=>'view_limited',
-// 									'name'=>'图文信息',
-// 									'media_id'=>'oCmCA6JW8AUym2t9uhqzeBh1UQrvEdzCMOSp53eujfY'
-// 								]
-// 							]
-// 						],
-// 						[
-// 							'name'=>'拍照',
-// 							'sub_button'=>[
-// 								[
-// 									'type'=>'pic_sysphoto',
-// 									'name'=>'系统拍照',
-// 									'key'=>'photosys'
-// 								],
-// 								[
-// 									'type'=>'pic_photo_or_album',
-// 									'name'=>'选择方式',
-// 									'key'=>'photosel'
-// 								],
-// 								[
-// 									'type'=>'pic_weixin',
-// 									'name'=>'微信相册',
-// 									'key'=>'photoweixin'
-// 								]
-// 							]
-// 						]
-// 			]
-// ];
-// $info = $wechatObj->createMenu($menu);	//创建自定义菜单
+$menu = [
+			'button'=>[
+						[
+							'name'=>'实验楼',
+							'sub_button'=>[
+									[
+										'type'=>'view',
+										'name'=>'主页',
+										'url'=>'http://www.shiyanlou.com'
+									],
+									[
+										'type'=>'click',
+										'name'=>'点我啊',
+										'key'=>'clickme'
+									],
+                  [
+                    'type'=>'click',
+                    'name'=>'点歌',
+                    'key'=>'diange'
+                  ],
+									[
+										'name'=>'我的位置',
+										'type'=>'location_select',
+										'key'=>'mylocation'
+									]
+							]
+						],
+						[
+							'name'=>'扫码',
+							'sub_button'=>[
+								[
+									'type'=>'scancode_waitmsg',
+									'name'=>'扫我有喜',
+									'key'=>'scammsg'
+								],
+								[
+									'type'=>'scancode_push',
+									'name'=>'扫我进入',
+									'key'=>'scaninto'
+								],
+								[
+									'type'=>'media_id',
+									'name'=>'看图',
+									'media_id'=>'oCmCA6JW8AUym2t9uhqzeIzNHOLe7GNsO2fvhAsuUtI'
+								],
+								[
+									'type'=>'view_limited',
+									'name'=>'图文信息',
+									'media_id'=>'oCmCA6JW8AUym2t9uhqzeBh1UQrvEdzCMOSp53eujfY'
+								],
+               [
+                 'type'=>'view_limited',
+                 'name'=>'小电影',
+                 'media_id'=>'oCmCA6JW8AUym2t9uhqzeKtiYQzppXBMyn6U2k2IMmU'
+               ]
+							]
+						],
+						[
+							'name'=>'拍照',
+							'sub_button'=>[
+								[
+									'type'=>'pic_sysphoto',
+									'name'=>'系统拍照',
+									'key'=>'photosys'
+								],
+								[
+									'type'=>'pic_photo_or_album',
+									'name'=>'选择方式',
+									'key'=>'photosel'
+								],
+								[
+									'type'=>'pic_weixin',
+									'name'=>'相册选择',
+									'key'=>'photoweixin'
+								]
+							]
+						]
+			]
+];
+$info = $wechatObj->createMenu($menu);	//创建自定义菜单
 // $info = $wechatObj->delMenu();		//删除菜单
 // $info = $wechatObj->getMenuInfo();	//菜单信息
 // 
 // var_dump($wechatObj->errCode);
 // var_dump($wechatObj->errMsg);
-// var_dump($info);
+var_dump($info);
+die;
 
 $msgType = $wechatObj->getRec()->getRecType();
 switch ($msgType) {
@@ -236,16 +247,54 @@ switch ($msgType) {
 		break;
 	case 'shortvideo':
 		// $videoInfo = $wechatObj->getRecVideo();
-		$videoInfo['title'] = '适！';
+		$videoInfo['title'] = '适合深夜一个人看的视频！';
 		$videoInfo['description'] = '这是测试时用的一个视频文件，里面有你想要的，你懂的！！';
 		$videoInfo['mediaid'] = 'oCmCA6JW8AUym2t9uhqzeKtiYQzppXBMyn6U2k2IMmU';
 		// $wechatObj->text('不要给我发短视频，我分分钟几百万上下，没有时间看！')->reply();
 		$wechatObj->video($videoInfo)->reply();
 		break;
-	case '':
-
+	case 'event':
+    $eventInfo = $wechatObj->getRecEvent();
+    switch ($eventInfo['event']) {
+      case 'CLICK':
+        if ($eventInfo['key'] == 'diange') {
+          $music = [
+              'title'=>'成全',
+              'desc'=>'这是我用(sui)心(bian)为你点播的一首歌',
+              'url'=>'http://music.163.com/#/program?id=794490893',
+              'hqurl'=>'http://music.163.com/#/program?id=794490893',
+              'thumbid'=>'oCmCA6JW8AUym2t9uhqzeIzNHOLe7GNsO2fvhAsuUtI'
+              ];
+          $wechatObj->music($music)->reply();
+        } else {
+          $wechatObj->text('我开个玩笑而已，你还真敢点我啊！')->reply();
+        }
+        break;
+      case 'subscribe':
+        // if ($eventInfo['ticket']) {
+        //   $wechatObj->text('欢迎欢迎，热烈欢迎！回复 "help" 查看帮助信息！')->reply();
+        // }
+        $wechatObj->text('欢迎欢迎，热烈欢迎！回复 "help" 查看帮助信息！')->reply();
+        break;
+      case 'SCAN':
+        $wechatObj->text('(已经关注) 回复 "help" 查看帮助信息！')->reply();
+        break;
+      case 'VIEW':
+        $wechatObj->text('你在打开链接。。。')->reply();
+        break;
+      case 'pic_sysphoto':
+        $wechatObj->text('调用系统拍照！')->reply();
+        break;
+      default:
+        $wechatObj->text('休息，一会儿，马上回来！')->reply();
+        break;
+    }
 		break;
-	default:
-		# code...
+    case 'location':
+          $locinfo = $wechatObj->getLocation();
+          $wechatObj->text("你的位置信息：\r\n 经纬度：(".$locinfo['latitude'].",".$locinfo['longitude'].") \r\n 地名:".$locinfo['label']."\r\n 你的位置已暴露，注意人身安全！")->reply();
+          break;
+  	default:
+		$wechatObj->text('我迷路了，待会儿再说')->reply();
 		break;
 }

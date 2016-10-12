@@ -101,8 +101,10 @@ class WeChat
 		$this->appid = isset($options['appid'])?$options['appid']:'';
 		$this->appsecret = isset($options['appsecret'])?$options['appsecret']:'';
 		$this->logcallback = isset($options['logcallback'])?$options['logcallback']:false;
-		self::$last_time = (self::$last_time == null) ? time() : self::$last_time;
-		$this->checkTokenExpires();
+		$this->access_token = 'fff';
+		//https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wxaccbeff229770dbe&secret=d15f6e2ca8b0037f70a606f2f236d401
+		// self::$last_time = (self::$last_time == null) ? time() : self::$last_time;
+		// $this->checkTokenExpires();
 	}
 
 	//接入验证
@@ -136,12 +138,14 @@ class WeChat
 	//检查AccessToken是否过期
 	public function checkTokenExpires()
 	{
+		var_dump($this->access_token);die;
 		if (!isset($this->access_token)) {
 			$this->getAccessToken();
 			return true;
 		}
 		$now = time();
 		$diff = intval((($now - self::$last_time)%3600)/60);
+		var_dump($diff);die;
 		if ($diff >= 90) {
 			if ($this->getAccessToken()) {
 				return true;
@@ -461,10 +465,10 @@ class WeChat
 			$event['event'] = $this->receive['Event'];
 		}
 		if (isset($this->receive['EventKey'])) {
-			$event['key'] = $this->receive['Event'];
+			$event['key'] = $this->receive['EventKey'];
 		}
 		if (isset($this->receive['Ticket'])) {
-			$event['Ticket'] = $this->receive['Ticket'];
+			$event['ticket'] = $this->receive['Ticket'];
 		}
 		if (isset($event) && !empty($event)) {
 			return $event;
@@ -473,6 +477,19 @@ class WeChat
 		}
 	}
 
+	//获取地理位置
+	public function getLocation()
+	{
+		$locinfo['latitude'] = $this->receive['Location_X'];
+		$locinfo['longitude'] = $this->receive['Location_Y'];
+		$locinfo['label'] = $this->receive['Label'];
+		if (!empty($locinfo)) {
+			return $locinfo;
+		} else {
+			return false;
+		}
+
+	}
 	//上传临时素材
 	public function uploadTmp($type,$data)
 	{
