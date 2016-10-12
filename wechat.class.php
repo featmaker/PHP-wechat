@@ -89,7 +89,7 @@ class WeChat
 	private $encodingAesKey;
 	private $encrypt_type;
 	public $errMsg = "Hello shiyanlou";
-	public $errcode=-1;
+	public $errCode=-1;
 	public $logcallback;
 	public  static $last_time;
 
@@ -497,27 +497,27 @@ class WeChat
 		switch ($type) {
 			case 'news':
 				$url = self::API_URL_PREFIX . self::MATERIAL_ADDNEWS_URL . 'access_token=' . $this->access_token;
+				$result = $this->http_post($url, json_encode($data));
 				break;
 			case 'image':
 				$url = self::API_URL_PREFIX . self::MEDIA_ADDIMG_URL . 'access_token=' . $this->access_token;
-				break;
-			case 'material':
-				if ($is_video) {
-					$data['description'] = json_decode($info);
-				}
-				$url = self::API_URL_PREFIX . self::MATERIAL_ADDMATERIAL_URL . 'access_token=' . $this->access_token . '&type=' . $materialType;
+				$result = $this->http_post($url, $data, true);
 				break;
 			default:
-				return false;
+				if ($is_video) {
+					$data['description'] = json_encode($info);
+				}
+				$url = self::API_URL_PREFIX . self::MATERIAL_ADDMATERIAL_URL . 'access_token=' . $this->access_token . '&type=' . $type;
+				$result = $this->http_post($url, $data, true);
 				break;
 		}
-		$result = $this->http_post($url, $data, true);
+		
 		if ($result) {
 			$json = (array)json_decode($result);
 			if (!$json || !empty($json['errcode'])) {
 				$this->errCode = $json['errcode'];
 				$this->errMsg = $json['errmsg'];
-				return $false;
+				return false;
 			}
 			return $json;
 		} else {
@@ -530,7 +530,7 @@ class WeChat
 	{
 		$url = self::API_URL_PREFIX . self::MATERIAL_GETMATERIAL_URL . 'access_token=' . $this->access_token;
 		$data['media_id'] = $mediaid;
-		$result = $this->http_post($url, $data, false);
+		$result = $this->http_post($url, json_encode($data), false);
         if ($result)
         {
             if (is_string($result)) {
@@ -556,14 +556,13 @@ class WeChat
 	{
 		$url = self::API_URL_PREFIX . self::MATERIAL_DELMATERIAL_URL . 'access_token=' . $this->access_token;
 		$data['media_id'] = $mediaid;
-		$result = $this->http_post($url, $data, false);
+		$result = $this->http_post($url, json_encode($data), false);
         if ($result)
         {
             $json = json_decode($result,true);
             if (!$json || !empty($json['errcode'])) {
                 $this->errCode = $json['errcode'];
                 $this->errMsg = $json['errmsg'];
-                return false;
             }
             return true;
         }
@@ -576,7 +575,7 @@ class WeChat
 		$data['media_id'] = $mediaid;
 		$data['index'] = $index;
 		$url = self::API_URL_PREFIX . self::MATERIAL_UPDATENEWS_URL . 'access_token=' . $this->access_token;
-		$result = $this->http_post($url, $data);
+		$result = $this->http_post($url, json_encode($data));
         if ($result)
         {
             $json = json_decode($result,true);
@@ -595,7 +594,7 @@ class WeChat
 	{
 		$url = self::API_URL_PREFIX . self::MATERIAL_LIST_URL . 'access_token=' . $this->access_token;
 		$param = ['type'=>$type,'offset'=>$offset,'count'=>$count];
-		$result = $this->http_post($url, $param);
+		$result = $this->http_post($url, json_encode($param));
         if ($result)
         {
             $json = json_decode($result,true);
@@ -696,7 +695,9 @@ class WeChat
 		curl_setopt($oCurl, CURLOPT_RETURNTRANSFER, 1 );
 		curl_setopt($oCurl, CURLOPT_POST,true);
 		curl_setopt($oCurl, CURLOPT_POSTFIELDS,$strPOST);
+		// var_dump($strPOST);die;
 		$sContent = curl_exec($oCurl);
+		// var_dump($sContent);die;
 		$aStatus = curl_getinfo($oCurl);
 		curl_close($oCurl);
 		if(intval($aStatus["http_code"])==200){
@@ -704,5 +705,25 @@ class WeChat
 		}else{
 			return false;
 		}
+	}
+
+	public function apiCountClear()
+	{
+		$url = 'https://api.weixin.qq.com/cgi-bin/clear_quota?access_token=' . $this->access_token;
+		$result = $this->http_post($url, json_encode(['appid'=>$this->appid]));
+        if ($result)
+        {
+            $json = json_decode($result,true);
+            if (isset($json['errcode'])) {
+                $this->errCode = $json['errcode'];
+                $this->errMsg = $json['errmsg'];
+                if ($this->errMsg == 'ok') {
+                	return 'ok';
+                }
+                return false;
+            }
+            return $json;
+        }
+        return false;
 	}
 }
