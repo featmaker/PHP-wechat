@@ -10,9 +10,18 @@ $options = [
 		'token' => TOKEN,
 		'appid' => APPID,
 		'appsecret' => APPSECRET,
-		'logcallback' => false,
+		'logcallback' => true,
 	];
 $wechatObj = new WeChat($options);
+if (isset($_GET["echostr"])) {
+	$wechatObj->valid();
+}
+// if (!isset($_SESSION['token'])) {
+// 	$wechatObj->getAccessToken();
+// 	$_SESSION['token'] = $wechatObj->getToken();
+// }
+$wechatObj->getAccessToken();
+// var_dump($wechatObj->getToken());die;
 // $info = $wechatObj->apiCountClear();
 // var_dump($wechatObj->errCode);
 // var_dump($wechatObj->errMsg);
@@ -86,6 +95,8 @@ $wechatObj = new WeChat($options);
 // { ["media_id"]=> string(43) "oCmCA6JW8AUym2t9uhqzeBh1UQrvEdzCMOSp53eujfY" }
 // 永久素材数
 // $info = $wechatObj->getLongCount();
+// var_dump($info);
+// die;
 // 获取图文
 // $info = $wechatObj->getMaterial('oCmCA6JW8AUym2t9uhqzeBh1UQrvEdzCMOSp53eujfY');
 // 获取素材
@@ -157,15 +168,15 @@ $menu = [
 									'media_id'=>'oCmCA6JW8AUym2t9uhqzeIzNHOLe7GNsO2fvhAsuUtI'
 								],
 								[
-									'type'=>'view_limited',
+									'type'=>'media_id',
 									'name'=>'图文信息',
-									'media_id'=>'oCmCA6JW8AUym2t9uhqzeBh1UQrvEdzCMOSp53eujfY'
+									'media_id'=>'oCmCA6JW8AUym2t9uhqzeEHdfvJ_Z0MUoqUjOWWEOrQ'
 								],
-               [
-                 'type'=>'view_limited',
-                 'name'=>'小电影',
-                 'media_id'=>'oCmCA6JW8AUym2t9uhqzeKtiYQzppXBMyn6U2k2IMmU'
-               ]
+				               [
+				                 'type'=>'media_id',
+				                 'name'=>'小电影',
+				                 'media_id'=>'oCmCA6JW8AUym2t9uhqzeKtiYQzppXBMyn6U2k2IMmU'
+				               ]
 							]
 						],
 						[
@@ -190,14 +201,14 @@ $menu = [
 						]
 			]
 ];
-$info = $wechatObj->createMenu($menu);	//创建自定义菜单
+// $info = $wechatObj->createMenu($menu);	//创建自定义菜单
 // $info = $wechatObj->delMenu();		//删除菜单
 // $info = $wechatObj->getMenuInfo();	//菜单信息
-// 
+
 // var_dump($wechatObj->errCode);
 // var_dump($wechatObj->errMsg);
-var_dump($info);
-die;
+// var_dump($info);
+// die;
 
 $msgType = $wechatObj->getRec()->getRecType();
 switch ($msgType) {
@@ -254,21 +265,21 @@ switch ($msgType) {
 		$wechatObj->video($videoInfo)->reply();
 		break;
 	case 'event':
-    $eventInfo = $wechatObj->getRecEvent();
-    switch ($eventInfo['event']) {
-      case 'CLICK':
-        if ($eventInfo['key'] == 'diange') {
-          $music = [
-              'title'=>'成全',
-              'desc'=>'这是我用(sui)心(bian)为你点播的一首歌',
-              'url'=>'http://music.163.com/#/program?id=794490893',
-              'hqurl'=>'http://music.163.com/#/program?id=794490893',
-              'thumbid'=>'oCmCA6JW8AUym2t9uhqzeIzNHOLe7GNsO2fvhAsuUtI'
-              ];
-          $wechatObj->music($music)->reply();
-        } else {
-          $wechatObj->text('我开个玩笑而已，你还真敢点我啊！')->reply();
-        }
+	    $eventInfo = $wechatObj->getRecEvent();
+	    switch ($eventInfo['event']) {
+	      case 'CLICK':
+	        if ($eventInfo['key'] == 'diange') {
+	          $music = [
+	              'title'=>'成全',
+	              'desc'=>'这是我用(sui)心(bian)为你点播的一首歌',
+	              'url'=>'http://music.163.com/#/program?id=794490893',
+	              'hqurl'=>'http://music.163.com/#/program?id=794490893',
+	              'thumbid'=>'oCmCA6JW8AUym2t9uhqzeIzNHOLe7GNsO2fvhAsuUtI'
+	              ];
+	          $wechatObj->music($music)->reply();
+	        } else {
+	          $wechatObj->text('我开个玩笑而已，你还真敢点我啊！')->reply();
+	        }
         break;
       case 'subscribe':
         // if ($eventInfo['ticket']) {
@@ -276,8 +287,9 @@ switch ($msgType) {
         // }
         $wechatObj->text('欢迎欢迎，热烈欢迎！回复 "help" 查看帮助信息！')->reply();
         break;
-      case 'SCAN':
-        $wechatObj->text('(已经关注) 回复 "help" 查看帮助信息！')->reply();
+      case 'scancode_waitmsg':
+      	$info = $wechatObj->getScanInfo();
+        $wechatObj->text('扫描方式：扫我有喜('.$info['type'].'),扫描结果：'.$info['result'])->reply();
         break;
       case 'VIEW':
         $wechatObj->text('你在打开链接。。。')->reply();

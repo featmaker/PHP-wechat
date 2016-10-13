@@ -26,13 +26,6 @@ class WeChat
 	const EVENT_MENU_PIC_WEIXIN = 'pic_weixin';         //菜单 - 弹出微信相册发图器
 	const EVENT_MENU_LOCATION = 'location_select';      //菜单 - 弹出地理位置选择器
 
-	//客服管理
-	const KF_URL_PREFIX = 'https://api.weixin.qq.com/customservice/';
-	const KF_ADD_URL = 'kfaccount/add?';
-	const KF_UPDATE_URL = 'kfaccount/update?';
-	const KF_DEL_URL = 'kfaccount/del?';
-	const KF_LIST_URL = 'getkflist?';
-	const KF_HEADIMG_URL = 'kfaccount/uploadheadimg?';
 	//通用api接口前缀
 	const API_URL_PREFIX = 'https://api.weixin.qq.com/cgi-bin/';
 	//菜单管理
@@ -84,14 +77,11 @@ class WeChat
 	private $access_token;
 	private $msg;
 	private $receive;
-	private $postxml;
-	private $user_token;
 	private $encodingAesKey;
 	private $encrypt_type;
 	public $errMsg = "Hello shiyanlou";
 	public $errCode=-1;
 	public $logcallback;
-	public  static $last_time;
 
 
 	function __construct($options = [])
@@ -101,10 +91,7 @@ class WeChat
 		$this->appid = isset($options['appid'])?$options['appid']:'';
 		$this->appsecret = isset($options['appsecret'])?$options['appsecret']:'';
 		$this->logcallback = isset($options['logcallback'])?$options['logcallback']:false;
-		$this->access_token = 'fff';
-		//https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wxaccbeff229770dbe&secret=d15f6e2ca8b0037f70a606f2f236d401
-		// self::$last_time = (self::$last_time == null) ? time() : self::$last_time;
-		// $this->checkTokenExpires();
+		$this->access_token = "3T_-NV8HKpYu1EH7JuRGHGTDjPgZoG1R1k4R-WFfupb4lMTAbTZ4S-1cdZ0RFrdErZWZAqKhLl-klvbxE-MKTK7N5LSbA0yNnR0BEfvN-xbKd182tqbq2w4xluAoqdA3IXGfAIAAPY";
 	}
 
 	//接入验证
@@ -113,6 +100,7 @@ class WeChat
 		$echoStr = $_GET["echostr"];
 		//valid signature , option
 		if($this->checkSignature()){
+			$this->log($echoStr,'接入验证');
 			echo $echoStr;
 			exit;
 		}
@@ -135,26 +123,12 @@ class WeChat
 		}
 	}
 
-	//检查AccessToken是否过期
-	public function checkTokenExpires()
+	public function getToken()
 	{
-		var_dump($this->access_token);die;
 		if (!isset($this->access_token)) {
 			$this->getAccessToken();
-			return true;
 		}
-		$now = time();
-		$diff = intval((($now - self::$last_time)%3600)/60);
-		var_dump($diff);die;
-		if ($diff >= 90) {
-			if ($this->getAccessToken()) {
-				return true;
-			} else {
-				return false;
-			}
-		}
-		return true;
-
+		return $this->access_token;
 	}
 
 	//获取AccessToken
@@ -167,6 +141,7 @@ class WeChat
 		$url = self::API_URL_PREFIX . self::GET_TOKEN_URL . 'grant_type=client_credential&appid=' . $appid . '&secret=' . $appsecret;
 		$result = $this->http_get($url);
 		if ($result) {
+			$this->log($result,'获取 access_token');
 			$result = json_decode($result);
 			$this->access_token = $result->access_token;
 			return true;
@@ -279,7 +254,7 @@ class WeChat
 		}
 		$xmlData = $this->xml_encode($this->msg);
 		if ($this->logcallback) {
-			$this->log($xmlData);
+			$this->log($xmlData,'回复');
 		}
 		echo $xmlData;
 	}
@@ -332,9 +307,17 @@ class WeChat
 	}
 
 	//日志信息
-	public function log($data)
+	public function log($data,$option)
 	{
-		//TODO
+		$filename = './log.txt';
+		$logfile = fopen('./log.txt','a+')  or die("Unable to open file!");
+		if (is_array($data)) {
+			$data = json_encode($data);
+		}
+		$logdata = '时间：'.date('Y-n-d H:m:s')."\r\n".'操作：'.$option."\r\n".'内容：'.$data."\r\n ============================= \r\n";
+		fwrite($logfile,$logdata);
+		fclose($logfile);
+		return true;
 	}
 
 	//获取微信服务器的ip地址
@@ -352,10 +335,15 @@ class WeChat
 	public function getRec()
 	{
 		if ($this->receive) {
+			if ($this->logcallback){
+				$this->log($postStr,'接收');
+			}
 			return $this;
 		}
-		$postStr = !empty($this->postxml) ? $this->postxml : file_get_contents("php://input");
-		$this->log($postStr);
+		$postStr = file_get_contents("php://input");
+		if ($this->logcallback){
+			$this->log($postStr,'接收');
+		}
 		if (!empty($postStr)) {
 			$this->receive = (array)simplexml_load_string($postStr,'SimpleXMLElement', LIBXML_NOCDATA);
 		}
@@ -488,8 +476,20 @@ class WeChat
 		} else {
 			return false;
 		}
-
 	}
+
+	//扫描二维码
+	public function getScanInfo()
+	{
+		$info['type'] = $this->receive['ScanCodeInfo']->ScanType;
+		$info['result'] = $this->receive['ScanCodeInfo']->ScanResult;
+		if (!empty($info)) {
+			return $info;
+		} else {
+			return false;
+		}
+	}
+	
 	//上传临时素材
 	public function uploadTmp($type,$data)
 	{
@@ -501,6 +501,9 @@ class WeChat
 				$this->errCode = $json['errcode'];
 				$this->errMsg = $json['errmsg'];
 				return false;
+			}
+			if ($this->logcallback) {
+				$this->log($result,'上传临时素材');
 			}
 			return $json;
 		} else {
@@ -515,14 +518,17 @@ class WeChat
 		$result = $this->http_get($url);
 		if ($result)
 		{
-            if (is_string($result)) {
-                $json = json_decode($result,true);
-                if (isset($json['errcode'])) {
-                    $this->errCode = $json['errcode'];
-                    $this->errMsg = $json['errmsg'];
-                    return false;
-                }
-            }
+			if (is_string($result)) {
+				$json = json_decode($result,true);
+				if (isset($json['errcode'])) {
+					$this->errCode = $json['errcode'];
+					$this->errMsg = $json['errmsg'];
+					return false;
+				}
+			}
+			if ($this->logcallback) {
+				$this->log($result,'获取临时素材');
+			}
 			return $result;
 		}
 		return false;
@@ -556,6 +562,9 @@ class WeChat
 				$this->errMsg = $json['errmsg'];
 				return false;
 			}
+			if ($this->logcallback) {
+				$this->log($result,'新增永久素材');
+			}
 			return $json;
 		} else {
 			return false;
@@ -568,24 +577,25 @@ class WeChat
 		$url = self::API_URL_PREFIX . self::MATERIAL_GETMATERIAL_URL . 'access_token=' . $this->access_token;
 		$data['media_id'] = $mediaid;
 		$result = $this->http_post($url, json_encode($data), false);
-        if ($result)
-        {
-            if (is_string($result)) {
-                $json = json_decode($result,true);
-                if ($json) {
-                    if (isset($json['errcode'])) {
-                        $this->errCode = $json['errcode'];
-                        $this->errMsg = $json['errmsg'];
-                        return false;
-                    }
-                    return $json;
-                } else {
-                    return $result;
-                }
-            }
-            return $result;
-        }
-        return false;
+		if ($result)
+		{
+			if (is_string($result)) {
+				$json = json_decode($result,true);
+				if ($json) {
+					if (isset($json['errcode'])) {
+						$this->errCode = $json['errcode'];
+						$this->errMsg = $json['errmsg'];
+						return false;
+					}
+				}
+			if ($this->logcallback) {
+				$this->log($result,'获取永久素材');
+			}
+			return $result;
+			} else {
+				return false;
+			}
+		}
 	}
 
 	//删除永久素材
@@ -594,16 +604,24 @@ class WeChat
 		$url = self::API_URL_PREFIX . self::MATERIAL_DELMATERIAL_URL . 'access_token=' . $this->access_token;
 		$data['media_id'] = $mediaid;
 		$result = $this->http_post($url, json_encode($data), false);
-        if ($result)
-        {
-            $json = json_decode($result,true);
-            if (!$json || !empty($json['errcode'])) {
-                $this->errCode = $json['errcode'];
-                $this->errMsg = $json['errmsg'];
-            }
-            return true;
-        }
-        return false;
+		if ($result)
+		{
+			$json = json_decode($result,true);
+			if (!$json || !empty($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				if ($this->errCode == 0) {
+					if ($this->logcallback) {
+						$this->log($result,'删除永久素材');
+					}
+					return true;
+				} else {
+					return false;
+				}
+			}
+			return false;
+		}
+		return false;
 	}
 
 	//修改永久图文素材
@@ -613,17 +631,20 @@ class WeChat
 		$data['index'] = $index;
 		$url = self::API_URL_PREFIX . self::MATERIAL_UPDATENEWS_URL . 'access_token=' . $this->access_token;
 		$result = $this->http_post($url, json_encode($data));
-        if ($result)
-        {
-            $json = json_decode($result,true);
-            if (!$json || !empty($json['errcode'])) {
-                $this->errCode = $json['errcode'];
-                $this->errMsg = $json['errmsg'];
-                return false;
-            }
-            return $json;
-        }
-        return false;
+		if ($result)
+		{
+			$json = json_decode($result,true);
+			if (!$json || !empty($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				return false;
+			}
+			if ($this->logcallback) {
+				$this->log($result,'修改永久图文素材');
+			}
+			return $json;
+		}
+		return false;
 	}
 
 	//获取素材列表
@@ -632,17 +653,20 @@ class WeChat
 		$url = self::API_URL_PREFIX . self::MATERIAL_LIST_URL . 'access_token=' . $this->access_token;
 		$param = ['type'=>$type,'offset'=>$offset,'count'=>$count];
 		$result = $this->http_post($url, json_encode($param));
-        if ($result)
-        {
-            $json = json_decode($result,true);
-            if (!$json || !empty($json['errcode'])) {
-                $this->errCode = $json['errcode'];
-                $this->errMsg = $json['errmsg'];
-                return false;
-            }
-            return $json;
-        }
-        return false;
+		if ($result)
+		{
+			$json = json_decode($result,true);
+			if (!$json || !empty($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				return false;
+			}
+			if ($this->logcallback) {
+				$this->log($result,'获取永久素材列表');
+			}
+			return $json;
+		}
+		return false;
 	}
 
 	//获取永久素材总数
@@ -650,18 +674,98 @@ class WeChat
 	{
 		$url = self::API_URL_PREFIX . self::MATERIAL_COUNT_URL . 'access_token=' . $this->access_token;
 		$result = $this->http_get($url);
-        if ($result)
-        {
-            $json = json_decode($result,true);
-            if (isset($json['errcode'])) {
-                $this->errCode = $json['errcode'];
-                $this->errMsg = $json['errmsg'];
-                return false;
-            }
-            return $json;
-        }
-        return false;
+		if ($result)
+		{
+			$json = json_decode($result,true);
+			if (isset($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				return false;
+			}
+			if ($this->logcallback) {
+				$this->log($result,'新增永久素材总数');
+			}
+			return $json;
+		}
+		return false;
 	}
+
+//=================用户管理
+
+	//获取用户基本信息
+	public function getUserInfo($openid)
+	{
+		# code...
+	}
+
+	//获取用户列表
+	public function getUserList()
+	{
+		# code...
+	}
+
+	//获取用户地理位置
+	public function getUserLoc($openid)
+	{
+		# code...
+	}
+
+	//设置用户备注名
+	public function setUserName($openid,$remark)
+	{
+		
+	}
+
+	//用户标签管理
+	
+	//创建标签
+	public function userTagCreate($tag)
+	{
+		# code...
+	}
+
+	//获取已有标签
+	public function userTagGet()
+	{
+		# code...
+	}
+
+	//修改用户标签
+	public function userTagEdit($tagInfo)
+	{
+		
+	}
+
+	//删除标签
+	public function userTagDelete($tagInfo)
+	{
+		# code...
+	}
+
+	//获取标签下粉丝
+	public function getFansFromTag($tagInfo)
+	{
+		# code...
+	}
+
+	//批量为用户打标签
+	public function userBatchTag($info)
+	{
+		# code...
+	}
+
+	//批量为用户取消标签
+	public function userBatchUnTag($info)
+	{
+		# code...
+	}
+
+	//获取用户已有的标签列表
+	public function userTagList($openid)
+	{
+		# code...
+	}
+
 
 	//============菜单管理
 	//
@@ -671,20 +775,23 @@ class WeChat
 		$url = self::API_URL_PREFIX . self::MENU_CREATE_URL . 'access_token=' . $this->access_token;
 		// var_dump(json_encode($data));die;JSON_UNESCAPED_UNICODE
 		$result = $this->http_post($url, json_encode($data,JSON_UNESCAPED_UNICODE));
-        if ($result)
-        {
-            $json = json_decode($result,true);
-            if (isset($json['errcode'])) {
-                $this->errCode = $json['errcode'];
-                $this->errMsg = $json['errmsg'];
-                if ($this->errMsg == 'ok') {
-                	return true;
-                }
-                return false;
-            }
-            return $json;
-        }
-        return false;
+		if ($result)
+		{
+			$json = json_decode($result,true);
+			if (isset($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				if ($this->errMsg == 'ok') {
+					return true;
+				}
+				return false;
+			}
+			if ($this->logcallback) {
+				$this->log($result,'创建自定义菜单');
+			}
+			return $json;
+		}
+		return false;
 	}
 
 	//查询自定义菜单
@@ -692,17 +799,20 @@ class WeChat
 	{
 		$url = self::API_URL_PREFIX . self::MENU_GET_URL . 'access_token=' . $this->access_token;
 		$result = $this->http_get($url);
-        if ($result)
-        {
-            $json = json_decode($result,true);
-            if (isset($json['errcode'])) {
-                $this->errCode = $json['errcode'];
-                $this->errMsg = $json['errmsg'];
-                return false;
-            }
-            return $json;
-        }
-        return false;
+		if ($result)
+		{
+			$json = json_decode($result,true);
+			if (isset($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				return false;
+			}
+			if ($this->logcallback) {
+				$this->log($result,'查询自定义菜单');
+			}
+			return $json;
+		}
+		return false;
 	}
 
 	//删除自定义菜单
@@ -710,21 +820,25 @@ class WeChat
 	{
 		$url = self::API_URL_PREFIX . self::MENU_DELETE_URL . 'access_token=' . $this->access_token;
 		$result = $this->http_get($url);
-        if ($result)
-        {
-            $json = json_decode($result,true);
-            if (isset($json['errcode'])) {
-                $this->errCode = $json['errcode'];
-                $this->errMsg = $json['errmsg'];
-                if ($this->errMsg == 'ok') {
-                	return true;
-                }
-            }
-            return $json;
-        }
-        return false;
+		if ($result)
+		{
+			$json = json_decode($result,true);
+			if (isset($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				if ($this->errMsg == 'ok') {
+					return true;
+				}
+			}
+			if ($this->logcallback) {
+				$this->log($result,'删除自定义菜单');
+			}
+			return $json;
+		}
+		return false;
 	}
 
+	
 	/**
 	 * GET 请求
 	 * @param string $url
@@ -810,19 +924,22 @@ class WeChat
 	{
 		$url = 'https://api.weixin.qq.com/cgi-bin/clear_quota?access_token=' . $this->access_token;
 		$result = $this->http_post($url, json_encode(['appid'=>$this->appid]));
-        if ($result)
-        {
-            $json = json_decode($result,true);
-            if (isset($json['errcode'])) {
-                $this->errCode = $json['errcode'];
-                $this->errMsg = $json['errmsg'];
-                if ($this->errMsg == 'ok') {
-                	return 'ok';
-                }
-                return false;
-            }
-            return $json;
-        }
-        return false;
+		if ($result)
+		{
+			$json = json_decode($result,true);
+			if (isset($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				if ($this->errMsg == 'ok') {
+					return 'ok';
+				}
+				return false;
+			}
+			if ($this->logcallback) {
+				$this->log($result,'API调用次数清零');
+			}
+			return $json;
+		}
+		return false;
 	}
 }
