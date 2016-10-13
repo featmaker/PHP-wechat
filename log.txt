@@ -1353,3 +1353,51 @@
 操作：回复
 内容：<xml><ToUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></ToUserName><FromUserName><![CDATA[gh_67ddb97cc7fc]]></FromUserName><CreateTime><![CDATA[1476351041]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[fdgdf(小孩子不要乱发消息哦)]]></Content></xml>
  ============================= 
+时间：2016-10-13 22:10:28
+操作：获取 access_token
+内容：{"access_token":"0zny8knhBd-HM8vDTfba4KIJBYxxyQdoPzgwkgkYpJWDSsH7XpqbqygQ1vOud-QOBNNiAi-lbGn4Zsfgz7OmMDGtqiOsGkrlOQcXjpECgjmSFOJ-5s5XWKxxUDYVO1KgOEJfAHAFVA","expires_in":7200}
+ ============================= 
+时间：2016-10-13 22:10:44
+操作：获取用户基本信息
+内容：{"total":2,"count":2,"data":{"openid":["oLA-5v9JKdKz_Unir3urFleTlVj4","oLA-5v_Y2oc9DRIabapSpEeNbFzE"]},"next_openid":"oLA-5v_Y2oc9DRIabapSpEeNbFzE"}
+ ============================= 
+时间：2016-10-13 22:10:40
+操作：获取用户基本信息
+内容：{"subscribe":1,"openid":"oLA-5v9JKdKz_Unir3urFleTlVj4","nickname":"浅水很深","sex":1,"language":"zh_CN","city":"绵阳","province":"四川","country":"中国","headimgurl":"http:\/\/wx.qlogo.cn\/mmopen\/G6axZpedw1uLNT8STcZ5cY6AhJmZrCWtKFOOMDDEpQhl7ztibN2Uqkol5ic3ImIOVZLh9QHJ0mXE1UPUMOGhuE1avI68bicXQb7\/0","subscribe_time":1476348356,"remark":"","groupid":0,"tagid_list":[]}
+ ============================= 
+时间：2016-10-13 22:10:44
+操作：获取用户基本信息
+内容：{"subscribe":1,"openid":"oLA-5v9JKdKz_Unir3urFleTlVj4","nickname":"浅水很深","sex":1,"language":"zh_CN","city":"绵阳","province":"四川","country":"中国","headimgurl":"http:\/\/wx.qlogo.cn\/mmopen\/G6axZpedw1uLNT8STcZ5cY6AhJmZrCWtKFOOMDDEpQhl7ztibN2Uqkol5ic3ImIOVZLh9QHJ0mXE1UPUMOGhuE1avI68bicXQb7\/0","subscribe_time":1476348356,"remark":"","groupid":0,"tagid_list":[]}
+ ============================= 
+时间：2016-10-13 23:10:27
+操作：获取用户基本信息
+内容：{"subscribe":1,"openid":"oLA-5v9JKdKz_Unir3urFleTlVj4","nickname":"浅水很深","sex":1,"language":"zh_CN","city":"绵阳","province":"四川","country":"中国","headimgurl":"http:\/\/wx.qlogo.cn\/mmopen\/G6axZpedw1uLNT8STcZ5cY6AhJmZrCWtKFOOMDDEpQhl7ztibN2Uqkol5ic3ImIOVZLh9QHJ0mXE1UPUMOGhuE1avI68bicXQb7\/0","subscribe_time":1476348356,"remark":"fuli","groupid":0,"tagid_list":[]}
+ ============================= 
+时间：2016-10-13 23:10:37
+操作：获取用户基本信息
+内容：{"tag":{"id":100,"name":"\\u5b9e\\u9a8c\\u697c"}}
+ ============================= 
+时间：2016-10-13 23:10:36
+操作：获取用户基本信息
+内容：{"tag":{"id":101,"name":"\\u5b9e\\u9a8c\\u697c"}}
+ ============================= 
+时间：2016-10-13 23:10:57
+操作：获取用户基本信息
+内容：{"tag":{"id":102,"name":"\\u5b9e\\u9a8c\\u697c"}}
+ ============================= 
+时间：2016-10-13 23:10:00
+操作：获取用户基本信息
+内容：{"tag":{"id":103,"name":"\\u5b9e\\u9a8c\\u697c"}}
+ ============================= 
+时间：2016-10-13 23:10:10
+操作：获取用户基本信息
+内容：{"tags":[{"id":2,"name":"星标组","count":0},{"id":100,"name":"\\u5b9e\\u9a8c\\u697c","count":0},{"id":101,"name":"\\u5b9e\\u9a8c\\u697c","count":0},{"id":102,"name":"\\u5b9e\\u9a8c\\u697c","count":0},{"id":103,"name":"\\u5b9e\\u9a8c\\u697c","count":0}]}
+ ============================= 
+时间：2016-10-13 23:10:06
+操作：获取用户基本信息
+内容：{"tag":{"id":104,"name":"实验楼"}}
+ ============================= 
+时间：2016-10-13 23:10:39
+操作：获取用户基本信息
+内容：{"tags":[{"id":2,"name":"星标组","count":0},{"id":100,"name":"\\u5b9e\\u9a8c\\u697c","count":0},{"id":101,"name":"\\u5b9e\\u9a8c\\u697c","count":0},{"id":102,"name":"\\u5b9e\\u9a8c\\u697c","count":0},{"id":103,"name":"\\u5b9e\\u9a8c\\u697c","count":0},{"id":104,"name":"实验楼","count":0}]}
+ ============================= 

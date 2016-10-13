@@ -20,7 +20,8 @@ if (isset($_GET["echostr"])) {
 // 	$wechatObj->getAccessToken();
 // 	$_SESSION['token'] = $wechatObj->getToken();
 // }
-$wechatObj->getAccessToken();
+// $wechatObj->getAccessToken();
+// die;
 // var_dump($wechatObj->getToken());die;
 // $info = $wechatObj->apiCountClear();
 // var_dump($wechatObj->errCode);
@@ -122,93 +123,105 @@ $wechatObj->getAccessToken();
 
 //=============================菜单管理
 //菜单
-$menu = [
-			'button'=>[
-						[
-							'name'=>'实验楼',
-							'sub_button'=>[
-									[
-										'type'=>'view',
-										'name'=>'主页',
-										'url'=>'http://www.shiyanlou.com'
-									],
-									[
-										'type'=>'click',
-										'name'=>'点我啊',
-										'key'=>'clickme'
-									],
-                  [
-                    'type'=>'click',
-                    'name'=>'点歌',
-                    'key'=>'diange'
-                  ],
-									[
-										'name'=>'我的位置',
-										'type'=>'location_select',
-										'key'=>'mylocation'
-									]
-							]
-						],
-						[
-							'name'=>'扫码',
-							'sub_button'=>[
-								[
-									'type'=>'scancode_waitmsg',
-									'name'=>'扫我有喜',
-									'key'=>'scammsg'
-								],
-								[
-									'type'=>'scancode_push',
-									'name'=>'扫我进入',
-									'key'=>'scaninto'
-								],
-								[
-									'type'=>'media_id',
-									'name'=>'看图',
-									'media_id'=>'oCmCA6JW8AUym2t9uhqzeIzNHOLe7GNsO2fvhAsuUtI'
-								],
-								[
-									'type'=>'media_id',
-									'name'=>'图文信息',
-									'media_id'=>'oCmCA6JW8AUym2t9uhqzeEHdfvJ_Z0MUoqUjOWWEOrQ'
-								],
-				               [
-				                 'type'=>'media_id',
-				                 'name'=>'小电影',
-				                 'media_id'=>'oCmCA6JW8AUym2t9uhqzeKtiYQzppXBMyn6U2k2IMmU'
-				               ]
-							]
-						],
-						[
-							'name'=>'拍照',
-							'sub_button'=>[
-								[
-									'type'=>'pic_sysphoto',
-									'name'=>'系统拍照',
-									'key'=>'photosys'
-								],
-								[
-									'type'=>'pic_photo_or_album',
-									'name'=>'选择方式',
-									'key'=>'photosel'
-								],
-								[
-									'type'=>'pic_weixin',
-									'name'=>'相册选择',
-									'key'=>'photoweixin'
-								]
-							]
-						]
-			]
-];
+// $menu = [
+// 			'button'=>[
+// 						[
+// 							'name'=>'实验楼',
+// 							'sub_button'=>[
+// 									[
+// 										'type'=>'view',
+// 										'name'=>'主页',
+// 										'url'=>'http://www.shiyanlou.com'
+// 									],
+// 									[
+// 										'type'=>'click',
+// 										'name'=>'点我啊',
+// 										'key'=>'clickme'
+// 									],
+//                   [
+//                     'type'=>'click',
+//                     'name'=>'点歌',
+//                     'key'=>'diange'
+//                   ],
+// 									[
+// 										'name'=>'我的位置',
+// 										'type'=>'location_select',
+// 										'key'=>'mylocation'
+// 									]
+// 							]
+// 						],
+// 						[
+// 							'name'=>'扫码',
+// 							'sub_button'=>[
+// 								[
+// 									'type'=>'scancode_waitmsg',
+// 									'name'=>'扫我有喜',
+// 									'key'=>'scammsg'
+// 								],
+// 								[
+// 									'type'=>'scancode_push',
+// 									'name'=>'扫我进入',
+// 									'key'=>'scaninto'
+// 								],
+// 								[
+// 									'type'=>'media_id',
+// 									'name'=>'看图',
+// 									'media_id'=>'oCmCA6JW8AUym2t9uhqzeIzNHOLe7GNsO2fvhAsuUtI'
+// 								],
+// 								[
+// 									'type'=>'media_id',
+// 									'name'=>'图文信息',
+// 									'media_id'=>'oCmCA6JW8AUym2t9uhqzeEHdfvJ_Z0MUoqUjOWWEOrQ'
+// 								],
+// 				               [
+// 				                 'type'=>'media_id',
+// 				                 'name'=>'小电影',
+// 				                 'media_id'=>'oCmCA6JW8AUym2t9uhqzeKtiYQzppXBMyn6U2k2IMmU'
+// 				               ]
+// 							]
+// 						],
+// 						[
+// 							'name'=>'拍照',
+// 							'sub_button'=>[
+// 								[
+// 									'type'=>'pic_sysphoto',
+// 									'name'=>'系统拍照',
+// 									'key'=>'photosys'
+// 								],
+// 								[
+// 									'type'=>'pic_photo_or_album',
+// 									'name'=>'选择方式',
+// 									'key'=>'photosel'
+// 								],
+// 								[
+// 									'type'=>'pic_weixin',
+// 									'name'=>'相册选择',
+// 									'key'=>'photoweixin'
+// 								]
+// 							]
+// 						]
+// 			]
+// ];
 // $info = $wechatObj->createMenu($menu);	//创建自定义菜单
 // $info = $wechatObj->delMenu();		//删除菜单
 // $info = $wechatObj->getMenuInfo();	//菜单信息
 
-// var_dump($wechatObj->errCode);
-// var_dump($wechatObj->errMsg);
-// var_dump($info);
-// die;
+//用户管理
+
+// $info = $wechatObj->getUserList(); //获取用户列表
+$openid = 'oLA-5v9JKdKz_Unir3urFleTlVj4';
+// $info = $wechatObj->getUserInfo($openid);  //获取用户信息
+// $info = $wechatObj->setUserName($openid,'fuli');  //获取用户信息
+// $info = $wechatObj->userTagCreate(['tag'=>['name'=>'实验楼']]);
+// $info = $wechatObj->userTagGet();104
+// $data = ['tag'=>['id'=>104,'name'=>'实验楼+1']];
+// $info = $wechatObj->userTagEdit($data);
+$data = ['tag'=>['id'=>104]];
+$info = $wechatObj->userTagDelete($data);
+var_dump($wechatObj->errCode);
+var_dump($wechatObj->errMsg);
+var_dump($info);
+die;
 
 $msgType = $wechatObj->getRec()->getRecType();
 switch ($msgType) {

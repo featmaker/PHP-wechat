@@ -40,11 +40,12 @@ class WeChat
 	const TAGS_FANS_URL = 'user/tag/get?';
 	const TAGS_BATCH_URL = 'tags/members/batchtagging?';
 	const TAGS_CANCLE_URL = 'tags/members/batchuntagging?';
-	const TAGS_USER_URL = 'tags/getidlist?';
+	const TAGS_LIST_URL = 'tags/getidlist?';
 
 	const USER_INFO_URL = 'user/info?';
 	const USERS_INFO_URL = 'user/info/batchget?';
 	const USER_LIST_URL = 'user/get?';
+	const USER_UPDATE_URL = 'user/info/updateremark?';
 	const USER_BLACKLIST_URL = 'tags/members/getblacklist?';
 	const USER_BLACK_URL = 'tags/members/batchblacklist?';
 	const USER_UNBLACK_URL = 'tags/members/batchunblacklist?';
@@ -91,7 +92,7 @@ class WeChat
 		$this->appid = isset($options['appid'])?$options['appid']:'';
 		$this->appsecret = isset($options['appsecret'])?$options['appsecret']:'';
 		$this->logcallback = isset($options['logcallback'])?$options['logcallback']:false;
-		$this->access_token = "3T_-NV8HKpYu1EH7JuRGHGTDjPgZoG1R1k4R-WFfupb4lMTAbTZ4S-1cdZ0RFrdErZWZAqKhLl-klvbxE-MKTK7N5LSbA0yNnR0BEfvN-xbKd182tqbq2w4xluAoqdA3IXGfAIAAPY";
+		$this->access_token = "0zny8knhBd-HM8vDTfba4KIJBYxxyQdoPzgwkgkYpJWDSsH7XpqbqygQ1vOud-QOBNNiAi-lbGn4Zsfgz7OmMDGtqiOsGkrlOQcXjpECgjmSFOJ-5s5XWKxxUDYVO1KgOEJfAHAFVA";
 	}
 
 	//接入验证
@@ -695,25 +696,70 @@ class WeChat
 	//获取用户基本信息
 	public function getUserInfo($openid)
 	{
-		# code...
+		$url = self::API_URL_PREFIX . self::USER_INFO_URL . 'access_token=' . $this->access_token . '&openid=' . $openid . '&lang=zh_CN';
+		$result = $this->http_get($url);
+		if ($result)
+		{
+			$json = json_decode($result,true);
+			if (isset($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				return false;
+			}
+			if ($this->logcallback) {
+				$this->log($result,'获取用户基本信息');
+			}
+			return $json;
+		}
+		return false;
 	}
 
 	//获取用户列表
 	public function getUserList()
 	{
-		# code...
-	}
-
-	//获取用户地理位置
-	public function getUserLoc($openid)
-	{
-		# code...
+		$url = self::API_URL_PREFIX . self::USER_LIST_URL . 'access_token=' . $this->access_token;
+		$result = $this->http_get($url);
+		if ($result)
+		{
+			$json = json_decode($result,true);
+			if (isset($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				return false;
+			}
+			if ($this->logcallback) {
+				$this->log($result,'获取用户基本信息');
+			}
+			return $json;
+		}
+		return false;
 	}
 
 	//设置用户备注名
 	public function setUserName($openid,$remark)
 	{
-		
+		$url = self::API_URL_PREFIX . self::USER_UPDATE_URL . 'access_token=' . $this->access_token;
+		$data['openid'] = $openid;
+		$data['remark'] = $remark;
+		$result = $this->http_post($url, json_encode($data));
+		if ($result)
+		{
+			$json = json_decode($result,true);
+			if (isset($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				if ($this->errMsg == 'ok') {
+					return true;
+				} else {
+					return false;
+				}
+			}
+			if ($this->logcallback) {
+				$this->log($result,'获取用户基本信息');
+			}
+			return $json;
+		}
+		return false;
 	}
 
 	//用户标签管理
@@ -721,49 +767,189 @@ class WeChat
 	//创建标签
 	public function userTagCreate($tag)
 	{
-		# code...
+		$url = self::API_URL_PREFIX . self::TAGS_CREATE_URL . 'access_token=' . $this->access_token;
+		$result = $this->http_post($url, json_encode($tag,JSON_UNESCAPED_UNICODE));
+		if ($result)
+		{
+			$json = json_decode($result,true);
+			if (isset($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				return false;
+			}
+			if ($this->logcallback) {
+				$this->log($result,'获取用户基本信息');
+			}
+			return $json;
+		}
+		return false;
 	}
 
 	//获取已有标签
 	public function userTagGet()
 	{
-		# code...
+		$url = self::API_URL_PREFIX . self::TAGS_GET_URL . 'access_token=' . $this->access_token;
+		$result = $this->http_get($url);
+		if ($result)
+		{
+			$json = json_decode($result,true);
+			if (isset($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				return false;
+			}
+			if ($this->logcallback) {
+				$this->log($result,'获取用户基本信息');
+			}
+			return $json;
+		}
+		return false;
 	}
 
 	//修改用户标签
 	public function userTagEdit($tagInfo)
 	{
-		
+		$url = self::API_URL_PREFIX . self::TAGS_UPDATE_URL . 'access_token=' . $this->access_token;
+		$result = $this->http_post($url, json_encode($tagInfo,JSON_UNESCAPED_UNICODE));
+		if ($result)
+		{
+			$json = json_decode($result,true);
+			if (isset($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				if ($this->errMsg == 'ok') {
+					return true;
+				} else {
+					return false;
+				}
+			}
+			if ($this->logcallback) {
+				$this->log($result,'获取用户基本信息');
+			}
+			return $json;
+		}
+		return false;
 	}
 
 	//删除标签
 	public function userTagDelete($tagInfo)
 	{
-		# code...
+		$url = self::API_URL_PREFIX . self::TAGS_DELETE_URL . 'access_token=' . $this->access_token;
+		$result = $this->http_post($url, json_encode($tagInfo,JSON_UNESCAPED_UNICODE));
+		if ($result)
+		{
+			$json = json_decode($result,true);
+			if (isset($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				if ($this->errMsg == 'ok') {
+					return true;
+				} else {
+					return false;
+				}
+			}
+			if ($this->logcallback) {
+				$this->log($result,'获取用户基本信息');
+			}
+			return $json;
+		}
+		return false;
 	}
 
 	//获取标签下粉丝
 	public function getFansFromTag($tagInfo)
 	{
-		# code...
+		$url = self::API_URL_PREFIX . self::TAGS_FANS_URL . 'access_token=' . $this->access_token;
+		$result = $this->http_post($url, json_encode($tagInfo,JSON_UNESCAPED_UNICODE));
+		if ($result)
+		{
+			$json = json_decode($result,true);
+			if (isset($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				return false;
+			}
+			if ($this->logcallback) {
+				$this->log($result,'获取用户基本信息');
+			}
+			return $json;
+		}
+		return false;
 	}
 
 	//批量为用户打标签
 	public function userBatchTag($info)
 	{
-		# code...
+		$url = self::API_URL_PREFIX . self::TAGS_BATCH_URL . 'access_token=' . $this->access_token;
+		$result = $this->http_post($url, json_encode($info,JSON_UNESCAPED_UNICODE));
+		if ($result)
+		{
+			$json = json_decode($result,true);
+			if (isset($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				if ($this->errMsg == 'ok') {
+					return true;
+				} else {
+					return false;
+				}
+			}
+			if ($this->logcallback) {
+				$this->log($result,'获取用户基本信息');
+			}
+			return $json;
+		}
+		return false;
 	}
 
 	//批量为用户取消标签
 	public function userBatchUnTag($info)
 	{
-		# code...
+		$url = self::API_URL_PREFIX . self::TAGS_CANCLE_URL . 'access_token=' . $this->access_token;
+		$result = $this->http_post($url, json_encode($info,JSON_UNESCAPED_UNICODE));
+		if ($result)
+		{
+			$json = json_decode($result,true);
+			if (isset($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				if ($this->errMsg == 'ok') {
+					return true;
+				} else {
+					return false;
+				}
+			}
+			if ($this->logcallback) {
+				$this->log($result,'获取用户基本信息');
+			}
+			return $json;
+		}
+		return false;
 	}
 
 	//获取用户已有的标签列表
 	public function userTagList($openid)
 	{
-		# code...
+		$url = self::API_URL_PREFIX . self::TAGS_LIST_URL . 'access_token=' . $this->access_token;
+		$result = $this->http_post($url, json_encode($info,JSON_UNESCAPED_UNICODE));
+		if ($result)
+		{
+			$json = json_decode($result,true);
+			if (isset($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				if ($this->errMsg == 'ok') {
+					return true;
+				} else {
+					return false;
+				}
+			}
+			if ($this->logcallback) {
+				$this->log($result,'获取用户基本信息');
+			}
+			return $json;
+		}
+		return false;
 	}
 
 
