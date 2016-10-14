@@ -1401,3 +1401,111 @@
 操作：获取用户基本信息
 内容：{"tags":[{"id":2,"name":"星标组","count":0},{"id":100,"name":"\\u5b9e\\u9a8c\\u697c","count":0},{"id":101,"name":"\\u5b9e\\u9a8c\\u697c","count":0},{"id":102,"name":"\\u5b9e\\u9a8c\\u697c","count":0},{"id":103,"name":"\\u5b9e\\u9a8c\\u697c","count":0},{"id":104,"name":"实验楼","count":0}]}
  ============================= 
+时间：2016-10-14 03:10:21
+操作：接入验证
+内容：6724336165126503369
+ ============================= 
+时间：2016-10-14 03:10:36
+操作：接入验证
+内容：4194541131043814269
+ ============================= 
+时间：2016-10-14 03:10:39
+操作：接入验证
+内容：8445252307124304759
+ ============================= 
+时间：2016-10-14 03:10:06
+操作：删除标签
+内容：{"errcode":42001,"errmsg":"access_token expired hint: [d1oAra0224rsz4!]"}
+ ============================= 
+时间：2016-10-14 03:10:06
+操作：删除标签
+内容：{"errcode":42001,"errmsg":"access_token expired hint: [WnAMuA0225rsz4!]"}
+ ============================= 
+时间：2016-10-14 03:10:11
+操作：获取 access_token
+内容：{"access_token":"vMun3RRfJaCugRZa3JY529EaLRwB15_t1-w27RcipCtt16W4SOteICjf2eHL2WbANWEGoQgw0dNbI0uHlPnM6nhTtLYoFTG04g1HxQi12D4IbmcscOAKKg7KJSsF9_xVVHLbAFAMYC","expires_in":7200}
+ ============================= 
+时间：2016-10-14 03:10:11
+操作：接收
+内容：
+ ============================= 
+时间：2016-10-14 03:10:11
+操作：回复
+内容：<xml><ToUserName><![CDATA[]]></ToUserName><FromUserName><![CDATA[]]></FromUserName><CreateTime><![CDATA[1476410291]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[我迷路了，待会儿再说]]></Content></xml>
+ ============================= 
+时间：2016-10-14 03:10:57
+操作：接收
+内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
+<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
+<CreateTime>1476410335</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[CLICK]]></Event>
+<EventKey><![CDATA[diange]]></EventKey>
+</xml>
+ ============================= 
+时间：2016-10-14 03:10:57
+操作：回复
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476410337]]></CreateTime><MsgType><![CDATA[music]]></MsgType><Music><Title><![CDATA[成全]]></Title><Description><![CDATA[这是我用(sui)心(bian)为你点播的一首歌]]></Description><MusicUrl><![CDATA[http://music.163.com/#/program?id=794490893]]></MusicUrl><HQMusicUrl><![CDATA[http://music.163.com/#/program?id=794490893]]></HQMusicUrl><ThumbMediaId><![CDATA[oCmCA6JW8AUym2t9uhqzeIzNHOLe7GNsO2fvhAsuUtI]]></ThumbMediaId></Music></xml>
+ ============================= 
+时间：2016-10-14 04:10:24
+操作：接收
+内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
+<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
+<CreateTime>1476410335</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[CLICK]]></Event>
+<EventKey><![CDATA[diange]]></EventKey>
+</xml>
+ ============================= 
+时间：2016-10-14 04:10:24
+操作：回复
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476411324]]></CreateTime><MsgType><![CDATA[music]]></MsgType><Music><Title><![CDATA[成全]]></Title><Description><![CDATA[这是我用(sui)心(bian)为你点播的一首歌]]></Description><MusicUrl><![CDATA[http://music.163.com/#/program?id=794490893]]></MusicUrl><HQMusicUrl><![CDATA[http://music.163.com/#/program?id=794490893]]></HQMusicUrl><ThumbMediaId><![CDATA[oCmCA6JW8AUym2t9uhqzeIzNHOLe7GNsO2fvhAsuUtI]]></ThumbMediaId></Music></xml>
+ ============================= 
+时间：2016-10-14 07:10:22
+操作：接收
+内容：
+ ============================= 
+时间：2016-10-14 07:10:22
+操作：回复
+内容：<xml><ToUserName><![CDATA[]]></ToUserName><FromUserName><![CDATA[]]></FromUserName><CreateTime><![CDATA[1476424222]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[我迷路了，待会儿再说]]></Content></xml>
+ ============================= 
+时间：2016-10-14 11:10:27
+操作：接入验证
+内容：5149993805280309133
+ ============================= 
+时间：2016-10-14 11:10:47
+操作：接入验证
+内容：2429304036674764795
+ ============================= 
+时间：2016-10-14 11:10:28
+操作：接入验证
+内容：3676472859981774550
+ ============================= 
+时间：2016-10-14 12:10:06
+操作：接收
+内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
+<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
+<CreateTime>1476439742</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[佛挡杀佛的]]></Content>
+<MsgId>6341260406822303281</MsgId>
+</xml>
+ ============================= 
+时间：2016-10-14 12:10:06
+操作：回复
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476439746]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[佛挡杀佛的(小孩子不要乱发消息哦)]]></Content></xml>
+ ============================= 
+时间：2016-10-14 12:10:20
+操作：接收
+内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
+<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
+<CreateTime>1476439756</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[hello ，实验楼]]></Content>
+<MsgId>6341260466951845428</MsgId>
+</xml>
+ ============================= 
+时间：2016-10-14 12:10:20
+操作：回复
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476439760]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[hello ，实验楼(小孩子不要乱发消息哦)]]></Content></xml>
+ ============================= 

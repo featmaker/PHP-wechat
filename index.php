@@ -10,14 +10,14 @@ $options = [
 		'token' => TOKEN,
 		'appid' => APPID,
 		'appsecret' => APPSECRET,
-		'logcallback' => true,
+		'dubug' => true,
 	];
 $wechatObj = new WeChat($options);
 if (isset($_GET["echostr"])) {
 	$wechatObj->valid();
 }
 // if (!isset($_SESSION['token'])) {
-// 	$wechatObj->getAccessToken();
+	// $wechatObj->getAccessToken();
 // 	$_SESSION['token'] = $wechatObj->getToken();
 // }
 // $wechatObj->getAccessToken();
@@ -209,19 +209,19 @@ if (isset($_GET["echostr"])) {
 //用户管理
 
 // $info = $wechatObj->getUserList(); //获取用户列表
-$openid = 'oLA-5v9JKdKz_Unir3urFleTlVj4';
+// $openid = 'oLA-5v9JKdKz_Unir3urFleTlVj4';
 // $info = $wechatObj->getUserInfo($openid);  //获取用户信息
 // $info = $wechatObj->setUserName($openid,'fuli');  //获取用户信息
 // $info = $wechatObj->userTagCreate(['tag'=>['name'=>'实验楼']]);
 // $info = $wechatObj->userTagGet();104
 // $data = ['tag'=>['id'=>104,'name'=>'实验楼+1']];
 // $info = $wechatObj->userTagEdit($data);
-$data = ['tag'=>['id'=>104]];
-$info = $wechatObj->userTagDelete($data);
-var_dump($wechatObj->errCode);
-var_dump($wechatObj->errMsg);
-var_dump($info);
-die;
+// $data = ['tag'=>['id'=>104]];
+// $info = $wechatObj->userTagDelete($data);
+// var_dump($wechatObj->errCode);
+// var_dump($wechatObj->errMsg);
+// var_dump($info);
+// die;
 
 $msgType = $wechatObj->getRec()->getRecType();
 switch ($msgType) {
