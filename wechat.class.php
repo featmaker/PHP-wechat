@@ -92,7 +92,10 @@ class WeChat
 		$this->appid = isset($options['appid'])?$options['appid']:'';
 		$this->appsecret = isset($options['appsecret'])?$options['appsecret']:'';
 		$this->dubug = isset($options['dubug'])?$options['dubug']:false;
-		$this->access_token = "vMun3RRfJaCugRZa3JY529EaLRwB15_t1-w27RcipCtt16W4SOteICjf2eHL2WbANWEGoQgw0dNbI0uHlPnM6nhTtLYoFTG04g1HxQi12D4IbmcscOAKKg7KJSsF9_xVVHLbAFAMYC";
+		if ($this->checkExpire(7200)) {
+			$this->getAccessToken();
+		}
+		$this->access_token = $this->getTokenByCache();
 	}
 
 	//接入验证
@@ -126,15 +129,13 @@ class WeChat
 
 	public function getToken()
 	{
-		if (!isset($this->access_token)) {
-			$this->getAccessToken();
-		}
 		return $this->access_token;
 	}
 
 	//获取AccessToken
 	public function getAccessToken($appid='',$appsecret='')
 	{
+
 		if (!$appid || !$appsecret) {
 			$appid = $this->appid;
 			$appsecret = $this->appsecret;
@@ -144,8 +145,51 @@ class WeChat
 		if ($result) {
 			$this->log($result,'获取 access_token');
 			$result = json_decode($result);
-			$this->access_token = $result->access_token;
+			$this->cache($result->access_token);
 			return true;
+		} else {
+			return false;
+		}
+	}
+
+	//缓存access_token数据
+	public function cache($value)
+	{
+		$file = fopen('./access_token.txt','w+');
+		if ($file) {
+			fwrite($file,$value);
+			fclose($file);
+			return true;
+		}
+	}
+
+	//从缓存中获取acces_token
+	public function getTokenByCache()
+	{
+		if (file_exists('./access_token.txt')) {
+			$content = file_get_contents('./access_token.txt');
+			if ($content == '') {
+				$this->getAccessToken();
+				return file_get_contents('./access_token.txt');
+			} else {
+				return file_get_contents('./access_token.txt');
+			}
+		} else {
+			$this->getAccessToken();
+			return file_get_contents('./access_token.txt');
+		}
+	}
+
+	//检查access_token 过期时间
+	public function checkExpire($time = 7200)
+	{
+		$file = './access_token.txt';
+		if (file_exists($file)) {
+			if (time() - filemtime($file) > $time) {
+				return true;
+			} else {
+				return false;
+			}
 		} else {
 			return false;
 		}
@@ -166,28 +210,28 @@ class WeChat
 	}
 
 	//回复图片消息
-	public function image($info)
+	public function image($mediaid)
 	{
 		$msg = [
 			'ToUserName' => $this->getRecFrom(),
 			'FromUserName'=>$this->getRecTo(),
 			'CreateTime'=>time(),
 			'MsgType'=>self::MSGTYPE_IMAGE,
-			'Image'=>['MediaId'=>$info['mediaid']]
+			'Image'=>['MediaId'=>$mediaid]
 		];
 		$this->message($msg);
 		return $this;
 	}
 
 	//回复语音消息
-	public function voice($info)
+	public function voice($mediaid)
 	{
 		$msg = [
 			'ToUserName' => $this->getRecFrom(),
 			'FromUserName'=>$this->getRecTo(),
 			'CreateTime'=>time(),
 			'MsgType'=>self::MSGTYPE_VOICE,
-			'Voice'=>['MediaId'=>$info['mediaid']]
+			'Voice'=>['MediaId'=>$mediaid]
 		];
 		$this->message($msg);
 		return $this;
@@ -337,7 +381,7 @@ class WeChat
 	{
 		if ($this->receive) {
 			if ($this->dubug){
-				$this->log($postStr,'接收');
+				$this->log($this->receive,'接收');
 			}
 			return $this;
 		}

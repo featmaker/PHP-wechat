@@ -1,9 +1,7 @@
 <?php
 /**
   * wechat php test
-  */
-
-// define your token
+*/
 require_once 'config.php';
 require_once 'wechat.class.php';
 $options = [
@@ -16,9 +14,19 @@ $wechatObj = new WeChat($options);
 if (isset($_GET["echostr"])) {
 	$wechatObj->valid();
 }
+// echo $wechatObj->getToken();
+// 打印接受到的数据
+// var_dump($wechatObj->getRec()->getReceiveDate());
+$wechatObj->getRec();
+// $wechatObj->text("你好，我是微信机器人，来自自动回复!")->reply();
+$imageInfo = $wechatObj->getRecPic();
+$wechatObj->image($imageInfo['mediaid'])->reply();
+die;
 // if (!isset($_SESSION['token'])) {
-	// $wechatObj->getAccessToken();
+// 	$wechatObj->getAccessToken();
 // 	$_SESSION['token'] = $wechatObj->getToken();
+// } else {
+// 	echo "fdsfsd";
 // }
 // $wechatObj->getAccessToken();
 // die;

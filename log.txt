@@ -1,1511 +1,430 @@
-时间：2016-10-13 08:10:18
+时间：2016-10-17 09:10:21
 操作：获取 access_token
-内容：{"access_token":"QlUtXIF8TefNZy0IkHTxTVLy8qZCQlHG7_Pnufboo3hI8jbWEqEtOqOM1ph8nM3lRQXjavnWcGNU8vEpySZGOat3cwbrMFailyPFmrg-fDpSy6jlUJz_tm7QZcvMuVgbUEGgAIAEOQ","expires_in":7200}
+内容：{"access_token":"fBnqRIw2YC2DHbmc9ICVsGUpXUVYPnx8nPv2N_GP16BV32SGWoVH-vz8BOPmd5ZJdiy4TcH-9WcwHMBPvPN4sT1Scbzj6980R3N9-plgEuSHVyhcfWw6m3k7qofY3YFUJIPcABAZYF","expires_in":7200}
  ============================= 
-时间：2016-10-13 08:10:56
-操作：获取 access_token
-内容：{"access_token":"jELgDja7a2Tm72_w1MKOfLsAIPgp21lqfkb_72bpoTsdc3W_ZVzY_rv92Q4mARGjYSDqo2Tv1Vk7ISeu1yOsiGIo44bog0kpehWA798JEalCHzDHQLa8RLIo-Lqb4R1xMNUiABAGHO","expires_in":7200}
- ============================= 
-时间：2016-10-13 09:10:17
-操作：
-内容：
- ============================= 
-时间：2016-10-13 09:10:17
-操作：回复
-内容：<xml><ToUserName><![CDATA[]]></ToUserName><FromUserName><![CDATA[]]></FromUserName><CreateTime><![CDATA[1476344057]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[我迷路了，待会儿再说]]></Content></xml>
- ============================= 
-时间：2016-10-13 09:10:28
+时间：2016-10-17 09:10:21
 操作：接收
 内容：
  ============================= 
-时间：2016-10-13 09:10:28
+时间：2016-10-17 09:10:21
 操作：回复
-内容：<xml><ToUserName><![CDATA[]]></ToUserName><FromUserName><![CDATA[]]></FromUserName><CreateTime><![CDATA[1476344128]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[我迷路了，待会儿再说]]></Content></xml>
+内容：<xml><ToUserName><![CDATA[]]></ToUserName><FromUserName><![CDATA[]]></FromUserName><CreateTime><![CDATA[1476689841]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[我迷路了，待会儿再说]]></Content></xml>
  ============================= 
-时间：2016-10-13 09:10:35
-操作：获取 access_token
-内容：{"access_token":"ziqx7eDbeGtXMgbGCA45_ga01v9MdAs9yp0Df3Vgb1ttQEub1QJay9OZI-Lq9kE76u9cOT_FoTF6GLH6qTJLcDJcukxQmyPmNURWZTxtDdezo_gZM6MOUZrsmti0FRORPZVhAAADNJ","expires_in":7200}
+时间：2016-10-17 09:10:27
+操作：接收
+内容：
  ============================= 
-时间：2016-10-13 09:10:35
+时间：2016-10-17 09:10:27
+操作：回复
+内容：<xml><ToUserName><![CDATA[]]></ToUserName><FromUserName><![CDATA[]]></FromUserName><CreateTime><![CDATA[1476689847]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[我迷路了，待会儿再说]]></Content></xml>
+ ============================= 
+时间：2016-10-17 09:10:14
+操作：接收
+内容：
+ ============================= 
+时间：2016-10-17 09:10:14
+操作：回复
+内容：<xml><ToUserName><![CDATA[]]></ToUserName><FromUserName><![CDATA[]]></FromUserName><CreateTime><![CDATA[1476691094]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[我迷路了，待会儿再说]]></Content></xml>
+ ============================= 
+时间：2016-10-17 09:10:20
 操作：接收
 内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
 <FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476344133</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[CLICK]]></Event>
-<EventKey><![CDATA[clickme]]></EventKey>
-</xml>
- ============================= 
-时间：2016-10-13 09:10:35
-操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476344135]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[我开个玩笑而已，你还真敢点我啊！]]></Content></xml>
- ============================= 
-时间：2016-10-13 09:10:39
-操作：获取 access_token
-内容：{"access_token":"ziqx7eDbeGtXMgbGCA45_ga01v9MdAs9yp0Df3Vgb1vzvcooqIO38INxdRkhfYkNDA0HMEqJO7OIihDiG4Ti9fKihFr-Gzk0xKVOtg9Q-ByrT_KFE4gZXocPeJzvhZE2KGJhAAAZVY","expires_in":7196}
- ============================= 
-时间：2016-10-13 09:10:39
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
-<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476344137</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[CLICK]]></Event>
-<EventKey><![CDATA[diange]]></EventKey>
-</xml>
- ============================= 
-时间：2016-10-13 09:10:39
-操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476344139]]></CreateTime><MsgType><![CDATA[music]]></MsgType><Music><Title><![CDATA[成全]]></Title><Description><![CDATA[这是我用(sui)心(bian)为你点播的一首歌]]></Description><MusicUrl><![CDATA[http://music.163.com/#/program?id=794490893]]></MusicUrl><HQMusicUrl><![CDATA[http://music.163.com/#/program?id=794490893]]></HQMusicUrl><ThumbMediaId><![CDATA[oCmCA6JW8AUym2t9uhqzeIzNHOLe7GNsO2fvhAsuUtI]]></ThumbMediaId></Music></xml>
- ============================= 
-时间：2016-10-13 09:10:24
-操作：获取 access_token
-内容：{"access_token":"Efyb_G6JZdP5a39VmPuO-FGc_MR8c9Omqgo4dTMUWvb2n7gkZ7o5UdqZbC1NkUuYrgM1CInNJb9vAakUX1ckbZLD6Cf12UEaHBFRKn1mLgkUIIjABAJXX","expires_in":7200}
- ============================= 
-时间：2016-10-13 09:10:24
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
-<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476344182</CreateTime>
+<CreateTime>1476691100</CreateTime>
 <MsgType><![CDATA[text]]></MsgType>
-<Content><![CDATA[GG]]></Content>
-<MsgId>6340849979747477866</MsgId>
+<Content><![CDATA[fdsf ]]></Content>
+<MsgId>6342339981211933263</MsgId>
 </xml>
  ============================= 
-时间：2016-10-13 09:10:24
+时间：2016-10-17 09:10:20
 操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476344184]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[GG(小孩子不要乱发消息哦)]]></Content></xml>
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476691100]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[fdsf (小孩子不要乱发消息哦)]]></Content></xml>
  ============================= 
-时间：2016-10-13 09:10:27
-操作：获取 access_token
-内容：{"access_token":"Efyb_G6JZdP5a39VmPuO-FGc_MR8c9Omqgo4dTMUWvahoKtYrCrqGIRBGAu1_GulTN74Al3yVT1v7G_6H1k14hjWLxZ0vkeZM_J0o3L7nqQHIZjABAXYP","expires_in":7197}
- ============================= 
-时间：2016-10-13 09:10:27
+时间：2016-10-17 09:10:45
 操作：接收
 内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
 <FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476344186</CreateTime>
+<CreateTime>1476691125</CreateTime>
 <MsgType><![CDATA[text]]></MsgType>
-<Content><![CDATA[gg]]></Content>
-<MsgId>6340849996927347052</MsgId>
+<Content><![CDATA[dsf ]]></Content>
+<MsgId>6342340088586115667</MsgId>
 </xml>
  ============================= 
-时间：2016-10-13 09:10:27
+时间：2016-10-17 09:10:45
 操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476344187]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[这真是一场精彩的对局!]]></Content></xml>
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476691125]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[dsf (小孩子不要乱发消息哦)]]></Content></xml>
  ============================= 
-时间：2016-10-13 09:10:33
-操作：获取 access_token
-内容：{"access_token":"Efyb_G6JZdP5a39VmPuO-FGc_MR8c9Omqgo4dTMUWvb6iuRduYjFM9JVhhzXStNbzmY5H2Te4cTKAG_xWN4VclJq5p1LtiR3rgcvUtot3jQAVSjABAMHE","expires_in":7200}
- ============================= 
-时间：2016-10-13 09:10:33
+时间：2016-10-17 09:10:29
 操作：接收
 内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
 <FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476344192</CreateTime>
+<CreateTime>1476691169</CreateTime>
 <MsgType><![CDATA[text]]></MsgType>
-<Content><![CDATA[help]]></Content>
-<MsgId>6340850022697150831</MsgId>
+<Content><![CDATA[fdsf ]]></Content>
+<MsgId>6342340277564676699</MsgId>
 </xml>
  ============================= 
-时间：2016-10-13 09:10:33
+时间：2016-10-17 09:10:29
+操作：接收
+内容：
+ ============================= 
+时间：2016-10-17 09:10:29
 操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476344193]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[微信公众号使用帮助：
- 1.回复'ip',查看全部微信服务器IP地址 
- 2.回复'gg','GG' 
- 3.回复'你是谁',详细了解我 
- 4.回复'关于',关于信息 
- 5.回复任意内容(文字，语音，图片)，回复任意内容(文字，语音，图片) 
- 6.------TODO-----]]></Content></xml>
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476691169]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[fdsf (小孩子不要乱发消息哦)]]></Content></xml>
  ============================= 
-时间：2016-10-13 09:10:42
-操作：获取 access_token
-内容：{"access_token":"Efyb_G6JZdP5a39VmPuO-FGc_MR8c9Omqgo4dTMUWvY4cEG9Oh_yjey31C5yQ1LclTTuXe9w21ZHYrbuNxKX8QRD4EIPCJF98x6PbbeI1gIDCWjABAPOI","expires_in":7200}
- ============================= 
-时间：2016-10-13 09:10:42
+时间：2016-10-17 09:10:44
 操作：接收
 内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
 <FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476344200</CreateTime>
+<CreateTime>1476691183</CreateTime>
 <MsgType><![CDATA[text]]></MsgType>
-<Content><![CDATA[关于]]></Content>
-<MsgId>6340850057056889201</MsgId>
+<Content><![CDATA[你好，实验楼]]></Content>
+<MsgId>6342340337694218846</MsgId>
 </xml>
  ============================= 
-时间：2016-10-13 09:10:42
+时间：2016-10-17 09:10:44
+操作：接收
+内容：
+ ============================= 
+时间：2016-10-17 09:10:44
 操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476344202]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[我是微信机器人，Powered by Lifue-本条消息来自火星]]></Content></xml>
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476691184]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[你好，实验楼(小孩子不要乱发消息哦)]]></Content></xml>
  ============================= 
-时间：2016-10-13 10:10:35
-操作：获取 access_token
-内容：{"access_token":"30lQxBpnOFzPKOYrGpn4JL0QKMQpkjwcwAAgGsRAoWIemwxjIg5iYUVGwRULCIyYY_CeC1XB6_2_EdAu9f_iviZ3B4RVsWM80R7CB5rwEaE5wdrunPffg4P3B6LTRvixANAhAAAVIV","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:35
+时间：2016-10-17 10:10:57
 操作：接收
 内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
 <FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476346293</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[CLICK]]></Event>
-<EventKey><![CDATA[diange]]></EventKey>
-</xml>
- ============================= 
-时间：2016-10-13 10:10:35
-操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476346295]]></CreateTime><MsgType><![CDATA[music]]></MsgType><Music><Title><![CDATA[成全]]></Title><Description><![CDATA[这是我用(sui)心(bian)为你点播的一首歌]]></Description><MusicUrl><![CDATA[http://music.163.com/#/program?id=794490893]]></MusicUrl><HQMusicUrl><![CDATA[http://music.163.com/#/program?id=794490893]]></HQMusicUrl><ThumbMediaId><![CDATA[oCmCA6JW8AUym2t9uhqzeIzNHOLe7GNsO2fvhAsuUtI]]></ThumbMediaId></Music></xml>
- ============================= 
-时间：2016-10-13 10:10:41
-操作：获取 access_token
-内容：{"access_token":"30lQxBpnOFzPKOYrGpn4JL0QKMQpkjwcwAAgGsRAoWIEcOAxHu6umKU5RJ0eHMrxIP9wpgbTwuhPa7vXWnSIMaEm6FG3PgMSqG2Hb6MoZkXxdUqmEldKD7-h_PP5iW9jFTUhAAAQEF","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:41
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
-<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476346299</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[CLICK]]></Event>
-<EventKey><![CDATA[clickme]]></EventKey>
-</xml>
- ============================= 
-时间：2016-10-13 10:10:41
-操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476346301]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[我开个玩笑而已，你还真敢点我啊！]]></Content></xml>
- ============================= 
-时间：2016-10-13 10:10:24
-操作：获取 access_token
-内容：{"access_token":"R407xGquAB61jmDY2p-Q_zgoJ_wwu3s062VVcCD4-EGtHUE23KhddX7VPAJ9z7FquUCgO9kiTsyvNN6ko7zDTAAK4Lagm2g0AOL5h7pA4b2XxYSHKUNCjFbmRcl3-wwLFAAeAFAOJJ","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:24
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_67ddb97cc7fc]]></ToUserName>
-<FromUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></FromUserName>
-<CreateTime>1476346403</CreateTime>
+<CreateTime>1476691183</CreateTime>
 <MsgType><![CDATA[text]]></MsgType>
-<Content><![CDATA[help]]></Content>
-<MsgId>6340859518858990729</MsgId>
+<Content><![CDATA[你好，实验楼]]></Content>
+<MsgId>6342340337694218846</MsgId>
 </xml>
  ============================= 
-时间：2016-10-13 10:10:25
-操作：回复
-内容：<xml><ToUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></ToUserName><FromUserName><![CDATA[gh_67ddb97cc7fc]]></FromUserName><CreateTime><![CDATA[1476346405]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[微信公众号使用帮助：
- 1.回复'ip',查看全部微信服务器IP地址 
- 2.回复'gg','GG' 
- 3.回复'你是谁',详细了解我 
- 4.回复'关于',关于信息 
- 5.回复任意内容(文字，语音，图片)，回复任意内容(文字，语音，图片) 
- 6.------TODO-----]]></Content></xml>
- ============================= 
-时间：2016-10-13 10:10:34
-操作：获取 access_token
-内容：{"access_token":"R407xGquAB61jmDY2p-Q_zgoJ_wwu3s062VVcCD4-EF_t2l99NAIXMDecTlDoTuH2xWLGa-dKwRMbszbRfFnvtAY8FONtEKr02846hx1dIpFio0zsP1F2K0Bg6UInJAlLVFeAFAZJT","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:34
+时间：2016-10-17 10:10:57
 操作：接收
-内容：<xml><ToUserName><![CDATA[gh_67ddb97cc7fc]]></ToUserName>
-<FromUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></FromUserName>
-<CreateTime>1476346413</CreateTime>
+内容：{"ToUserName":"gh_9ce7b64359dd","FromUserName":"oLA-5v9JKdKz_Unir3urFleTlVj4","CreateTime":"1476691183","MsgType":"text","Content":"\u4f60\u597d\uff0c\u5b9e\u9a8c\u697c","MsgId":"6342340337694218846"}
+ ============================= 
+时间：2016-10-17 10:10:57
+操作：回复
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476691677]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[你好，实验楼(小孩子不要乱发消息哦)]]></Content></xml>
+ ============================= 
+时间：2016-10-17 11:10:46
+操作：获取 access_token
+内容：{"access_token":"kJVeIrue8oFw5qfgYH3HRGXSokRvJGpvZNL8XYnwM62JztMSz_u-Y5eQqyv5_5F1hYito0dzvBUAg-r_Yx2wpaXXZ5FcPixk684Er-rYZ0BXLzjvNdMvNz99fHsYdxWIAINbAJAQYD","expires_in":7200}
+ ============================= 
+时间：2016-10-17 11:10:46
+操作：回复
+内容：<xml><ToUserName><![CDATA[]]></ToUserName><FromUserName><![CDATA[]]></FromUserName><CreateTime><![CDATA[1476697726]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[这真是一场精彩的对局!]]></Content></xml>
+ ============================= 
+时间：2016-10-17 11:10:46
+操作：接收
+内容：
+ ============================= 
+时间：2016-10-17 11:10:46
+操作：回复
+内容：<xml><ToUserName><![CDATA[]]></ToUserName><FromUserName><![CDATA[]]></FromUserName><CreateTime><![CDATA[1476697726]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[我迷路了，待会儿再说]]></Content></xml>
+ ============================= 
+时间：2016-10-17 11:10:04
+操作：回复
+内容：<xml><ToUserName><![CDATA[]]></ToUserName><FromUserName><![CDATA[]]></FromUserName><CreateTime><![CDATA[1476697744]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[这真是一场精彩的对局!]]></Content></xml>
+ ============================= 
+时间：2016-10-17 11:10:04
+操作：接收
+内容：
+ ============================= 
+时间：2016-10-17 11:10:04
+操作：回复
+内容：<xml><ToUserName><![CDATA[]]></ToUserName><FromUserName><![CDATA[]]></FromUserName><CreateTime><![CDATA[1476697744]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[我迷路了，待会儿再说]]></Content></xml>
+ ============================= 
+时间：2016-10-17 11:10:05
+操作：回复
+内容：<xml><ToUserName><![CDATA[]]></ToUserName><FromUserName><![CDATA[]]></FromUserName><CreateTime><![CDATA[1476697745]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[这真是一场精彩的对局!]]></Content></xml>
+ ============================= 
+时间：2016-10-17 11:10:05
+操作：接收
+内容：
+ ============================= 
+时间：2016-10-17 11:10:05
+操作：回复
+内容：<xml><ToUserName><![CDATA[]]></ToUserName><FromUserName><![CDATA[]]></FromUserName><CreateTime><![CDATA[1476697745]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[我迷路了，待会儿再说]]></Content></xml>
+ ============================= 
+时间：2016-10-17 11:10:19
+操作：回复
+内容：<xml><ToUserName><![CDATA[]]></ToUserName><FromUserName><![CDATA[]]></FromUserName><CreateTime><![CDATA[1476697759]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[这真是一场精彩的对局!]]></Content></xml>
+ ============================= 
+时间：2016-10-17 11:10:19
+操作：接收
+内容：
+ ============================= 
+时间：2016-10-17 11:10:19
+操作：回复
+内容：<xml><ToUserName><![CDATA[]]></ToUserName><FromUserName><![CDATA[]]></FromUserName><CreateTime><![CDATA[1476697759]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[我迷路了，待会儿再说]]></Content></xml>
+ ============================= 
+时间：2016-10-17 11:10:44
+操作：回复
+内容：<xml><ToUserName><![CDATA[]]></ToUserName><FromUserName><![CDATA[]]></FromUserName><CreateTime><![CDATA[1476697844]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[这真是一场精彩的对局!]]></Content></xml>
+ ============================= 
+时间：2016-10-17 11:10:27
+操作：回复
+内容：<xml><ToUserName><![CDATA[]]></ToUserName><FromUserName><![CDATA[]]></FromUserName><CreateTime><![CDATA[1476697887]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[这真是一场精彩的对局!]]></Content></xml>
+ ============================= 
+时间：2016-10-17 11:10:05
+操作：接收
+内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
+<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
+<CreateTime>1476697984</CreateTime>
 <MsgType><![CDATA[text]]></MsgType>
-<Content><![CDATA[ip]]></Content>
-<MsgId>6340859561808663692</MsgId>
+<Content><![CDATA[放到是否]]></Content>
+<MsgId>6342369547766801188</MsgId>
 </xml>
  ============================= 
-时间：2016-10-13 10:10:35
+时间：2016-10-17 11:10:05
 操作：回复
-内容：<xml><ToUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></ToUserName><FromUserName><![CDATA[gh_67ddb97cc7fc]]></FromUserName><CreateTime><![CDATA[1476346415]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[微信服务器IP：
-101.226.62.77
-101.226.62.78
-101.226.62.79
-101.226.62.80
-101.226.62.81
-101.226.62.82
-101.226.62.83
-101.226.62.84
-101.226.62.85
-101.226.62.86
-101.226.103.59
-101.226.103.60
-101.226.103.61
-101.226.103.62
-101.226.103.63
-101.226.103.69
-101.226.103.70
-101.226.103.71
-101.226.103.72
-101.226.103.73
-140.207.54.73
-140.207.54.74
-140.207.54.75
-140.207.54.76
-140.207.54.77
-140.207.54.78
-140.207.54.79
-140.207.54.80
-182.254.11.203
-182.254.11.202
-182.254.11.201
-182.254.11.200
-182.254.11.199
-182.254.11.198
-59.37.97.100
-59.37.97.101
-59.37.97.102
-59.37.97.103
-59.37.97.104
-59.37.97.105
-59.37.97.106
-59.37.97.107
-59.37.97.108
-59.37.97.109
-59.37.97.110
-59.37.97.111
-59.37.97.112
-59.37.97.113
-59.37.97.114
-59.37.97.115
-59.37.97.116
-59.37.97.117
-59.37.97.118
-112.90.78.158
-112.90.78.159
-112.90.78.160
-112.90.78.161
-112.90.78.162
-112.90.78.163
-112.90.78.164
-112.90.78.165
-112.90.78.166
-112.90.78.167
-140.207.54.19
-140.207.54.76
-140.207.54.77
-140.207.54.78
-140.207.54.79
-140.207.54.80
-180.163.15.149
-180.163.15.151
-180.163.15.152
-180.163.15.153
-180.163.15.154
-180.163.15.155
-180.163.15.156
-180.163.15.157
-180.163.15.158
-180.163.15.159
-180.163.15.160
-180.163.15.161
-180.163.15.162
-180.163.15.163
-180.163.15.164
-180.163.15.165
-180.163.15.166
-180.163.15.167
-180.163.15.168
-180.163.15.169
-180.163.15.170
-101.226.103.0/25
-101.226.233.128/25
-58.247.206.128/25
-182.254.86.128/25
-103.7.30.21
-103.7.30.64/26
-58.251.80.32/27
-183.3.234.32/27
-121.51.130.64/27]]></Content></xml>
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476697985]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[放到是否(小孩子不要乱发消息哦)]]></Content></xml>
  ============================= 
-时间：2016-10-13 10:10:29
-操作：获取 access_token
-内容：{"access_token":"4Q7D2xcoBOvr4IIaPJB4tUEFxZ0SJI08LzyMSE3FNiiEyOiJkZ8Ej5y4__1g-1M4jwLZ56I0Axjm0hlF17ZmudEjAmy-yE83D4GWbMIxoOsrDl8HfLDk8N5gLuaq7wc7VBIfAAAYEL","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:47
-操作：获取 access_token
-内容：{"access_token":"QlUtXIF8TefNZy0IkHTxTaZjVnmvbwLFZnphNDydyPxYg2NCDWLn615OWz7bUYWSxhesY3BjGOZvXs7E9XkgzyC_pm8V0_1CQvcpiFnVsOuFGfkSi4lZ-T01jSAJ_DnGWYXgAGAACB","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:27
-操作：获取 access_token
-内容：{"access_token":"Ag0zDauy3gdixiX7IJ4BCyKgvWit2nhqYkTeCX-7sEJ9ZTfuUcklqHdom4eFU1_jtQVF51NHi75YDwUfq9uEwPTzUMutdzroHc6AyKn1Xf7Wi3E4pTQiCsLLvw1w4Z4AXNNdAAADTT","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:07
-操作：获取 access_token
-内容：{"access_token":"mr1KlJq7o9D-XA4Icu3v0gi1-kUv6J2xFogjOYceN2vRp1vOXznocyWBkXVNaSyi2Ya6PeDjkZMem8YqI3_ylNd6Q_rrKPOWbfnRr35jJKsWtgelpUMF-m2QcDAvBwOUNNUfADARRY","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:33
-操作：获取 access_token
-内容：{"access_token":"qOmnA-EIgoXcc9iMv02Na34HM5ZkeJVqiZwhSiYr9lgO9QleQ11All32oSRK5Tto8yMtrTh5i_u8UIj_3gMVgbQx-qyxqZjutgNmOkRnHpF8A-tV3LzmEkNXlCsvg6vbDFYgAJAZBU","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:09
-操作：获取 access_token
-内容：{"access_token":"PvYaRn4qa1LMEtzY7T5K7eGalNsvWmv8ja9XDYki8YmIC9Bjmz90JWoIwmqDDh6sRAd13T1FefTbwzOFX9pz2AMmvnQrrVn4j-HqXpsLWHrUtUWYjdJ0_ly3ENRsPzzJYZXfADABCA","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:10
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_67ddb97cc7fc]]></ToUserName>
-<FromUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></FromUserName>
-<CreateTime>1476346928</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[unsubscribe]]></Event>
-<EventKey><![CDATA[]]></EventKey>
-</xml>
- ============================= 
-时间：2016-10-13 10:10:10
-操作：回复
-内容：<xml><ToUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></ToUserName><FromUserName><![CDATA[gh_67ddb97cc7fc]]></FromUserName><CreateTime><![CDATA[1476346930]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[休息，一会儿，马上回来！]]></Content></xml>
- ============================= 
-时间：2016-10-13 10:10:22
-操作：获取 access_token
-内容：{"access_token":"PvYaRn4qa1LMEtzY7T5K7eGalNsvWmv8ja9XDYki8YnKn565toflPgCXbpQ8XDTWk7LTsG_7RTjMwhPWJBE9goxzmG_iNb8_Dl5b8DFOtb572V899x9RZS3adRPrE69uMFRfADABUG","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:22
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_67ddb97cc7fc]]></ToUserName>
-<FromUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></FromUserName>
-<CreateTime>1476346940</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[subscribe]]></Event>
-<EventKey><![CDATA[]]></EventKey>
-</xml>
- ============================= 
-时间：2016-10-13 10:10:22
-操作：回复
-内容：<xml><ToUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></ToUserName><FromUserName><![CDATA[gh_67ddb97cc7fc]]></FromUserName><CreateTime><![CDATA[1476346942]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[欢迎欢迎，热烈欢迎！回复 "help" 查看帮助信息！]]></Content></xml>
- ============================= 
-时间：2016-10-13 10:10:08
-操作：获取 access_token
-内容：{"access_token":"zH3PS7so0IjrPGTVDvAQCRvfmqFwRU7s22ijKpYmSf4bicj1kkyaiaTWNZyi4FwaHII4rne8MgyBTaLfeUAb1o830a4N74wHvoWtVUW23pWzCxU-JH21bCZQ9GP-CZppAHFfAGATAY","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:40
-操作：获取 access_token
-内容：{"access_token":"RiIOOuBK65G6ZN2i9pvbwkCj5kIw65yHM9oeNWXUKzvOn4shO9jg3my1Wyan0e6dHyHyjmN9Jb2J_fGDFRXjdklHBUXNUkvDfwcpCS9BP5rDyZuPGxqdVCYQIWNEf66fUEHdAHAJTW","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:40
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_67ddb97cc7fc]]></ToUserName>
-<FromUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></FromUserName>
-<CreateTime>1476347019</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[unsubscribe]]></Event>
-<EventKey><![CDATA[]]></EventKey>
-</xml>
- ============================= 
-时间：2016-10-13 10:10:40
-操作：回复
-内容：<xml><ToUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></ToUserName><FromUserName><![CDATA[gh_67ddb97cc7fc]]></FromUserName><CreateTime><![CDATA[1476347020]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[休息，一会儿，马上回来！]]></Content></xml>
- ============================= 
-时间：2016-10-13 10:10:47
-操作：获取 access_token
-内容：{"access_token":"RiIOOuBK65G6ZN2i9pvbwkCj5kIw65yHM9oeNWXUKzuFgLjFgnUQudK44kJ1c5LCV1w0Eig_-D9JQRIKJG4bqNlDvVKJk8KinI8Dd7J8lutwSUgkTQ8wx0Tn0wzjpyVARIZdAHAHYP","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:47
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_67ddb97cc7fc]]></ToUserName>
-<FromUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></FromUserName>
-<CreateTime>1476347025</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[subscribe]]></Event>
-<EventKey><![CDATA[]]></EventKey>
-</xml>
- ============================= 
-时间：2016-10-13 10:10:47
-操作：回复
-内容：<xml><ToUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></ToUserName><FromUserName><![CDATA[gh_67ddb97cc7fc]]></FromUserName><CreateTime><![CDATA[1476347027]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[欢迎欢迎，热烈欢迎！回复 "help" 查看帮助信息！]]></Content></xml>
- ============================= 
-时间：2016-10-13 10:10:02
-操作：获取 access_token
-内容：{"access_token":"1z4YtG5g6lCajuQTLWx_E1vqaJOyOI3nREnP1pnbwbh_fejxYLLlR9Z1CK89EfUg60mC_jpwOobJJAhm6OX35ykb1WHF-sVanhnT8mP7rJ6PEpoxAJB8ufaYOB5pg9lMBNBfAFARDR","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:02
+时间：2016-10-17 11:10:42
 操作：接收
 内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
 <FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476347040</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[CLICK]]></Event>
-<EventKey><![CDATA[clickme]]></EventKey>
-</xml>
- ============================= 
-时间：2016-10-13 10:10:02
-操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476347042]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[我开个玩笑而已，你还真敢点我啊！]]></Content></xml>
- ============================= 
-时间：2016-10-13 10:10:08
-操作：获取 access_token
-内容：{"access_token":"1z4YtG5g6lCajuQTLWx_E1vqaJOyOI3nREnP1pnbwbgKunTuG9_iIiuKIn8Ge3PN3iTzWjoJTfTYZIpOTsmP7c9F0OshJjgtmPXpcp-5l6AEJrW2dD0d3Ye3P2qSbI8iNPFfAFAHJZ","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:08
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
-<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476347047</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[unsubscribe]]></Event>
-<EventKey><![CDATA[]]></EventKey>
-</xml>
- ============================= 
-时间：2016-10-13 10:10:08
-操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476347048]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[休息，一会儿，马上回来！]]></Content></xml>
- ============================= 
-时间：2016-10-13 10:10:24
-操作：获取 access_token
-内容：{"access_token":"nnFsYd8kSml1c9LwXqXUWG0jUyGjo5CnrdPhzl3W3ufcfssaHUrMra62ozoCxwZFxeN7K8SeyuxcNnk1SkjdR6yNA9lSXq3UkbtfZPdrLjEGKMjAJAKOQ","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:24
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
-<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476347062</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[subscribe]]></Event>
-<EventKey><![CDATA[]]></EventKey>
-</xml>
- ============================= 
-时间：2016-10-13 10:10:24
-操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476347064]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[欢迎欢迎，热烈欢迎！回复 "help" 查看帮助信息！]]></Content></xml>
- ============================= 
-时间：2016-10-13 10:10:57
-操作：获取 access_token
-内容：{"access_token":"3T_-NV8HKpYu1EH7JuRGHI79GoCBQoqXuDoLm3IwcP8DkGDSkQ3-N0RulgoUc1LGHKo-cBCenXI9mX39mpvhnLKCg8UPlnKWWs-nVn0TSO8CKMdAHAGOQ","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:57
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_67ddb97cc7fc]]></ToUserName>
-<FromUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></FromUserName>
-<CreateTime>1476347095</CreateTime>
+<CreateTime>1476698021</CreateTime>
 <MsgType><![CDATA[text]]></MsgType>
-<Content><![CDATA[help]]></Content>
-<MsgId>6340862490976359723</MsgId>
+<Content><![CDATA[付水电费]]></Content>
+<MsgId>6342369706680591153</MsgId>
 </xml>
  ============================= 
-时间：2016-10-13 10:10:57
+时间：2016-10-17 11:10:42
 操作：回复
-内容：<xml><ToUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></ToUserName><FromUserName><![CDATA[gh_67ddb97cc7fc]]></FromUserName><CreateTime><![CDATA[1476347097]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[微信公众号使用帮助：
- 1.回复'ip',查看全部微信服务器IP地址 
- 2.回复'gg','GG' 
- 3.回复'你是谁',详细了解我 
- 4.回复'关于',关于信息 
- 5.回复任意内容(文字，语音，图片)，回复任意内容(文字，语音，图片) 
- 6.------TODO-----]]></Content></xml>
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476698022]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[这真是一场精彩的对局!]]></Content></xml>
  ============================= 
-时间：2016-10-13 10:10:12
-操作：获取 access_token
-内容：{"access_token":"3T_-NV8HKpYu1EH7JuRGHI79GoCBQoqXuDoLm3IwcP-hqgcmc6sH8otwNCGAXVgVS-8Ckr1pbaz0ac2RWYkMNZ9l5PEiOdH2o-4AEf8BZC4JMDdAHAXAR","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:12
+时间：2016-10-17 11:10:52
 操作：接收
-内容：<xml><ToUserName><![CDATA[gh_67ddb97cc7fc]]></ToUserName>
-<FromUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></FromUserName>
-<CreateTime>1476347110</CreateTime>
+内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
+<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
+<CreateTime>1476698332</CreateTime>
 <MsgType><![CDATA[text]]></MsgType>
-<Content><![CDATA[gg]]></Content>
-<MsgId>6340862555400869171</MsgId>
+<Content><![CDATA[你好，实验楼]]></Content>
+<MsgId>6342371042415420291</MsgId>
 </xml>
  ============================= 
-时间：2016-10-13 10:10:12
+时间：2016-10-17 11:10:52
 操作：回复
-内容：<xml><ToUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></ToUserName><FromUserName><![CDATA[gh_67ddb97cc7fc]]></FromUserName><CreateTime><![CDATA[1476347112]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[这真是一场精彩的对局!]]></Content></xml>
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476698332]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[这真是一场精彩的对局!]]></Content></xml>
  ============================= 
-时间：2016-10-13 10:10:55
-操作：接入验证
-内容：657459611405608398
- ============================= 
-时间：2016-10-13 10:10:21
-操作：获取 access_token
-内容：{"access_token":"RiIOOuBK65G6ZN2i9pvbwixA0bz1i1xfFgBcm1ky0C5iJxPZUu_hGbyMzZXD70FBSKXgVz3ABVGmVFI0Oow7EkMK6Pp9qnHyGmOzwLLp9LvhgiBJ3eg_YoQyrCz5MkSoIYLdAFANDQ","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:21
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_67ddb97cc7fc]]></ToUserName>
-<FromUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></FromUserName>
-<CreateTime>1476347239</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[unsubscribe]]></Event>
-<EventKey><![CDATA[]]></EventKey>
-</xml>
- ============================= 
-时间：2016-10-13 10:10:21
-操作：回复
-内容：<xml><ToUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></ToUserName><FromUserName><![CDATA[gh_67ddb97cc7fc]]></FromUserName><CreateTime><![CDATA[1476347241]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[休息，一会儿，马上回来！]]></Content></xml>
- ============================= 
-时间：2016-10-13 10:10:39
-操作：获取 access_token
-内容：{"access_token":"RiIOOuBK65G6ZN2i9pvbwixA0bz1i1xfFgBcm1ky0C6GD4SDqjY-lYwouQywDTVhZ7xcs2iNnQckNpsuWnMUsa8rcefP5aUOWwr5pk0YPSIamZy_JHKkZ5p3HCtU1uEjUOZdAFAGAL","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:39
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_67ddb97cc7fc]]></ToUserName>
-<FromUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></FromUserName>
-<CreateTime>1476347257</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[subscribe]]></Event>
-<EventKey><![CDATA[]]></EventKey>
-</xml>
- ============================= 
-时间：2016-10-13 10:10:39
-操作：回复
-内容：<xml><ToUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></ToUserName><FromUserName><![CDATA[gh_67ddb97cc7fc]]></FromUserName><CreateTime><![CDATA[1476347259]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[欢迎欢迎，热烈欢迎！回复 "help" 查看帮助信息！]]></Content></xml>
- ============================= 
-时间：2016-10-13 10:10:46
-操作：获取 access_token
-内容：{"access_token":"DWmr6vYnxIgNKVVVusLX2IXtXIju81vdrvrqE3EMgArXk6HxZ_6UQHvKKerODLlTEXg18i1cMcy1EzwRqUBtbohKeAo-OEudoeiZBrdPtWp-jcpNabYq1ixabOa_dRpAQBAdAGACNM","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:28
-操作：获取 access_token
-内容：{"access_token":"KSdByZ5WPM11y6Ri2Zg9-TmpQVzq3tCRX7xTJxLAYTPNVfEVNEc7hPGDWcB__cOPogDU3xWrL9nY_6BK-arVf2sA5MSU_e8-dWlqypX42ZMCSX0VaX5RWYBIWRZ8uyo7FNSgADAZHM","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:43
-操作：获取 access_token
-内容：{"access_token":"KSdByZ5WPM11y6Ri2Zg9-TmpQVzq3tCRX7xTJxLAYTN0CqW56GnWyF63lJrh3mF_dxtdVMKzFZYrZowZVOiTX6QPK_vtYB13Tk7H8XeeUAgWRNsy75SH_GC5CFzowfAHWXNgADACDT","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:02
-操作：获取 access_token
-内容：{"access_token":"c_UuquFx1dy0xzPxegwQRD9PZ41Ug1p4xzP2EWqRFeWsMTcBcYxTC8-JXv6_SJd6hLIJTdNPe9OkE-aBpMjz2p4-C6-1atJjWIcQkkbCao3KQO3YNdWyun6-KDQuxE6AUYKgAAAXBN","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:14
-操作：获取 access_token
-内容：{"access_token":"c_UuquFx1dy0xzPxegwQRD9PZ41Ug1p4xzP2EWqRFeXm17Ji2V9hCqSzUmOeUzQSFILNrEFwMXmtF2l8Cb8mZT38LVEt2q9mo8NVHM8mhG8nzcQxq39XVS9Qs5EFz4MxIOTgAAABHM","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:45
-操作：获取 access_token
-内容：{"access_token":"FVs5UVei1ItCBLvGA-8603jgQ89TCJSedZDaQZ19FH7lRmjcryclSAZx9wZY0H618m8ipoPLZK-sGcGotHyc1mZjSt7ZO_lqVvo_XuMjqm8epOkanaVrJzrxhC-CDv7WPOBaAHAGFS","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:15
-操作：获取 access_token
-内容：{"access_token":"fLmBj51CSaXqPpedUZdgGlpkQxnZN9lqUcWm5Wk_Glt92CdDuS3hd6bWBD_SQurjIKJ-mpFE7fovUcMeweBNvxkIWLFqFEwTWOx1NTF8Ug8cX6FHEialYf61klsyeWysRTRjAAADFD","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:28
-操作：获取 access_token
-内容：{"access_token":"fLmBj51CSaXqPpedUZdgGlpkQxnZN9lqUcWm5Wk_GlvUdcremC6rfcJwtJgF_xjOjp4grvyXKAyoqSEiL_LuPiNJNNDzxzFOP5IRF-FpOu9SQYLWEln9iF2aBGVUPTb6VFKjAAAZJO","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:03
-操作：获取 access_token
-内容：{"access_token":"AHIfKrP896vJqHS55etz6sCZPN7knQ7-YRk4DN-5zPRujVpExHdA2ssUOBglJYx6qoVdS9v6HzGAKc095hONKR8Zj9vYDDpLgcnzEmLHdfUi_D2ZijfBbitF_RZrLB1vKNGcAEAWZS","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:04
-操作：查询自定义菜单
-内容：{"menu":{"button":[{"name":"实验楼","sub_button":[{"type":"view","name":"主页","url":"http:\/\/www.shiyanlou.com","sub_button":[]},{"type":"click","name":"点我啊","key":"clickme","sub_button":[]},{"type":"click","name":"点歌","key":"diange","sub_button":[]},{"type":"location_select","name":"我的位置","key":"mylocation","sub_button":[]}]},{"name":"扫码","sub_button":[{"type":"scancode_waitmsg","name":"扫我有喜","key":"scammsg","sub_button":[]},{"type":"scancode_push","name":"扫我进入","key":"scaninto","sub_button":[]},{"type":"media_id","name":"看图","sub_button":[],"media_id":"oCmCA6JW8AUym2t9uhqzeIzNHOLe7GNsO2fvhAsuUtI"},{"type":"media_id","name":"图文信息","sub_button":[],"media_id":"oCmCA6JW8AUym2t9uhqzeEHdfvJ_Z0MUoqUjOWWEOrQ"},{"type":"media_id","name":"小电影","sub_button":[],"media_id":"oCmCA6JW8AUym2t9uhqzeKtiYQzppXBMyn6U2k2IMmU"}]},{"name":"拍照","sub_button":[{"type":"pic_sysphoto","name":"系统拍照","key":"photosys","sub_button":[]},{"type":"pic_photo_or_album","name":"选择方式","key":"photosel","sub_button":[]},{"type":"pic_weixin","name":"相册选择","key":"photoweixin","sub_button":[]}]}]}}
- ============================= 
-时间：2016-10-13 10:10:54
-操作：获取 access_token
-内容：{"access_token":"GvFmOGgA4pHSpP1DG9c8Aq3HdMR1B62zmd4OyT3m1frnYBxxdJaZzFT-WmipcT6BBTKka8un_UJb2Aje7LtU4MNt6T5AV-Ol40BlqxSDZpcOIPiAIAUOV","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:55
-操作：查询自定义菜单
-内容：{"menu":{"button":[{"name":"实验楼","sub_button":[{"type":"view","name":"主页","url":"http:\/\/www.shiyanlou.com","sub_button":[]},{"type":"click","name":"点我啊","key":"clickme","sub_button":[]},{"type":"click","name":"点歌","key":"diange","sub_button":[]},{"type":"location_select","name":"我的位置","key":"mylocation","sub_button":[]}]},{"name":"扫码","sub_button":[{"type":"scancode_waitmsg","name":"扫我有喜","key":"scammsg","sub_button":[]},{"type":"scancode_push","name":"扫我进入","key":"scaninto","sub_button":[]},{"type":"media_id","name":"看图","sub_button":[],"media_id":"oCmCA6JW8AUym2t9uhqzeIzNHOLe7GNsO2fvhAsuUtI"},{"type":"media_id","name":"图文信息","sub_button":[],"media_id":"oCmCA6JW8AUym2t9uhqzeEHdfvJ_Z0MUoqUjOWWEOrQ"},{"type":"media_id","name":"小电影","sub_button":[],"media_id":"oCmCA6JW8AUym2t9uhqzeKtiYQzppXBMyn6U2k2IMmU"}]},{"name":"拍照","sub_button":[{"type":"pic_sysphoto","name":"系统拍照","key":"photosys","sub_button":[]},{"type":"pic_photo_or_album","name":"选择方式","key":"photosel","sub_button":[]},{"type":"pic_weixin","name":"相册选择","key":"photoweixin","sub_button":[]}]}]}}
- ============================= 
-时间：2016-10-13 10:10:14
-操作：获取 access_token
-内容：{"access_token":"GvFmOGgA4pHSpP1DG9c8Aq3HdMR1B62zmd4OyT3m1fpf78Tybq4y9nNkj1lmGJJYZwea3Ie428iGZPG6SDZHXphlRQuFEfIlk1x3jwOYLG0BEViAIAJMD","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:14
-操作：查询自定义菜单
-内容：{"menu":{"button":[{"name":"实验楼","sub_button":[{"type":"view","name":"主页","url":"http:\/\/www.shiyanlou.com","sub_button":[]},{"type":"click","name":"点我啊","key":"clickme","sub_button":[]},{"type":"click","name":"点歌","key":"diange","sub_button":[]},{"type":"location_select","name":"我的位置","key":"mylocation","sub_button":[]}]},{"name":"扫码","sub_button":[{"type":"scancode_waitmsg","name":"扫我有喜","key":"scammsg","sub_button":[]},{"type":"scancode_push","name":"扫我进入","key":"scaninto","sub_button":[]},{"type":"media_id","name":"看图","sub_button":[],"media_id":"oCmCA6JW8AUym2t9uhqzeIzNHOLe7GNsO2fvhAsuUtI"},{"type":"media_id","name":"图文信息","sub_button":[],"media_id":"oCmCA6JW8AUym2t9uhqzeEHdfvJ_Z0MUoqUjOWWEOrQ"},{"type":"media_id","name":"小电影","sub_button":[],"media_id":"oCmCA6JW8AUym2t9uhqzeKtiYQzppXBMyn6U2k2IMmU"}]},{"name":"拍照","sub_button":[{"type":"pic_sysphoto","name":"系统拍照","key":"photosys","sub_button":[]},{"type":"pic_photo_or_album","name":"选择方式","key":"photosel","sub_button":[]},{"type":"pic_weixin","name":"相册选择","key":"photoweixin","sub_button":[]}]}]}}
- ============================= 
-时间：2016-10-13 10:10:02
-操作：获取 access_token
-内容：{"access_token":"m6quCArKt-Lk_Dmoul_k8bN2EcTgqWYr9rn9kHkHkruOBYJawCgz1vAINRJd8_QFhX85c_Uen-A9vcvxF_-OGX7r0CMw-wDiFJ_E-RfryPoDUTfAAAXON","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:03
-操作：查询自定义菜单
-内容：{"menu":{"button":[{"name":"实验楼","sub_button":[{"type":"view","name":"主页","url":"http:\/\/www.shiyanlou.com","sub_button":[]},{"type":"click","name":"点我啊","key":"clickme","sub_button":[]},{"type":"click","name":"点歌","key":"diange","sub_button":[]},{"type":"location_select","name":"我的位置","key":"mylocation","sub_button":[]}]},{"name":"扫码","sub_button":[{"type":"scancode_waitmsg","name":"扫我有喜","key":"scammsg","sub_button":[]},{"type":"scancode_push","name":"扫我进入","key":"scaninto","sub_button":[]},{"type":"media_id","name":"看图","sub_button":[],"media_id":"oCmCA6JW8AUym2t9uhqzeIzNHOLe7GNsO2fvhAsuUtI"},{"type":"media_id","name":"图文信息","sub_button":[],"media_id":"oCmCA6JW8AUym2t9uhqzeEHdfvJ_Z0MUoqUjOWWEOrQ"},{"type":"media_id","name":"小电影","sub_button":[],"media_id":"oCmCA6JW8AUym2t9uhqzeKtiYQzppXBMyn6U2k2IMmU"}]},{"name":"拍照","sub_button":[{"type":"pic_sysphoto","name":"系统拍照","key":"photosys","sub_button":[]},{"type":"pic_photo_or_album","name":"选择方式","key":"photosel","sub_button":[]},{"type":"pic_weixin","name":"相册选择","key":"photoweixin","sub_button":[]}]}]}}
- ============================= 
-时间：2016-10-13 10:10:45
-操作：获取 access_token
-内容：{"access_token":"0fAzl-Oh852WKML_ErNk4_umQVoOEPP_OV6dDilxJgEEDjKIyY8Uyb4RXhUvmEyBoqSBY3MSqh6wBv5oS-n3BUnS5xzYyp9EOUVS0TtFqPxMNWZxjgaVzNHIM5VdQpbaHGUaACADCQ","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:45
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_67ddb97cc7fc]]></ToUserName>
-<FromUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></FromUserName>
-<CreateTime>1476347863</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[subscribe]]></Event>
-<EventKey><![CDATA[]]></EventKey>
-</xml>
- ============================= 
-时间：2016-10-13 10:10:45
-操作：回复
-内容：<xml><ToUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></ToUserName><FromUserName><![CDATA[gh_67ddb97cc7fc]]></FromUserName><CreateTime><![CDATA[1476347865]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[欢迎欢迎，热烈欢迎！回复 "help" 查看帮助信息！]]></Content></xml>
- ============================= 
-时间：2016-10-13 10:10:32
-操作：获取 access_token
-内容：{"access_token":"_UQEeF-YgW-5DWPjBmMvI9j0byHJccFdvN-QqzZ3eTCgd7CQ1gUtiXljdo9cJ1GEPH91wvU8lm9EjiYYTqbQfAud9bDhBlOoSBFWknKjS3Q1qmXAj3qM6NBr0tJLF_CFHTUiAFAUGH","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:58
-操作：获取 access_token
-内容：{"access_token":"hDrXt8PlWdJgXzh74Tu3Si-0E-zXGthGnMC3OdRaJlbUk6gBZYegfiZkLdfloVCTI0PIbAi7AoN6Fs6L1Zzy6AZvExIb1Tyue2cMOzxsXcxiLtlonVQzVcb_j9PU0cGeLHOjAFAVRY","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:58
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_67ddb97cc7fc]]></ToUserName>
-<FromUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></FromUserName>
-<CreateTime>1476347937</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[unsubscribe]]></Event>
-<EventKey><![CDATA[]]></EventKey>
-</xml>
- ============================= 
-时间：2016-10-13 10:10:58
-操作：回复
-内容：<xml><ToUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></ToUserName><FromUserName><![CDATA[gh_67ddb97cc7fc]]></FromUserName><CreateTime><![CDATA[1476347938]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[休息，一会儿，马上回来！]]></Content></xml>
- ============================= 
-时间：2016-10-13 10:10:17
-操作：获取 access_token
-内容：{"access_token":"hDrXt8PlWdJgXzh74Tu3Si-0E-zXGthGnMC3OdRaJlZMLKwKS8qXEAPF7htD6w0iYyYSO8QHKdqpviy1frsMj11QHEd0c4amfn2m1mpYENC1FCmOvZarhrNIUwn_6b6QHNWjAFARXG","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:17
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_67ddb97cc7fc]]></ToUserName>
-<FromUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></FromUserName>
-<CreateTime>1476347955</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[subscribe]]></Event>
-<EventKey><![CDATA[]]></EventKey>
-</xml>
- ============================= 
-时间：2016-10-13 10:10:17
-操作：回复
-内容：<xml><ToUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></ToUserName><FromUserName><![CDATA[gh_67ddb97cc7fc]]></FromUserName><CreateTime><![CDATA[1476347957]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[欢迎欢迎，热烈欢迎！回复 "help" 查看帮助信息！]]></Content></xml>
- ============================= 
-时间：2016-10-13 10:10:27
-操作：删除自定义菜单
-内容：{"errcode":41001,"errmsg":"access_token missing hint: [.037qA0027rsz4!]"}
- ============================= 
-时间：2016-10-13 10:10:33
-操作：删除自定义菜单
-内容：{"errcode":41001,"errmsg":"access_token missing hint: [9vemxa0093rsz4!]"}
- ============================= 
-时间：2016-10-13 10:10:41
-操作：删除自定义菜单
-内容：{"errcode":41001,"errmsg":"access_token missing hint: [TyKkJA0100rsz4!]"}
- ============================= 
-时间：2016-10-13 10:10:42
-操作：删除自定义菜单
-内容：{"errcode":41001,"errmsg":"access_token missing hint: [e0102rsz3!]"}
- ============================= 
-时间：2016-10-13 10:10:44
-操作：删除自定义菜单
-内容：{"errcode":41001,"errmsg":"access_token missing hint: [zrBoAa0103rsz5!]"}
- ============================= 
-时间：2016-10-13 10:10:12
-操作：获取 access_token
-内容：{"access_token":"RiIOOuBK65G6ZN2i9pvbwmmD81lr18tFzuI5RKuMICh_wIz9MbthF-CnFIzS--yM7eRXsEcQmQDRu-pj7eN3VXsfbjHsuXUmlMTX9P_iV2YRe2KxK3i1wlz8s9bpFE_JEUNhABAAQJ","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:02
-操作：获取 access_token
-内容：{"access_token":"-MWjGQc9R9feHyjqBqn6RhKRhGseuVvTBiH3CAKv3aumCL4w1HZ9ZFMvx5_j-2MW-60SpWpajP40NSlThmA8DgB3qdb5E5oVkMdOc3Sss630SsN7Z2lGBJ2_i_7q64qrANSbAJAPCH","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:36
-操作：获取 access_token
-内容：{"access_token":"GyrpWJnfLC_TJdBDs-Mo175y-GNXdghImIh9y9aJhbLI7inEB6UpOFDCJyfgQ0xuiCh9O7wSwRMK39ag2hDeTDoIL70MDTWmiGCANmh3QSu9VCaijUCBgzZYSjjVX9kUGFUdABACBQ","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:48
-操作：获取 access_token
-内容：{"access_token":"GyrpWJnfLC_TJdBDs-Mo175y-GNXdghImIh9y9aJhbLnoHfbwoNOo4TVAY9YEWALebldnkLSrr9TsNPbQJmrw4x27dbbaff9hBYvnpAPx8T6WU4Dd1vic5txNa4oG091MBVdABATIC","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:08
-操作：获取 access_token
-内容：{"access_token":"k1VmPaf6TxKXDPjzlvcA2UIXrbAhK1ae_wvnUPegHLFqmKf9ZeAKtr6toSHHrXToPmNZz7SuqrQ2IVI4c3toO9KJ_bYM5WyISUrvNqz0wkwAxmwMmzjVBDmGBPHCCatdLOOhAJAYBB","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:08
-操作：获取 access_token
-内容：{"access_token":"k1VmPaf6TxKXDPjzlvcA2UIXrbAhK1ae_wvnUPegHLF2VHpI5nK3VO_9vYCHllpgNjFJTge8MNtU8Se8ls-hce4IZ3hEPMdnvkLsEt1gsUgHYc7S21vUSoLbxQB0HPIXKLBhAJASTJ","expires_in":7199}
- ============================= 
-时间：2016-10-13 10:10:17
-操作：获取 access_token
-内容：{"access_token":"k1VmPaf6TxKXDPjzlvcA2UIXrbAhK1ae_wvnUPegHLEf0NVMqY_CV--MzRwEdaQ5z8rR98dEJhenQsGzI5irtd4RlPNXS4dYjr1puND4oQOaJY7DisYJOYQCvlMJzxnyWXLhAJACDR","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:17
-操作：获取 access_token
-内容：{"access_token":"k1VmPaf6TxKXDPjzlvcA2UIXrbAhK1ae_wvnUPegHLHs5l27VcMtWInGm63aQGgWDVSaWR77IgdSuHkscQPkweF5WqNjutbWu2WCk6kgSR4PlDPFhIp02SIRJd95LFERYMAhAJASGU","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:34
-操作：获取 access_token
-内容：{"access_token":"JB4jo495DLN5cVRGgZ3RhAT-P3dH0Hq41BP8VEZW9zL8xOM_SB8oUd7MibKMq6kBvKZ4ai_rFokFL5XMMR9OZ60MRdCU21am6_fue0vQZHSnJ-1v7zt6ml7OAWxkT5n2SRLiAAAZYS","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:46
-操作：获取 access_token
-内容：{"access_token":"JB4jo495DLN5cVRGgZ3RhAT-P3dH0Hq41BP8VEZW9zLm1m9SXQz9BFt6vQSEngt1R_2MYyESJ3rIxi-8QMfHn7YbKtDLY5T4AZry_eJjEMYR9E8nmfk2oriU1x9viixuECRiAAAJHW","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:46
-操作：获取 access_token
-内容：{"access_token":"JB4jo495DLN5cVRGgZ3RhAT-P3dH0Hq41BP8VEZW9zIVCWhQp4sXw1PLIIs8QQZFJhuLiZYie52iSrRtvNHZN2BAxhkLoBBQlbNNXn-lMCyDwUNrrclhj5VFhCFskl0jQHGiAAAJAZ","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:56
-操作：获取 access_token
-内容：{"access_token":"DWmr6vYnxIgNKVVVusLX2NHCcjHe8pMqNXxmxgGxGYozT5A31zpaC_sdBP0wRvLM7NZH0MMnDCVfQKVFzDRISwMHo1rKK7nrQTVeWboiiYhw2DXycSOFPukzmTID38PPRDSjAFAZLA","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:56
-操作：获取 access_token
-内容：{"access_token":"DWmr6vYnxIgNKVVVusLX2NHCcjHe8pMqNXxmxgGxGYq6CbHhCW4uh44XEk7uNbsWTLaZr3sjt33H7O-Zghk8hRmCd-aN2KSkgRW-QVR8Q5QoeecZ7gO-AQjYX98QeX14XIEjAFAEPL","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:51
-操作：获取 access_token
-内容：{"access_token":"mr1KlJq7o9D-XA4Icu3v0iN0pK1M9MzDzeQp-xlUbAtqpPJr95GPe-52r3zzpOrilbAIb1vM9PT6kSZltA5RGdXQJsEkVc1AXgs54MLUBaIPXBdAEATBF","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:51
-操作：获取 access_token
-内容：{"access_token":"mr1KlJq7o9D-XA4Icu3v0iN0pK1M9MzDzeQp-xlUbAsYHEcgTihUhay5DZEsCVBfQSmuZR9br_-VWdjl1oGU-zhjbQGFOD0av4Pgd9Jh14sUECdAEAMWU","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:51
+时间：2016-10-17 11:10:27
 操作：接收
 内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
 <FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476348349</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[unsubscribe]]></Event>
-<EventKey><![CDATA[]]></EventKey>
+<CreateTime>1476698367</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[你好，实验楼]]></Content>
+<MsgId>6342371192739275661</MsgId>
 </xml>
  ============================= 
-时间：2016-10-13 10:10:51
+时间：2016-10-17 11:10:27
 操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476348351]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[休息，一会儿，马上回来！]]></Content></xml>
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476698367]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[这真是一场精彩的对局!]]></Content></xml>
  ============================= 
-时间：2016-10-13 10:10:58
-操作：获取 access_token
-内容：{"access_token":"mr1KlJq7o9D-XA4Icu3v0iN0pK1M9MzDzeQp-xlUbAunLdzvDZH1N9aop0OuIlGiaufY4nsHzMd4y6djEdj_5WsD9epxNcvRYIoj_oOTC94HJZdAEAXZP","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:58
-操作：获取 access_token
-内容：{"access_token":"mr1KlJq7o9D-XA4Icu3v0iN0pK1M9MzDzeQp-xlUbAvnsplrDVewJ7SlD5IH_psqtlSD3wWgGNczfBnd9Dln0m_-Ed6CnagDDGMu2xjW9AkUOJdAEAKEZ","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:58
+时间：2016-10-17 11:10:58
 操作：接收
 内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
 <FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476348356</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[subscribe]]></Event>
-<EventKey><![CDATA[]]></EventKey>
+<CreateTime>1476698397</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[你好，实验楼]]></Content>
+<MsgId>6342371321588294558</MsgId>
 </xml>
  ============================= 
-时间：2016-10-13 10:10:58
+时间：2016-10-17 11:10:58
 操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476348358]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[欢迎欢迎，热烈欢迎！回复 "help" 查看帮助信息！]]></Content></xml>
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476698398]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[你好，我是微信机器人，来自自动回复!]]></Content></xml>
  ============================= 
-时间：2016-10-13 10:10:20
-操作：获取 access_token
-内容：{"access_token":"0Puw4uXCeueMbaXUKsxpxfLp5ww1vpMhE6gFx1TAJ2Y3pyzg9Wn3dSRNYs-LP1fP17Zj2fWN5HGoHOa082XbGsZQRrso0uGgpr-HhIANW3tVMqavAx2xyag0qEdgFcvwREUdAIAIVL","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:36
-操作：接入验证
-内容：1846640157638228707
- ============================= 
-时间：2016-10-13 10:10:39
-操作：获取 access_token
-内容：{"access_token":"MmVFutwYHoiGlze5cScBEWFpThYS8_7r4DftxPuH0K4f4Mme3zrm4fZKl3dG3-H-B4b2RyBiCFv02C4QRbPxw3q8LdhONGgUU19BgdiGngCOotGcYuPUxB4GlZmLAlpKCOCeACAGSG","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:02
-操作：获取 access_token
-内容：{"access_token":"yA2Hx-vdP3JnkbY8DLXZP9mgyaT_Q84DNzt9LpKxqVldZRUhDw4jwlmFGwh_--OYCT38srxwlrx4k8hq0DvHcI4DvX0oSmhK-mGJASIkVFR-qN8SYM2cwwaGsN1jCXaAJDNiAAAOIS","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:28
-操作：获取 access_token
-内容：{"access_token":"msFBJjDR1ZZn8u0Gw_UgFMmHUmsjW4cQwqiWqrYGX_uGfxrilI8-nAl2ocvr1CcJViSH7w_h6ybU5bTJqiUeJ3uBSS7U8VhCp3SDi7nUTuqZH1PITbpkpA6pH8KwoNItSFAdADAGTO","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:29
-操作：获取 access_token
-内容：{"access_token":"msFBJjDR1ZZn8u0Gw_UgFMmHUmsjW4cQwqiWqrYGX_sNE_iQ9WBfrr-BXnELTYRGkKj4ZyHv1anV2jEAe5atEQI2_6AFxTBcd051EYXUNtkNFgrI0Y2U3AciWXknvucNLDKdADAQIP","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:27
-操作：获取 access_token
-内容：{"access_token":"uijEvQ9xZWHOinjQpBw1dJqR8Dt2ygLvxPjh80w30bYic44BA2xNHzNslETrN98b1SWdq5juuhMqDk7x1pOA3qdUQ0Z0LV1fkdAUIV0l9v37jhEam0u8OkqKXdFMwF9VKXQeAAAYLE","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:27
-操作：获取 access_token
-内容：{"access_token":"uijEvQ9xZWHOinjQpBw1dJqR8Dt2ygLvxPjh80w30bZ8If6sE1ydG6syu_NwV7Hif_vYYt4tZiqnNZLDuOvzEmBLQx_0vw7XkRWTA0KUeMNZ22zvScnZeWiTfY2fDVmfHPReAAANVX","expires_in":7199}
- ============================= 
-时间：2016-10-13 10:10:46
-操作：获取 access_token
-内容：{"access_token":"uijEvQ9xZWHOinjQpBw1dJqR8Dt2ygLvxPjh80w30bYyovCaWWtnt11xEzeAm9wbIhgHgEGK5jAz6KW14XRPmNYyv12zwYznwYV0U0GLXhUDuyVE9W-dA14Zhzfm-l8VFNFeAAAKSK","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:46
-操作：获取 access_token
-内容：{"access_token":"iILA62pUctzoubhvPEN0DoYeedjNXqDzaDkzeJA1JdxqmlzlmQ5Pv4EkqfTFQNB1Qf5wpxeClTrTuqMiOEhtrL2OUqAmR2w4XB8fxMq6BqgFQSfAEAZKM","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:46
+时间：2016-10-17 11:10:58
 操作：接收
-内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
-<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476349004</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[CLICK]]></Event>
-<EventKey><![CDATA[clickme]]></EventKey>
-</xml>
+内容：{"ToUserName":"gh_9ce7b64359dd","FromUserName":"oLA-5v9JKdKz_Unir3urFleTlVj4","CreateTime":"1476698397","MsgType":"text","Content":"\u4f60\u597d\uff0c\u5b9e\u9a8c\u697c","MsgId":"6342371321588294558"}
  ============================= 
-时间：2016-10-13 10:10:46
+时间：2016-10-17 11:10:58
 操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476349006]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[我开个玩笑而已，你还真敢点我啊！]]></Content></xml>
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476698398]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[你好，实验楼(小孩子不要乱发消息哦)]]></Content></xml>
  ============================= 
-时间：2016-10-13 10:10:51
-操作：获取 access_token
-内容：{"access_token":"iILA62pUctzoubhvPEN0DoYeedjNXqDzaDkzeJA1JdzO5E0YXgdvRbu_QCxi6AWIzM7scP_qhy24jz89KnzsY1kdnIsGtvKq8C_OsMuQd4QLZWfAEABPM","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:52
-操作：获取 access_token
-内容：{"access_token":"iILA62pUctzoubhvPEN0DoYeedjNXqDzaDkzeJA1JdxJxk-ECKl97o4LU5uFlF4mC3nVrIEybN8pM8lZ6TdcGMufT1cDizheDQEa9zjXDA8VGGfAEAJUU","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:52
+时间：2016-10-17 12:10:30
 操作：接收
 内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
 <FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476349010</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[CLICK]]></Event>
-<EventKey><![CDATA[clickme]]></EventKey>
+<CreateTime>1476698489</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[放到是否]]></Content>
+<MsgId>6342371716725285820</MsgId>
 </xml>
  ============================= 
-时间：2016-10-13 10:10:52
+时间：2016-10-17 12:10:30
 操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476349012]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[我开个玩笑而已，你还真敢点我啊！]]></Content></xml>
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476698490]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[你好，我是微信机器人，来自自动回复!]]></Content></xml>
  ============================= 
-时间：2016-10-13 10:10:55
-操作：获取 access_token
-内容：{"access_token":"iILA62pUctzoubhvPEN0DoYeedjNXqDzaDkzeJA1Jdzx9Xdt5r6dsL23eDxRc6kov0jFd1dYool6u3Qv7ewp1xi-AXFpqA0wkLz01RHlESEGFIfAEATSV","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:55
-操作：获取 access_token
-内容：{"access_token":"iILA62pUctzoubhvPEN0DoYeedjNXqDzaDkzeJA1Jdysc3XeGFV_knMHbZm9LdT1_oH0X9QJZtTlaMYQfefgVBei8jFQsbgVcmoaTRZTF9AOUOfAEAEKE","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:55
+时间：2016-10-17 12:10:34
 操作：接收
 内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
 <FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476349013</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[CLICK]]></Event>
-<EventKey><![CDATA[diange]]></EventKey>
+<CreateTime>1476698494</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[你好，实验楼]]></Content>
+<MsgId>6342371738200122302</MsgId>
 </xml>
  ============================= 
-时间：2016-10-13 10:10:55
+时间：2016-10-17 12:10:34
 操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476349015]]></CreateTime><MsgType><![CDATA[music]]></MsgType><Music><Title><![CDATA[成全]]></Title><Description><![CDATA[这是我用(sui)心(bian)为你点播的一首歌]]></Description><MusicUrl><![CDATA[http://music.163.com/#/program?id=794490893]]></MusicUrl><HQMusicUrl><![CDATA[http://music.163.com/#/program?id=794490893]]></HQMusicUrl><ThumbMediaId><![CDATA[oCmCA6JW8AUym2t9uhqzeIzNHOLe7GNsO2fvhAsuUtI]]></ThumbMediaId></Music></xml>
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476698494]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[你好，我是微信机器人，来自自动回复!]]></Content></xml>
  ============================= 
-时间：2016-10-13 10:10:26
-操作：获取 access_token
-内容：{"access_token":"glJJeupKzbh35HjFyQvSWWAfH0IU9-D-7O6U4F4oLWf2UgJom0MlCVn-Misykvi3gus4HavhYzVX8D1P4EuaWo8TUvb_FlnO5t6K-iPWQTLQ858lupchnbGWEhHQuOLvGMXdAAAMSD","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:26
-操作：获取 access_token
-内容：{"access_token":"glJJeupKzbh35HjFyQvSWWAfH0IU9-D-7O6U4F4oLWeNxcFXXbjf7-SMIHjnfwNnUgZitUMHYv9k4fLJabnh2jtQOu9LpYfD8ot5zc-OCDTvzknlfwauYYwMNOxatFt1PTOdAAAIMH","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:27
+时间：2016-10-17 12:10:04
 操作：接收
 内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
 <FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476349045</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[scancode_push]]></Event>
-<EventKey><![CDATA[scaninto]]></EventKey>
-<ScanCodeInfo><ScanType><![CDATA[qrcode]]></ScanType>
-<ScanResult><![CDATA[http://weixin.qq.com/r/_kTTy2PEBz54rSeo9xHo]]></ScanResult>
-</ScanCodeInfo>
-</xml>
- ============================= 
-时间：2016-10-13 10:10:27
-操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476349047]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[休息，一会儿，马上回来！]]></Content></xml>
- ============================= 
-时间：2016-10-13 10:10:02
-操作：获取 access_token
-内容：{"access_token":"LtEpPcljVYSqiMZtNSHP6rFjd_eDG8X6D1Ilipf-Jit1eAou3nLMK4UEcGbrBKfm7XBCQ72GqWUtr-VgH3LnqOrEsC4ZOcWjoZ5sfO7NPNMYVFcAFASPZ","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:02
-操作：获取 access_token
-内容：{"access_token":"LtEpPcljVYSqiMZtNSHP6rFjd_eDG8X6D1Ilipf-JiswMDQJa0id1nDQlItb8eW9j0xN00Jl-0ZcrJLxev8ggeTBlbY1VHGVQN8eJVBRUqESMOcAFAOIK","expires_in":7200}
- ============================= 
-时间：2016-10-13 10:10:02
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
-<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476349080</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[scancode_waitmsg]]></Event>
-<EventKey><![CDATA[scammsg]]></EventKey>
-<ScanCodeInfo><ScanType><![CDATA[qrcode]]></ScanType>
-<ScanResult><![CDATA[http://weixin.qq.com/r/_kTTy2PEBz54rSeo9xHo]]></ScanResult>
-</ScanCodeInfo>
-</xml>
- ============================= 
-时间：2016-10-13 10:10:02
-操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476349082]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[休息，一会儿，马上回来！]]></Content></xml>
- ============================= 
-时间：2016-10-13 11:10:19
-操作：获取 access_token
-内容：{"access_token":"DWmr6vYnxIgNKVVVusLX2DVafHwboRoQiR1-mzdozEmK8FjxIoLJuOS3UcEP447a7TmJGiqQpdwl43HQiDTiKj173JON90Kyp1vIL6tsRRvL3yAJbn5cXYAS7Wm_3lYXDJGjABAXDA","expires_in":7200}
- ============================= 
-时间：2016-10-13 11:10:19
-操作：获取 access_token
-内容：{"access_token":"DWmr6vYnxIgNKVVVusLX2DVafHwboRoQiR1-mzdozEkmzUDcEEFJ1cP-mkTFvRVMEKDeArZ02qPGiF5Se2LwPJEzt0rnbdVcovuYXkElS5sQb6219CGyEJkTNlnZJyN9JUFjABACNY","expires_in":7199}
- ============================= 
-时间：2016-10-13 11:10:19
-操作：获取 access_token
-内容：{"access_token":"DWmr6vYnxIgNKVVVusLX2DVafHwboRoQiR1-mzdozEkVTq6S0BlCsm_BVkjNxIiC84kLIfi0a53SC2DcRldL2LpAMcQ1hFd4VRRD6kJ8oSBsYlALJorlCokPCIePxHWVOJZjABAKFV","expires_in":7199}
- ============================= 
-时间：2016-10-13 11:10:19
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
-<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476349397</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[location_select]]></Event>
-<EventKey><![CDATA[mylocation]]></EventKey>
-<SendLocationInfo><Location_X><![CDATA[30.53949546813965]]></Location_X>
-<Location_Y><![CDATA[104.0692138671875]]></Location_Y>
-<Scale><![CDATA[16]]></Scale>
-<Label><![CDATA[武侯区天府大道(天府五街地铁站北250米)]]></Label>
-<Poiname><![CDATA[[位置]]]></Poiname>
-</SendLocationInfo>
-</xml>
- ============================= 
-时间：2016-10-13 11:10:19
-操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476349399]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[休息，一会儿，马上回来！]]></Content></xml>
- ============================= 
-时间：2016-10-13 11:10:19
-操作：获取 access_token
-内容：{"access_token":"DWmr6vYnxIgNKVVVusLX2DVafHwboRoQiR1-mzdozEk9qfzZcVoPCmrFPK2Kq_XWs5Mglkd870Jq3G7WooUNJ9W7W1-dVmnSSedGPfLCPURUHzObT8JcHIVdR76yYmTfLMCjABABCS","expires_in":7199}
- ============================= 
-时间：2016-10-13 11:10:19
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
-<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476349397</CreateTime>
-<MsgType><![CDATA[location]]></MsgType>
-<Location_X>30.539495</Location_X>
-<Location_Y>104.069214</Location_Y>
-<Scale>16</Scale>
-<Label><![CDATA[武侯区天府大道(天府五街地铁站北250米)]]></Label>
-<MsgId>6340872378001927896</MsgId>
-</xml>
- ============================= 
-时间：2016-10-13 11:10:19
-操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476349399]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[你的位置信息：
- 经纬度：(30.539495,104.069214) 
- 地名:武侯区天府大道(天府五街地铁站北250米)
- 你的位置已暴露，注意人身安全！]]></Content></xml>
- ============================= 
-时间：2016-10-13 11:10:57
-操作：获取 access_token
-内容：{"access_token":"7RVP4olArjRuWcroNTGBAsfTz5poJLZtGDRC404nvBs_9MVCGkA2vNO8Ust4KQOyheX1PG1VfFgFp1P45-PYrabhT8wUkV01rM2cx3xk2U2xPJa988iNj5WRPp7KxzsFJNXdABAAEO","expires_in":7200}
- ============================= 
-时间：2016-10-13 11:10:58
-操作：获取 access_token
-内容：{"access_token":"7RVP4olArjRuWcroNTGBAsfTz5poJLZtGDRC404nvBuCUheXtwL02HchOoheI6A2GYf_IBRhjnSk3tCXytSWoz5TXKGo1sy_CzEbh4jZ5rH0DYJx99Le19DUH7hpYmhLJMMdABAYBB","expires_in":7200}
- ============================= 
-时间：2016-10-13 11:10:58
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
-<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476349915</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[scancode_waitmsg]]></Event>
-<EventKey><![CDATA[scammsg]]></EventKey>
-<ScanCodeInfo><ScanType><![CDATA[qrcode]]></ScanType>
-<ScanResult><![CDATA[http://weixin.qq.com/r/_kTTy2PEBz54rSeo9xHo]]></ScanResult>
-</ScanCodeInfo>
-</xml>
- ============================= 
-时间：2016-10-13 11:10:38
-操作：获取 access_token
-内容：{"access_token":"R407xGquAB61jmDY2p-Q_2Qe3_gDReuD58zTOtoaVgGCl0m9olBEvjWnLQ4rUBIJe8_672-c4Jlpqvsqjwk_3x_4RDBEI5DewvMwGidQmyh4pXlzg14wI3YwGNT1WeimPTEcACAKOZ","expires_in":7200}
- ============================= 
-时间：2016-10-13 11:10:39
-操作：获取 access_token
-内容：{"access_token":"R407xGquAB61jmDY2p-Q_2Qe3_gDReuD58zTOtoaVgFP45IJf-fuB10-h0MosKCCY59BOm9-8dYjpMvKaebjDMKOTZTxYCoa6o1uZkV-vAsWjTjuapT2cfFwIHHPtZdLNIKcACAFAC","expires_in":7200}
- ============================= 
-时间：2016-10-13 11:10:39
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
-<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476349957</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[scancode_waitmsg]]></Event>
-<EventKey><![CDATA[scammsg]]></EventKey>
-<ScanCodeInfo><ScanType><![CDATA[qrcode]]></ScanType>
-<ScanResult><![CDATA[http://weixin.qq.com/r/_kTTy2PEBz54rSeo9xHo]]></ScanResult>
-</ScanCodeInfo>
-</xml>
- ============================= 
-时间：2016-10-13 11:10:39
-操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476349959]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><type><![CDATA[]]></type><result><![CDATA[]]></result></Content></xml>
- ============================= 
-时间：2016-10-13 11:10:47
-操作：获取 access_token
-内容：{"access_token":"XNgOZKjAITi2KcW9ld_eklqLPWzcFr9w0auAowBakX1-v4olDu6c8-yuK2j3LzM7eclABX6VtPxV1PaU07v6LHp8oQDBHLHdevCixi-jxvIQXXgAJAGNN","expires_in":7200}
- ============================= 
-时间：2016-10-13 11:10:48
-操作：获取 access_token
-内容：{"access_token":"XNgOZKjAITi2KcW9ld_eklqLPWzcFr9w0auAowBakX33P0MLNjMfmqdyx4iuGpUUvitjEJYEsBZ_gKojYHN2GYyRVLJpQhyJAaKZez1oBykMCFgAJAFVY","expires_in":7200}
- ============================= 
-时间：2016-10-13 11:10:48
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
-<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476350086</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[scancode_waitmsg]]></Event>
-<EventKey><![CDATA[scammsg]]></EventKey>
-<ScanCodeInfo><ScanType><![CDATA[qrcode]]></ScanType>
-<ScanResult><![CDATA[http://weixin.qq.com/r/_kTTy2PEBz54rSeo9xHo]]></ScanResult>
-</ScanCodeInfo>
-</xml>
- ============================= 
-时间：2016-10-13 11:10:48
-操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476350088]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[扫描方式：扫我有喜(),扫描结果：]]></Content></xml>
- ============================= 
-时间：2016-10-13 11:10:32
-操作：获取 access_token
-内容：{"access_token":"3T_-NV8HKpYu1EH7JuRGHGTDjPgZoG1R1k4R-WFfupatrFe2k9xdjC7v3RLlJPhHk6bXPpr_Sgf-yM1XDtb4qnzUdFgFc8C4CpIBvZz30RJMuxLGKO3ddBBN_b-nrKYBJRYfAIARZG","expires_in":7200}
- ============================= 
-时间：2016-10-13 11:10:33
-操作：获取 access_token
-内容：{"access_token":"3T_-NV8HKpYu1EH7JuRGHGTDjPgZoG1R1k4R-WFfupb4lMTAbTZ4S-1cdZ0RFrdErZWZAqKhLl-klvbxE-MKTK7N5LSbA0yNnR0BEfvN-xbKd182tqbq2w4xluAoqdA3IXGfAIAAPY","expires_in":7200}
- ============================= 
-时间：2016-10-13 11:10:33
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
-<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476350131</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[scancode_waitmsg]]></Event>
-<EventKey><![CDATA[scammsg]]></EventKey>
-<ScanCodeInfo><ScanType><![CDATA[qrcode]]></ScanType>
-<ScanResult><![CDATA[http://weixin.qq.com/r/_kTTy2PEBz54rSeo9xHo]]></ScanResult>
-</ScanCodeInfo>
-</xml>
- ============================= 
-时间：2016-10-13 11:10:30
-操作：获取 access_token
-内容：{"access_token":"K3nNuwxhx1IMa9FELXgDGzy-OgAn3Y7BnUlb9n9e4-eYlBH4jEAoQXMhZpINhHJdzzKkNm10bPpRVIrhMMZ9WFYZkZTi87ouPkPrw-T43ZvJTi1kDZV5pHkfUaqfI_obGPMgADAMVS","expires_in":7200}
- ============================= 
-时间：2016-10-13 11:10:30
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
-<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476350488</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[scancode_waitmsg]]></Event>
-<EventKey><![CDATA[scammsg]]></EventKey>
-<ScanCodeInfo><ScanType><![CDATA[qrcode]]></ScanType>
-<ScanResult><![CDATA[http://weixin.qq.com/r/_kTTy2PEBz54rSeo9xHo]]></ScanResult>
-</ScanCodeInfo>
-</xml>
- ============================= 
-时间：2016-10-13 11:10:30
-操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476350490]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[扫描方式：扫我有喜(qrcode),扫描结果：http://weixin.qq.com/r/_kTTy2PEBz54rSeo9xHo]]></Content></xml>
- ============================= 
-时间：2016-10-13 11:10:18
-操作：获取 access_token
-内容：{"access_token":"jKCfR64mkL4tyxMa6JC8u7-N7vIf4LBfNksG9DYNG3twRFiDA9YYXnl7TJ65bV6I3WQa6J3IVvJVmZwzi-RkAhWJ2RRLfrhWv50a3geTeZYEvGwiA260WrKmrKgtXh7mUKDfAHAFVO","expires_in":7200}
- ============================= 
-时间：2016-10-13 11:10:18
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
-<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476350537</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[scancode_push]]></Event>
-<EventKey><![CDATA[scaninto]]></EventKey>
-<ScanCodeInfo><ScanType><![CDATA[qrcode]]></ScanType>
-<ScanResult><![CDATA[http://weixin.qq.com/r/_kTTy2PEBz54rSeo9xHo]]></ScanResult>
-</ScanCodeInfo>
-</xml>
- ============================= 
-时间：2016-10-13 11:10:18
-操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476350538]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[休息，一会儿，马上回来！]]></Content></xml>
- ============================= 
-时间：2016-10-13 11:10:44
-操作：获取 access_token
-内容：{"access_token":"3HQZk_7SMZuBTo_8U7dG4xAs16rjMocGm4E_MK840_r6BzvulGpzz43gfdK3_fp2d_HrI5rz4tWLDw-u0-Um5wXRKopQIJIWoyCI5BHayYqlewGX_wWF9tEGuILzxeGnQEWeAGAGUM","expires_in":7200}
- ============================= 
-时间：2016-10-13 11:10:44
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
-<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476350622</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[scancode_push]]></Event>
-<EventKey><![CDATA[scaninto]]></EventKey>
-<ScanCodeInfo><ScanType><![CDATA[qrcode]]></ScanType>
-<ScanResult><![CDATA[http://weixin.qq.com/r/_kTTy2PEBz54rSeo9xHo]]></ScanResult>
-</ScanCodeInfo>
-</xml>
- ============================= 
-时间：2016-10-13 11:10:44
-操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476350624]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[休息，一会儿，马上回来！]]></Content></xml>
- ============================= 
-时间：2016-10-13 11:10:22
-操作：获取 access_token
-内容：{"access_token":"sWRPAJ1S6WDO6vgsqfI347MYjwhRKn63sf1M5eC1hYan2NV3V3h1dW9JvCfN-M2ePxj39rmb0Xv_5YDNCOjiwR5V59j1Hj3McDoL9QTJFFkFELiAFALKR","expires_in":7200}
- ============================= 
-时间：2016-10-13 11:10:22
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
-<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476350661</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[pic_weixin]]></Event>
-<EventKey><![CDATA[photoweixin]]></EventKey>
-<SendPicsInfo><Count>1</Count>
-<PicList><item><PicMd5Sum><![CDATA[511669c8af15bb1277beca1f1307dd65]]></PicMd5Sum>
-</item>
-</PicList>
-</SendPicsInfo>
-</xml>
- ============================= 
-时间：2016-10-13 11:10:22
-操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476350662]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[休息，一会儿，马上回来！]]></Content></xml>
- ============================= 
-时间：2016-10-13 11:10:23
-操作：获取 access_token
-内容：{"access_token":"sWRPAJ1S6WDO6vgsqfI347MYjwhRKn63sf1M5eC1hYaeHVuPgMSHryhBkMf4u4tyHKSh5v-3Zl2PGAhKiRWPckaEustGgvP3p9yuk-SU9PoEIYiAFALPF","expires_in":7200}
- ============================= 
-时间：2016-10-13 11:10:23
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
-<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476350661</CreateTime>
+<CreateTime>1476700322</CreateTime>
 <MsgType><![CDATA[image]]></MsgType>
-<PicUrl><![CDATA[http://mmbiz.qpic.cn/mmbiz_jpg/fKNEsXNic3ibAEvuo33uVx6FqwwR1Md0g0ic2WAgT9J5LmhaXc2xZ3sscAtD0Bc63aM3j7ADs934RicS5XauI0ZVgA/0]]></PicUrl>
-<MsgId>6340877806840590312</MsgId>
-<MediaId><![CDATA[hq-VIuoynP5K4A4P-lv4SjE2fObFjzVx3bi7R0qxC8xxwR6gj4jbQ3VpBDKHCt20]]></MediaId>
+<PicUrl><![CDATA[http://mmbiz.qpic.cn/mmbiz_jpg/fKNEsXNic3ibCgUOmOUVHhWpVf9lXK5021pW56a0fowxy0egnXCw2gYjRr9RNibibqlUTA3g5Bgng7vbvFvu4aVrGw/0]]></PicUrl>
+<MsgId>6342379589400340098</MsgId>
+<MediaId><![CDATA[_pR849-WpJ5vUvjn7YuuiaHZ8FjTNumHHrAQhUkut9_Zi931OczI9ts5jzj33nee]]></MediaId>
 </xml>
  ============================= 
-时间：2016-10-13 11:10:23
+时间：2016-10-17 12:10:04
 操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476350663]]></CreateTime><MsgType><![CDATA[image]]></MsgType><Image><MediaId><![CDATA[hq-VIuoynP5K4A4P-lv4SjE2fObFjzVx3bi7R0qxC8xxwR6gj4jbQ3VpBDKHCt20]]></MediaId></Image></xml>
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476700324]]></CreateTime><MsgType><![CDATA[image]]></MsgType><Image><MediaId><mediaid><![CDATA[_pR849-WpJ5vUvjn7YuuiaHZ8FjTNumHHrAQhUkut9_Zi931OczI9ts5jzj33nee]]></mediaid><picurl><![CDATA[http://mmbiz.qpic.cn/mmbiz_jpg/fKNEsXNic3ibCgUOmOUVHhWpVf9lXK5021pW56a0fowxy0egnXCw2gYjRr9RNibibqlUTA3g5Bgng7vbvFvu4aVrGw/0]]></picurl></MediaId></Image></xml>
  ============================= 
-时间：2016-10-13 11:10:38
-操作：获取 access_token
-内容：{"access_token":"sWRPAJ1S6WDO6vgsqfI347MYjwhRKn63sf1M5eC1hYZPlX5SE3Zb6zRa6Tyw99bHFYhGf_RlaQyk-0fwMJ_DDU4NMj_IPmy9jlcVSpPd1EoYEQiAFAEKW","expires_in":7200}
- ============================= 
-时间：2016-10-13 11:10:38
+时间：2016-10-17 12:10:30
 操作：接收
 内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
 <FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476350676</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[pic_sysphoto]]></Event>
-<EventKey><![CDATA[photosys]]></EventKey>
-<SendPicsInfo><Count>1</Count>
-<PicList><item><PicMd5Sum><![CDATA[8c7e8c4804bd29966936125ad4d782f6]]></PicMd5Sum>
-</item>
-</PicList>
-</SendPicsInfo>
-</xml>
- ============================= 
-时间：2016-10-13 11:10:38
-操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476350678]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[调用系统拍照！]]></Content></xml>
- ============================= 
-时间：2016-10-13 11:10:38
-操作：获取 access_token
-内容：{"access_token":"sWRPAJ1S6WDO6vgsqfI347MYjwhRKn63sf1M5eC1hYbpNPo8m98yd7trSpxUqv6ttYMPDIdDT97AL7Cr0KmM07CnLi9Uwp_qt7kgGB-nr9oOZXiAFATEC","expires_in":7200}
- ============================= 
-时间：2016-10-13 11:10:38
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
-<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476350676</CreateTime>
+<CreateTime>1476700408</CreateTime>
 <MsgType><![CDATA[image]]></MsgType>
-<PicUrl><![CDATA[http://mmbiz.qpic.cn/mmbiz_jpg/fKNEsXNic3ibAEvuo33uVx6FqwwR1Md0g0OvFL3K9NbhucjB6YBgjfB6znunFQH6jzZHxt97icoM9yWlue7mibdA6A/0]]></PicUrl>
-<MsgId>6340877871265099758</MsgId>
-<MediaId><![CDATA[MzaHNlNBO840E3ffLPntUhHREGUAirG3KF7GmzYy2Hp01ycCWI_h4DBcbvNhnure]]></MediaId>
+<PicUrl><![CDATA[http://mmbiz.qpic.cn/mmbiz_png/fKNEsXNic3ibCgUOmOUVHhWpVf9lXK5021JtG7iaHFbLHkdB28sd4zLqSmvnP6icVyr8hlHw705lRMQHYmn7wUQ2aQ/0]]></PicUrl>
+<MsgId>6342379958767527565</MsgId>
+<MediaId><![CDATA[vVKYe2PHnAyrx2h55PXU3Sa6W1gdaOjWjca9nMSq8i0QgKViecc4MHUtCky8Hpvy]]></MediaId>
 </xml>
  ============================= 
-时间：2016-10-13 11:10:39
+时间：2016-10-17 12:10:30
 操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476350679]]></CreateTime><MsgType><![CDATA[image]]></MsgType><Image><MediaId><![CDATA[MzaHNlNBO840E3ffLPntUhHREGUAirG3KF7GmzYy2Hp01ycCWI_h4DBcbvNhnure]]></MediaId></Image></xml>
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476700410]]></CreateTime><MsgType><![CDATA[image]]></MsgType><Image><MediaId><mediaid><![CDATA[vVKYe2PHnAyrx2h55PXU3Sa6W1gdaOjWjca9nMSq8i0QgKViecc4MHUtCky8Hpvy]]></mediaid><picurl><![CDATA[http://mmbiz.qpic.cn/mmbiz_png/fKNEsXNic3ibCgUOmOUVHhWpVf9lXK5021JtG7iaHFbLHkdB28sd4zLqSmvnP6icVyr8hlHw705lRMQHYmn7wUQ2aQ/0]]></picurl></MediaId></Image></xml>
  ============================= 
-时间：2016-10-13 11:10:48
-操作：获取 access_token
-内容：{"access_token":"IPY-QdfgAMaElajAAzVpXWqBvcN2lLrISP8gxoua_ortwPa41hB_xKeGtd3iKMyNFPXZB-RqFwQRXn1ZpaLCtKRw6LY7m3-K7QTbCKJ3oAXDb4SFATlO9PInox50bBb3SQQhAHAYWW","expires_in":7200}
+时间：2016-10-17 12:10:41
+操作：回复
+内容：<xml><ToUserName><![CDATA[]]></ToUserName><FromUserName><![CDATA[]]></FromUserName><CreateTime><![CDATA[1476700481]]></CreateTime><MsgType><![CDATA[image]]></MsgType><Image><MediaId><![CDATA[]]></MediaId></Image></xml>
  ============================= 
-时间：2016-10-13 11:10:48
+时间：2016-10-17 12:10:57
 操作：接收
 内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
 <FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476350687</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[CLICK]]></Event>
-<EventKey><![CDATA[diange]]></EventKey>
+<CreateTime>1476700496</CreateTime>
+<MsgType><![CDATA[image]]></MsgType>
+<PicUrl><![CDATA[http://mmbiz.qpic.cn/mmbiz_png/fKNEsXNic3ibCgUOmOUVHhWpVf9lXK5021JtG7iaHFbLHkdB28sd4zLqSmvnP6icVyr8hlHw705lRMQHYmn7wUQ2aQ/0]]></PicUrl>
+<MsgId>6342380336724649625</MsgId>
+<MediaId><![CDATA[UoHBzC0CJk1MCajb9_8NvtSJJASaq5fP954sAdSQanxjFBzD_gi6wPsOD5XUghHC]]></MediaId>
 </xml>
  ============================= 
-时间：2016-10-13 11:10:48
+时间：2016-10-17 12:10:57
 操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476350688]]></CreateTime><MsgType><![CDATA[music]]></MsgType><Music><Title><![CDATA[成全]]></Title><Description><![CDATA[这是我用(sui)心(bian)为你点播的一首歌]]></Description><MusicUrl><![CDATA[http://music.163.com/#/program?id=794490893]]></MusicUrl><HQMusicUrl><![CDATA[http://music.163.com/#/program?id=794490893]]></HQMusicUrl><ThumbMediaId><![CDATA[oCmCA6JW8AUym2t9uhqzeIzNHOLe7GNsO2fvhAsuUtI]]></ThumbMediaId></Music></xml>
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476700497]]></CreateTime><MsgType><![CDATA[image]]></MsgType><Image><MediaId><mediaid><![CDATA[UoHBzC0CJk1MCajb9_8NvtSJJASaq5fP954sAdSQanxjFBzD_gi6wPsOD5XUghHC]]></mediaid><picurl><![CDATA[http://mmbiz.qpic.cn/mmbiz_png/fKNEsXNic3ibCgUOmOUVHhWpVf9lXK5021JtG7iaHFbLHkdB28sd4zLqSmvnP6icVyr8hlHw705lRMQHYmn7wUQ2aQ/0]]></picurl></MediaId></Image></xml>
  ============================= 
-时间：2016-10-13 11:10:57
-操作：获取 access_token
-内容：{"access_token":"IPY-QdfgAMaElajAAzVpXWqBvcN2lLrISP8gxoua_orKOszO7NIxgjYmAzl82fFQR_LVvqoMtpJc6vxrzf6FUoWt3MVKlylfcw7-NhaVEaqvsE6Az1Y18xZP119ecG3vMPChAHAVYL","expires_in":7200}
- ============================= 
-时间：2016-10-13 11:10:57
+时间：2016-10-17 12:10:25
 操作：接收
 内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
 <FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476350695</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[location_select]]></Event>
-<EventKey><![CDATA[mylocation]]></EventKey>
-<SendLocationInfo><Location_X><![CDATA[30.539541244506836]]></Location_X>
-<Location_Y><![CDATA[104.06915283203125]]></Location_Y>
-<Scale><![CDATA[16]]></Scale>
-<Label><![CDATA[武侯区天府大道(天府五街地铁站北250米)]]></Label>
-<Poiname><![CDATA[[位置]]]></Poiname>
-</SendLocationInfo>
+<CreateTime>1476700644</CreateTime>
+<MsgType><![CDATA[image]]></MsgType>
+<PicUrl><![CDATA[http://mmbiz.qpic.cn/mmbiz_png/fKNEsXNic3ibCgUOmOUVHhWpVf9lXK5021JtG7iaHFbLHkdB28sd4zLqSmvnP6icVyr8hlHw705lRMQHYmn7wUQ2aQ/0]]></PicUrl>
+<MsgId>6342380972379809459</MsgId>
+<MediaId><![CDATA[qYbAS56tkvlRh98PDQo9A19KojvGwqRxsaRL7R0lSjVhep3Azc1CblXzUlidxIqT]]></MediaId>
 </xml>
  ============================= 
-时间：2016-10-13 11:10:57
+时间：2016-10-17 12:10:25
 操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476350697]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[休息，一会儿，马上回来！]]></Content></xml>
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476700645]]></CreateTime><MsgType><![CDATA[image]]></MsgType><Image><MediaId><![CDATA[qYbAS56tkvlRh98PDQo9A19KojvGwqRxsaRL7R0lSjVhep3Azc1CblXzUlidxIqT]]></MediaId></Image></xml>
  ============================= 
-时间：2016-10-13 11:10:57
-操作：获取 access_token
-内容：{"access_token":"IPY-QdfgAMaElajAAzVpXWqBvcN2lLrISP8gxoua_oodFcmYNCFlbPOBTxY8qV3FVrGGLD9MZ5Wxt-GFj2qRrkHLKWR1aWwDROkR6no8uf9nnkZ7Ov_uiZfbQcboO_doDOShAHAQBF","expires_in":7200}
- ============================= 
-时间：2016-10-13 11:10:57
+时间：2016-10-17 12:10:40
 操作：接收
 内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
 <FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476350695</CreateTime>
-<MsgType><![CDATA[location]]></MsgType>
-<Location_X>30.539541</Location_X>
-<Location_Y>104.069153</Location_Y>
-<Scale>16</Scale>
-<Label><![CDATA[武侯区天府大道(天府五街地铁站北250米)]]></Label>
-<MsgId>6340877952869478391</MsgId>
+<CreateTime>1476700659</CreateTime>
+<MsgType><![CDATA[image]]></MsgType>
+<PicUrl><![CDATA[http://mmbiz.qpic.cn/mmbiz_png/fKNEsXNic3ibCgUOmOUVHhWpVf9lXK5021JtG7iaHFbLHkdB28sd4zLqSmvnP6icVyr8hlHw705lRMQHYmn7wUQ2aQ/0]]></PicUrl>
+<MsgId>6342381036804318902</MsgId>
+<MediaId><![CDATA[wCRPiHa90QouXX_W7KBKsb8NEFe8ARghzSf5qUaxzRTQtxrl8fhBOHvMmrMNP_oX]]></MediaId>
 </xml>
  ============================= 
-时间：2016-10-13 11:10:57
+时间：2016-10-17 12:10:40
 操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476350697]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[你的位置信息：
- 经纬度：(30.539541,104.069153) 
- 地名:武侯区天府大道(天府五街地铁站北250米)
- 你的位置已暴露，注意人身安全！]]></Content></xml>
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476700660]]></CreateTime><MsgType><![CDATA[image]]></MsgType><Image><MediaId><![CDATA[wCRPiHa90QouXX_W7KBKsb8NEFe8ARghzSf5qUaxzRTQtxrl8fhBOHvMmrMNP_oX]]></MediaId></Image></xml>
  ============================= 
-时间：2016-10-13 11:10:11
-操作：获取 access_token
-内容：{"access_token":"3T_-NV8HKpYu1EH7JuRGHJf7a6M4v_rooux1howu3X7_zpgJPbGUGvN6tXeDDlT3oXMPqM6T7kR2ivkYMLmcdzg_UNsk_r9ZLDhZoi1fILXkq_MAOqg4NPI4P2wceCkBJXZhAFAWKM","expires_in":7200}
- ============================= 
-时间：2016-10-13 11:10:11
+时间：2016-10-17 12:10:41
 操作：接收
 内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
 <FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476350709</CreateTime>
-<MsgType><![CDATA[shortvideo]]></MsgType>
-<MediaId><![CDATA[A5VVdYRd0d2rooxi39gvgPUHvzauQ8tqMuboSFjPm_aHAFh_yknSVla4U-uML-yt]]></MediaId>
-<ThumbMediaId><![CDATA[GYnfFSdQ8zIEA03P37Yg9MaikzbXOlkmAxlpglmO2rb1-lKaywUE1q-m_VxIzdVA]]></ThumbMediaId>
-<MsgId>6340878012999020543</MsgId>
+<CreateTime>1476700660</CreateTime>
+<MsgType><![CDATA[image]]></MsgType>
+<PicUrl><![CDATA[http://mmbiz.qpic.cn/mmbiz_png/fKNEsXNic3ibCgUOmOUVHhWpVf9lXK5021JtG7iaHFbLHkdB28sd4zLqSmvnP6icVyr8hlHw705lRMQHYmn7wUQ2aQ/0]]></PicUrl>
+<MsgId>6342381041099286199</MsgId>
+<MediaId><![CDATA[Vs6ZmhfvL3iTv9HwOXyFcpaKqa_jVWIZ0SrjWiJvx4n1eqmVI7NHUYf4JEpW2PgJ]]></MediaId>
 </xml>
  ============================= 
-时间：2016-10-13 11:10:11
+时间：2016-10-17 12:10:41
 操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476350711]]></CreateTime><MsgType><![CDATA[video]]></MsgType><Video><MediaId><![CDATA[oCmCA6JW8AUym2t9uhqzeKtiYQzppXBMyn6U2k2IMmU]]></MediaId><Title><![CDATA[适合深夜一个人看的视频！]]></Title><Description><![CDATA[这是测试时用的一个视频文件，里面有你想要的，你懂的！！]]></Description></Video></xml>
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476700661]]></CreateTime><MsgType><![CDATA[image]]></MsgType><Image><MediaId><![CDATA[Vs6ZmhfvL3iTv9HwOXyFcpaKqa_jVWIZ0SrjWiJvx4n1eqmVI7NHUYf4JEpW2PgJ]]></MediaId></Image></xml>
  ============================= 
-时间：2016-10-13 11:10:29
-操作：获取 access_token
-内容：{"access_token":"3T_-NV8HKpYu1EH7JuRGHJf7a6M4v_rooux1howu3X5SfHggXfbwg79HiEyAh-3dKaM_oZ6LP_F8C5Jpmbu4YQh6J4TrpYUeh7lYghCMn5lEprr99P2ajZ0yLFM2oHjwPFUhAFASIX","expires_in":7200}
- ============================= 
-时间：2016-10-13 11:10:29
+时间：2016-10-17 12:10:42
 操作：接收
 内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
 <FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476350727</CreateTime>
-<MsgType><![CDATA[location]]></MsgType>
-<Location_X>30.539541</Location_X>
-<Location_Y>104.069153</Location_Y>
-<Scale>16</Scale>
-<Label><![CDATA[武侯区天府大道(天府五街地铁站北250米)]]></Label>
-<MsgId>6340878090308431881</MsgId>
+<CreateTime>1476700661</CreateTime>
+<MsgType><![CDATA[image]]></MsgType>
+<PicUrl><![CDATA[http://mmbiz.qpic.cn/mmbiz_png/fKNEsXNic3ibCgUOmOUVHhWpVf9lXK5021JtG7iaHFbLHkdB28sd4zLqSmvnP6icVyr8hlHw705lRMQHYmn7wUQ2aQ/0]]></PicUrl>
+<MsgId>6342381045394253497</MsgId>
+<MediaId><![CDATA[gKEwfSf16xpaN68XxnoPsIeqG28SArTnCRK0Iw8uveujpGv2QOE6HGRdTM20ay5x]]></MediaId>
 </xml>
  ============================= 
-时间：2016-10-13 11:10:29
+时间：2016-10-17 12:10:42
 操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476350729]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[你的位置信息：
- 经纬度：(30.539541,104.069153) 
- 地名:武侯区天府大道(天府五街地铁站北250米)
- 你的位置已暴露，注意人身安全！]]></Content></xml>
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476700662]]></CreateTime><MsgType><![CDATA[image]]></MsgType><Image><MediaId><![CDATA[gKEwfSf16xpaN68XxnoPsIeqG28SArTnCRK0Iw8uveujpGv2QOE6HGRdTM20ay5x]]></MediaId></Image></xml>
  ============================= 
-时间：2016-10-13 11:10:41
-操作：获取 access_token
-内容：{"access_token":"SDP0GVVkp_J5DJr_8Lmc4unrmeKBwk0zP3hg2VWIPRmeccElkiJe1QMTM9gyPKMwIGR4hMzZa1wvSZSxLmftl2W3oJI4vkirbOs9eS36Gyb4q9_ok2iGCh9Vqh6hYEtiJLWdADAVXI","expires_in":7200}
- ============================= 
-时间：2016-10-13 11:10:41
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_67ddb97cc7fc]]></ToUserName>
-<FromUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></FromUserName>
-<CreateTime>1476351038</CreateTime>
-<MsgType><![CDATA[text]]></MsgType>
-<Content><![CDATA[fdgdf]]></Content>
-<MsgId>6340879426032408670</MsgId>
-</xml>
- ============================= 
-时间：2016-10-13 11:10:41
-操作：回复
-内容：<xml><ToUserName><![CDATA[oGElkwSXfwLpy7DXrufmjzqOJlsQ]]></ToUserName><FromUserName><![CDATA[gh_67ddb97cc7fc]]></FromUserName><CreateTime><![CDATA[1476351041]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[fdgdf(小孩子不要乱发消息哦)]]></Content></xml>
- ============================= 
-时间：2016-10-13 22:10:28
-操作：获取 access_token
-内容：{"access_token":"0zny8knhBd-HM8vDTfba4KIJBYxxyQdoPzgwkgkYpJWDSsH7XpqbqygQ1vOud-QOBNNiAi-lbGn4Zsfgz7OmMDGtqiOsGkrlOQcXjpECgjmSFOJ-5s5XWKxxUDYVO1KgOEJfAHAFVA","expires_in":7200}
- ============================= 
-时间：2016-10-13 22:10:44
-操作：获取用户基本信息
-内容：{"total":2,"count":2,"data":{"openid":["oLA-5v9JKdKz_Unir3urFleTlVj4","oLA-5v_Y2oc9DRIabapSpEeNbFzE"]},"next_openid":"oLA-5v_Y2oc9DRIabapSpEeNbFzE"}
- ============================= 
-时间：2016-10-13 22:10:40
-操作：获取用户基本信息
-内容：{"subscribe":1,"openid":"oLA-5v9JKdKz_Unir3urFleTlVj4","nickname":"浅水很深","sex":1,"language":"zh_CN","city":"绵阳","province":"四川","country":"中国","headimgurl":"http:\/\/wx.qlogo.cn\/mmopen\/G6axZpedw1uLNT8STcZ5cY6AhJmZrCWtKFOOMDDEpQhl7ztibN2Uqkol5ic3ImIOVZLh9QHJ0mXE1UPUMOGhuE1avI68bicXQb7\/0","subscribe_time":1476348356,"remark":"","groupid":0,"tagid_list":[]}
- ============================= 
-时间：2016-10-13 22:10:44
-操作：获取用户基本信息
-内容：{"subscribe":1,"openid":"oLA-5v9JKdKz_Unir3urFleTlVj4","nickname":"浅水很深","sex":1,"language":"zh_CN","city":"绵阳","province":"四川","country":"中国","headimgurl":"http:\/\/wx.qlogo.cn\/mmopen\/G6axZpedw1uLNT8STcZ5cY6AhJmZrCWtKFOOMDDEpQhl7ztibN2Uqkol5ic3ImIOVZLh9QHJ0mXE1UPUMOGhuE1avI68bicXQb7\/0","subscribe_time":1476348356,"remark":"","groupid":0,"tagid_list":[]}
- ============================= 
-时间：2016-10-13 23:10:27
-操作：获取用户基本信息
-内容：{"subscribe":1,"openid":"oLA-5v9JKdKz_Unir3urFleTlVj4","nickname":"浅水很深","sex":1,"language":"zh_CN","city":"绵阳","province":"四川","country":"中国","headimgurl":"http:\/\/wx.qlogo.cn\/mmopen\/G6axZpedw1uLNT8STcZ5cY6AhJmZrCWtKFOOMDDEpQhl7ztibN2Uqkol5ic3ImIOVZLh9QHJ0mXE1UPUMOGhuE1avI68bicXQb7\/0","subscribe_time":1476348356,"remark":"fuli","groupid":0,"tagid_list":[]}
- ============================= 
-时间：2016-10-13 23:10:37
-操作：获取用户基本信息
-内容：{"tag":{"id":100,"name":"\\u5b9e\\u9a8c\\u697c"}}
- ============================= 
-时间：2016-10-13 23:10:36
-操作：获取用户基本信息
-内容：{"tag":{"id":101,"name":"\\u5b9e\\u9a8c\\u697c"}}
- ============================= 
-时间：2016-10-13 23:10:57
-操作：获取用户基本信息
-内容：{"tag":{"id":102,"name":"\\u5b9e\\u9a8c\\u697c"}}
- ============================= 
-时间：2016-10-13 23:10:00
-操作：获取用户基本信息
-内容：{"tag":{"id":103,"name":"\\u5b9e\\u9a8c\\u697c"}}
- ============================= 
-时间：2016-10-13 23:10:10
-操作：获取用户基本信息
-内容：{"tags":[{"id":2,"name":"星标组","count":0},{"id":100,"name":"\\u5b9e\\u9a8c\\u697c","count":0},{"id":101,"name":"\\u5b9e\\u9a8c\\u697c","count":0},{"id":102,"name":"\\u5b9e\\u9a8c\\u697c","count":0},{"id":103,"name":"\\u5b9e\\u9a8c\\u697c","count":0}]}
- ============================= 
-时间：2016-10-13 23:10:06
-操作：获取用户基本信息
-内容：{"tag":{"id":104,"name":"实验楼"}}
- ============================= 
-时间：2016-10-13 23:10:39
-操作：获取用户基本信息
-内容：{"tags":[{"id":2,"name":"星标组","count":0},{"id":100,"name":"\\u5b9e\\u9a8c\\u697c","count":0},{"id":101,"name":"\\u5b9e\\u9a8c\\u697c","count":0},{"id":102,"name":"\\u5b9e\\u9a8c\\u697c","count":0},{"id":103,"name":"\\u5b9e\\u9a8c\\u697c","count":0},{"id":104,"name":"实验楼","count":0}]}
- ============================= 
-时间：2016-10-14 03:10:21
-操作：接入验证
-内容：6724336165126503369
- ============================= 
-时间：2016-10-14 03:10:36
-操作：接入验证
-内容：4194541131043814269
- ============================= 
-时间：2016-10-14 03:10:39
-操作：接入验证
-内容：8445252307124304759
- ============================= 
-时间：2016-10-14 03:10:06
-操作：删除标签
-内容：{"errcode":42001,"errmsg":"access_token expired hint: [d1oAra0224rsz4!]"}
- ============================= 
-时间：2016-10-14 03:10:06
-操作：删除标签
-内容：{"errcode":42001,"errmsg":"access_token expired hint: [WnAMuA0225rsz4!]"}
- ============================= 
-时间：2016-10-14 03:10:11
-操作：获取 access_token
-内容：{"access_token":"vMun3RRfJaCugRZa3JY529EaLRwB15_t1-w27RcipCtt16W4SOteICjf2eHL2WbANWEGoQgw0dNbI0uHlPnM6nhTtLYoFTG04g1HxQi12D4IbmcscOAKKg7KJSsF9_xVVHLbAFAMYC","expires_in":7200}
- ============================= 
-时间：2016-10-14 03:10:11
-操作：接收
-内容：
- ============================= 
-时间：2016-10-14 03:10:11
-操作：回复
-内容：<xml><ToUserName><![CDATA[]]></ToUserName><FromUserName><![CDATA[]]></FromUserName><CreateTime><![CDATA[1476410291]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[我迷路了，待会儿再说]]></Content></xml>
- ============================= 
-时间：2016-10-14 03:10:57
+时间：2016-10-17 12:10:42
 操作：接收
 内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
 <FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476410335</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[CLICK]]></Event>
-<EventKey><![CDATA[diange]]></EventKey>
+<CreateTime>1476700661</CreateTime>
+<MsgType><![CDATA[image]]></MsgType>
+<PicUrl><![CDATA[http://mmbiz.qpic.cn/mmbiz_png/fKNEsXNic3ibCgUOmOUVHhWpVf9lXK5021JtG7iaHFbLHkdB28sd4zLqSmvnP6icVyr8hlHw705lRMQHYmn7wUQ2aQ/0]]></PicUrl>
+<MsgId>6342381045394253498</MsgId>
+<MediaId><![CDATA[vVKYe2PHnAyrx2h55PXU3by6RUAWFnAy8Qw71Ed8lvlTMtrWkEYJk684GBYLd5Hn]]></MediaId>
 </xml>
  ============================= 
-时间：2016-10-14 03:10:57
+时间：2016-10-17 12:10:42
 操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476410337]]></CreateTime><MsgType><![CDATA[music]]></MsgType><Music><Title><![CDATA[成全]]></Title><Description><![CDATA[这是我用(sui)心(bian)为你点播的一首歌]]></Description><MusicUrl><![CDATA[http://music.163.com/#/program?id=794490893]]></MusicUrl><HQMusicUrl><![CDATA[http://music.163.com/#/program?id=794490893]]></HQMusicUrl><ThumbMediaId><![CDATA[oCmCA6JW8AUym2t9uhqzeIzNHOLe7GNsO2fvhAsuUtI]]></ThumbMediaId></Music></xml>
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476700662]]></CreateTime><MsgType><![CDATA[image]]></MsgType><Image><MediaId><![CDATA[vVKYe2PHnAyrx2h55PXU3by6RUAWFnAy8Qw71Ed8lvlTMtrWkEYJk684GBYLd5Hn]]></MediaId></Image></xml>
  ============================= 
-时间：2016-10-14 04:10:24
+时间：2016-10-17 12:10:43
 操作：接收
 内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
 <FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476410335</CreateTime>
-<MsgType><![CDATA[event]]></MsgType>
-<Event><![CDATA[CLICK]]></Event>
-<EventKey><![CDATA[diange]]></EventKey>
+<CreateTime>1476700662</CreateTime>
+<MsgType><![CDATA[image]]></MsgType>
+<PicUrl><![CDATA[http://mmbiz.qpic.cn/mmbiz_png/fKNEsXNic3ibCgUOmOUVHhWpVf9lXK5021JtG7iaHFbLHkdB28sd4zLqSmvnP6icVyr8hlHw705lRMQHYmn7wUQ2aQ/0]]></PicUrl>
+<MsgId>6342381049689220796</MsgId>
+<MediaId><![CDATA[Tbxpe_LeI7cl4K5kFOTkTucCIC0AM_9jdMujgV2aY-Gyi6gZ1WIxBfnkYiIEIfGc]]></MediaId>
 </xml>
  ============================= 
-时间：2016-10-14 04:10:24
+时间：2016-10-17 12:10:43
 操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476411324]]></CreateTime><MsgType><![CDATA[music]]></MsgType><Music><Title><![CDATA[成全]]></Title><Description><![CDATA[这是我用(sui)心(bian)为你点播的一首歌]]></Description><MusicUrl><![CDATA[http://music.163.com/#/program?id=794490893]]></MusicUrl><HQMusicUrl><![CDATA[http://music.163.com/#/program?id=794490893]]></HQMusicUrl><ThumbMediaId><![CDATA[oCmCA6JW8AUym2t9uhqzeIzNHOLe7GNsO2fvhAsuUtI]]></ThumbMediaId></Music></xml>
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476700663]]></CreateTime><MsgType><![CDATA[image]]></MsgType><Image><MediaId><![CDATA[Tbxpe_LeI7cl4K5kFOTkTucCIC0AM_9jdMujgV2aY-Gyi6gZ1WIxBfnkYiIEIfGc]]></MediaId></Image></xml>
  ============================= 
-时间：2016-10-14 07:10:22
-操作：接收
-内容：
- ============================= 
-时间：2016-10-14 07:10:22
-操作：回复
-内容：<xml><ToUserName><![CDATA[]]></ToUserName><FromUserName><![CDATA[]]></FromUserName><CreateTime><![CDATA[1476424222]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[我迷路了，待会儿再说]]></Content></xml>
- ============================= 
-时间：2016-10-14 11:10:27
-操作：接入验证
-内容：5149993805280309133
- ============================= 
-时间：2016-10-14 11:10:47
-操作：接入验证
-内容：2429304036674764795
- ============================= 
-时间：2016-10-14 11:10:28
-操作：接入验证
-内容：3676472859981774550
- ============================= 
-时间：2016-10-14 12:10:06
+时间：2016-10-17 12:10:43
 操作：接收
 内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
 <FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476439742</CreateTime>
-<MsgType><![CDATA[text]]></MsgType>
-<Content><![CDATA[佛挡杀佛的]]></Content>
-<MsgId>6341260406822303281</MsgId>
+<CreateTime>1476700662</CreateTime>
+<MsgType><![CDATA[image]]></MsgType>
+<PicUrl><![CDATA[http://mmbiz.qpic.cn/mmbiz_png/fKNEsXNic3ibCgUOmOUVHhWpVf9lXK5021JtG7iaHFbLHkdB28sd4zLqSmvnP6icVyr8hlHw705lRMQHYmn7wUQ2aQ/0]]></PicUrl>
+<MsgId>6342381049689220797</MsgId>
+<MediaId><![CDATA[qYbAS56tkvlRh98PDQo9A7K3EINl7iaxTne38rUcPQ7E7QqboVpI8pS_KV1PcIk4]]></MediaId>
 </xml>
  ============================= 
-时间：2016-10-14 12:10:06
+时间：2016-10-17 12:10:43
 操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476439746]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[佛挡杀佛的(小孩子不要乱发消息哦)]]></Content></xml>
- ============================= 
-时间：2016-10-14 12:10:20
-操作：接收
-内容：<xml><ToUserName><![CDATA[gh_9ce7b64359dd]]></ToUserName>
-<FromUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></FromUserName>
-<CreateTime>1476439756</CreateTime>
-<MsgType><![CDATA[text]]></MsgType>
-<Content><![CDATA[hello ，实验楼]]></Content>
-<MsgId>6341260466951845428</MsgId>
-</xml>
- ============================= 
-时间：2016-10-14 12:10:20
-操作：回复
-内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476439760]]></CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[hello ，实验楼(小孩子不要乱发消息哦)]]></Content></xml>
+内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476700663]]></CreateTime><MsgType><![CDATA[image]]></MsgType><Image><MediaId><![CDATA[qYbAS56tkvlRh98PDQo9A7K3EINl7iaxTne38rUcPQ7E7QqboVpI8pS_KV1PcIk4]]></MediaId></Image></xml>
  ============================= 
