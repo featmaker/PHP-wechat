@@ -779,5 +779,644 @@ $wechatObj->image($imageInfo['mediaid'])->reply();
 
 ![此处输入图片的描述](https://dn-anything-about-doc.qbox.me/document-uid108299labid2199timestamp1476700799287.png/wm)
 
-同理，你也可以回复任意视频，语音等媒体消息。
+同理，你也可以回复任意视频，语音等媒体消息。通过 `getRecType()` 获取消息的类型，可以做出对应的回应。
 
+以上内容都是讲的普通消息的接受，在微信公众平台中，还有一种特殊的消息：事件（event）。根据开发者文档描述，事件大致分为六种：
+
+> [1 关注/取消关注事件](https://mp.weixin.qq.com/wiki?action=doc&id=mp1421140454&t=0.5952282574097256&token=&lang=zh_CN#1)
+>
+> [2 扫描带参数二维码事件](https://mp.weixin.qq.com/wiki?action=doc&id=mp1421140454&t=0.5952282574097256&token=&lang=zh_CN#2)
+>
+> [3 上报地理位置事件](https://mp.weixin.qq.com/wiki?action=doc&id=mp1421140454&t=0.5952282574097256&token=&lang=zh_CN#3)
+>
+> [4 自定义菜单事件](https://mp.weixin.qq.com/wiki?action=doc&id=mp1421140454&t=0.5952282574097256&token=&lang=zh_CN#4)
+>
+> [5 点击菜单拉取消息时的事件推送](https://mp.weixin.qq.com/wiki?action=doc&id=mp1421140454&t=0.5952282574097256&token=&lang=zh_CN#5)
+>
+> [6 点击菜单跳转链接时的事件推送](https://mp.weixin.qq.com/wiki?action=doc&id=mp1421140454&t=0.5952282574097256&token=&lang=zh_CN#6)
+
+这部分内容，大家就自行去查阅开发者文档，这里不再详细讲解。我提供一个方法可以获取事件推送：
+
+```php
+//获取事件推送
+	public function getRecEvent()
+	{
+		if (isset($this->receive['Event'])) {
+			$event['event'] = $this->receive['Event'];
+		}
+		if (isset($this->receive['EventKey'])) {
+			$event['key'] = $this->receive['EventKey'];
+		}
+		if (isset($this->receive['Ticket'])) {
+			$event['ticket'] = $this->receive['Ticket'];
+		}
+		if (isset($event) && !empty($event)) {
+			return $event;
+		} else {
+			return false;
+		}
+	}
+```
+
+好了，关于消息接收部分我就讲到这里，内容不是很深，量也不是很大， 但是足够让你有对消息处理有了基本的了解，其他没讲到的内容，大家自行去查阅官方开发手册学习。
+
+---
+
+### 2.2 素材管理
+
+**临时素材** 
+
+> 公众号经常有需要用到一些临时性的多媒体素材的场景，例如在使用接口特别是发送消息时，对多媒体文件、多媒体消息的获取和调用等操作，是通过media_id来进行的。素材管理接口对所有认证的订阅号和服务号开放。通过本接口，公众号可以新增临时素材（即上传临时多媒体文件）。
+
+有以下几点需要注意：
+
+> 1、对于临时素材，每个素材（media_id）会在开发者上传或粉丝发送到微信服务器3天后自动删除（所以用户发送给开发者的素材，若开发者需要，应尽快下载到本地），以节省服务器资源。
+>
+> 2、media_id是可复用的。
+>
+> 3、素材的格式大小等要求与公众平台官网一致。具体是，图片大小不超过2M，支持png/jpeg/jpg/gif格式，语音大小不超过5M，长度不超过60秒，支持mp3/amr格式
+>
+> 4、需使用https调用本接口。
+
+素材管理部分，如果通过公众号后台的界面操作是很方便的，如果使用代码实现，就稍微有点麻烦，不过这也是我们学习他的原因。
+
+因为涉及到素材管理的API调用，所以我们这里还需要定义这些API的调用url。在定义类常量部分，添加一下内容：
+
+```php
+	//素材管理接口
+	const MEDIA_UPLOAD_URL = 'media/upload?';	//新增临时素材
+	const MEDIA_GET_URL = 'media/get?';		//获取临时素材
+	const MATERIAL_ADDNEWS_URL = 'material/add_news?';		//新增永久图文素材
+	const MEDIA_ADDIMG_URL = 'media/uploadimg?';		//新增永久图片素材
+	const MATERIAL_ADDMATERIAL_URL = 'material/add_material?';		//新增其他类型永久素材
+	const MATERIAL_GETMATERIAL_URL = 'material/get_material?';		//获取永久素材
+	const MATERIAL_DELMATERIAL_URL = 'material/del_material?';		//删除永久素材
+	const MATERIAL_UPDATENEWS_URL = 'material/update_news?';		//修改永久素材
+	const MATERIAL_COUNT_URL = 'material/get_materialcount?';		//获取永久素材总数
+```
+
+接口地址已经定义好了，下面我们开始直接使用：
+
+```php
+	//上传临时素材
+	public function uploadTmp($type,$data)
+	{
+		$url = self::API_URL_PREFIX . self::MEDIA_UPLOAD_URL . 'access_token=' . $this->access_token . '&type=' . $type;
+		$result = $this->http_post($url, $data, true);
+		if ($result) {
+			$json = (array)json_decode($result);
+			if (!$json || !empty($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				return false;
+			}
+			if ($this->dubug) {
+				$this->log($result,'上传临时素材');
+			}
+			return $json;
+		} else {
+			return false;
+		}
+	}
+```
+
+因为这是新增素材，所以需要上传文件，使用post请求。所以我定义了一个 `http_post()` 方法来实现post上传文件和传输数据。
+
+```php
+	/**
+	 * POST 请求
+	 * @param string $url
+	 * @param array $param
+	 * @param boolean $post_file 是否文件上传
+	 * @return string content
+	 */
+	private function http_post($url,$param,$post_file=false){
+		$oCurl = curl_init();
+		if(stripos($url,"https://")!==FALSE){
+			curl_setopt($oCurl, CURLOPT_SSL_VERIFYPEER, FALSE);
+			curl_setopt($oCurl, CURLOPT_SSL_VERIFYHOST, false);
+			curl_setopt($oCurl, CURLOPT_SSLVERSION, 1); //CURL_SSLVERSION_TLSv1
+		}
+		if (PHP_VERSION_ID >= 50500 && class_exists('\CURLFile')) {
+				$is_curlFile = true;
+		} else {
+			$is_curlFile = false;
+				if (defined('CURLOPT_SAFE_UPLOAD')) {
+					curl_setopt($oCurl, CURLOPT_SAFE_UPLOAD, false);
+				}
+		}
+		if (is_string($param)) {
+					$strPOST = $param;
+			}elseif($post_file) {
+					if($is_curlFile) {
+						foreach ($param as $key => $val) {
+								if (substr($val, 0, 1) == '@') {
+									$param[$key] = new \CURLFile(realpath(substr($val,1)));
+								} else {
+									$param[$key] = $val;
+								}
+						}
+					}
+			$strPOST = $param;
+		} else {
+			$aPOST = array();
+			foreach($param as $key=>$val){
+				$aPOST[] = $key."=".urlencode($val);
+			}
+			$strPOST =  join("&", $aPOST);
+		}
+		curl_setopt($oCurl, CURLOPT_URL, $url);
+		curl_setopt($oCurl, CURLOPT_RETURNTRANSFER, 1 );
+		curl_setopt($oCurl, CURLOPT_POST,true);
+		curl_setopt($oCurl, CURLOPT_POSTFIELDS,$strPOST);
+		// var_dump($strPOST);die;
+		$sContent = curl_exec($oCurl);
+		// var_dump($sContent);die;
+		$aStatus = curl_getinfo($oCurl);
+		curl_close($oCurl);
+		if(intval($aStatus["http_code"])==200){
+			return $sContent;
+		}else{
+			return false;
+		}
+	}
+
+```
+
+上面主要还是利用curl进行网络请求的操作，可以模拟表单使用post请求上传文件，也可以直接post普通数据。如果需要上传文件，参数必须为['@文件地址']，不清楚的地方，大家自己去查阅curl的相关用法，这里不再赘述。
+
+接下来， 就可以获取临时素材：
+
+```php
+	//获取临时素材
+	public function getTmp($mediaid)
+	{
+		$url = self::API_URL_PREFIX . self::MEDIA_GET_URL . 'access_token=' . $this->access_token . '&media_id=' . $mediaid;
+		$result = $this->http_get($url);
+		if ($result)
+		{
+			if (is_string($result)) {
+				$json = json_decode($result,true);
+				if (isset($json['errcode'])) {
+					$this->errCode = $json['errcode'];
+					$this->errMsg = $json['errmsg'];
+					return false;
+				}
+			}
+			if ($this->dubug) {
+				$this->log($result,'获取临时素材');
+			}
+			return $result;
+		}
+		return false;
+	}
+
+```
+
+此外，其他几种素材管理的代码我也一起贴出来，其实原理都差不多，只需要改一下url地址就行，稍微查看一下开发者手册，就能知道这些方法的作用：
+
+```php
+	//新增永久素材(其他类型需申明，视频素材需要描述数据)
+	public function addMaterial($type,$data,$is_video=false,$info=[])
+	{
+		switch ($type) {
+			case 'news':
+				$url = self::API_URL_PREFIX . self::MATERIAL_ADDNEWS_URL . 'access_token=' . $this->access_token;
+				$result = $this->http_post($url, json_encode($data));
+				break;
+			case 'image':
+				$url = self::API_URL_PREFIX . self::MEDIA_ADDIMG_URL . 'access_token=' . $this->access_token;
+				$result = $this->http_post($url, $data, true);
+				break;
+			default:
+				if ($is_video) {
+					$data['description'] = json_encode($info);
+				}
+				$url = self::API_URL_PREFIX . self::MATERIAL_ADDMATERIAL_URL . 'access_token=' . $this->access_token . '&type=' . $type;
+				$result = $this->http_post($url, $data, true);
+				break;
+		}
+		
+		if ($result) {
+			$json = (array)json_decode($result);
+			if (!$json || !empty($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				return false;
+			}
+			if ($this->dubug) {
+				$this->log($result,'新增永久素材');
+			}
+			return $json;
+		} else {
+			return false;
+		}
+	}
+	
+	//获取永久素材
+	public function getMaterial($mediaid)
+	{
+		$url = self::API_URL_PREFIX . self::MATERIAL_GETMATERIAL_URL . 'access_token=' . $this->access_token;
+		$data['media_id'] = $mediaid;
+		$result = $this->http_post($url, json_encode($data), false);
+		if ($result)
+		{
+			if (is_string($result)) {
+				$json = json_decode($result,true);
+				if ($json) {
+					if (isset($json['errcode'])) {
+						$this->errCode = $json['errcode'];
+						$this->errMsg = $json['errmsg'];
+						return false;
+					}
+				}
+			if ($this->dubug) {
+				$this->log($result,'获取永久素材');
+			}
+			return $result;
+			} else {
+				return false;
+			}
+		}
+	}
+	
+		//删除永久素材
+	public function delMaterial($mediaid)
+	{
+		$url = self::API_URL_PREFIX . self::MATERIAL_DELMATERIAL_URL . 'access_token=' . $this->access_token;
+		$data['media_id'] = $mediaid;
+		$result = $this->http_post($url, json_encode($data), false);
+		if ($result)
+		{
+			$json = json_decode($result,true);
+			if (!$json || !empty($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				if ($this->errCode == 0) {
+					if ($this->dubug) {
+						$this->log($result,'删除永久素材');
+					}
+					return true;
+				} else {
+					return false;
+				}
+			}
+			return false;
+		}
+		return false;
+	}
+	
+		//修改永久图文素材
+	public function updateNews($mediaid,$index,$data)
+	{
+		$data['media_id'] = $mediaid;
+		$data['index'] = $index;
+		$url = self::API_URL_PREFIX . self::MATERIAL_UPDATENEWS_URL . 'access_token=' . $this->access_token;
+		$result = $this->http_post($url, json_encode($data));
+		if ($result)
+		{
+			$json = json_decode($result,true);
+			if (!$json || !empty($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				return false;
+			}
+			if ($this->dubug) {
+				$this->log($result,'修改永久图文素材');
+			}
+			return $json;
+		}
+		return false;
+	}
+
+	//获取素材列表
+	public function getMaterialList($type,$offset,$count)
+	{
+		$url = self::API_URL_PREFIX . self::MATERIAL_LIST_URL . 'access_token=' . $this->access_token;
+		$param = ['type'=>$type,'offset'=>$offset,'count'=>$count];
+		$result = $this->http_post($url, json_encode($param));
+		if ($result)
+		{
+			$json = json_decode($result,true);
+			if (!$json || !empty($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				return false;
+			}
+			if ($this->dubug) {
+				$this->log($result,'获取永久素材列表');
+			}
+			return $json;
+		}
+		return false;
+	}
+
+	//获取永久素材总数
+	public function getLongCount()
+	{
+		$url = self::API_URL_PREFIX . self::MATERIAL_COUNT_URL . 'access_token=' . $this->access_token;
+		$result = $this->http_get($url);
+		if ($result)
+		{
+			$json = json_decode($result,true);
+			if (isset($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				return false;
+			}
+			if ($this->dubug) {
+				$this->log($result,'新增永久素材总数');
+			}
+			return $json;
+		}
+		return false;，
+	}
+```
+
+这些功能在开发者手册里都有介绍，而且上面的代码都类似，看着量很大，其实没有什么难度。仔细观察一下上面的代码，是不是有很大的代码冗余：
+
+```php
+if ($result)
+{
+	$json = json_decode($result,true);
+	if (isset($json['errcode'])) {
+		$this->errCode = $json['errcode'];
+		$this->errMsg = $json['errmsg'];
+		return false;
+	}
+  	//每次只有这里有变化
+	if ($this->dubug) {
+		$this->log($result,'新增永久素材总数');
+	}
+	return $json;
+}
+return false;
+}
+```
+
+所以，我们因该想办法把这一部分提取出来，做成一个公共的方法：
+
+```php
+	//检查返回结果
+	public function checkResult($result)
+	{
+		if ($result)
+		{
+			$json = json_decode($result,true);
+			if (isset($json['errcode'])) {
+				$this->errCode = $json['errcode'];
+				$this->errMsg = $json['errmsg'];
+				if ($this->errMsg == 'ok') {
+					return true;
+				} else {
+					return false;
+				}
+			}
+			return $json;
+		}
+		return false;
+	}
+```
+
+之前用到这段代码的地方都做对应的修改，我就拿上面的：`获取永久素材总数 getLongCoun()` 方法做一个修改的实例，其他方法自行对比做修改：
+
+```php
+	//获取永久素材总数
+	public function getLongCount()
+	{
+		$url = self::API_URL_PREFIX . self::MATERIAL_COUNT_URL . 'access_token=' . $this->access_token;
+		$result = $this->http_get($url);
+      if ($this->dubug) {
+        $this->log($result,'新增永久素材总数');
+      }
+		return $this->checkResult($result);
+	}
+```
+
+素材管理的其他方法，也做类似修改，只需要变化打印日志的信息就行。这样一来，就可以很大程度上减少代码冗余度。
+
+关于这部分的测试内容，以后再讲解。你也可以自己查看开发手册，测试这些方法的功能。
+
+---
+
+**菜单管理**
+
+开发者文档相关部分介绍：[自定义菜单](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421141013&token=&lang=**zh_CN**)
+这部分可以让你直观的看到效果，菜单管理不外乎几个功能：创建菜单，查询菜单信息，删除菜单。其实方法也非常简单，我就直接贴代码了：
+
+首先，定义API接口url：
+
+```php
+	//菜单管理
+	const MENU_CREATE_URL = 'menu/create?';
+	const MENU_GET_URL = 'menu/get?';
+	const MENU_DELETE_URL = 'menu/delete?';
+```
+
+```php
+	//============菜单管理
+	//
+	//自定义菜单
+	public function createMenu($data)
+	{
+		$url = self::API_URL_PREFIX . self::MENU_CREATE_URL . 'access_token=' . $this->access_token;
+		// 用PHP的json_encode来处理中文的时候, 中文都会被编码, 变成不可读的, 类似”\u***”的格式, 还会在一定程度上增加传输的数据量.而在PHP5.4, 这个问题终于得以解决, Json新增了一个选项: JSON_UNESCAPED_UNICODE, 故名思议, 就是说, Json不要编码Unicode.
+		$result = $this->http_post($url, json_encode($data,JSON_UNESCAPED_UNICODE));
+		if ($this->dubug) {
+			$this->log($result,'创建自定义菜单');
+		}
+		return $this->checkResult($result);
+	}
+
+	//查询自定义菜单
+	public function getMenuInfo()
+	{
+		$url = self::API_URL_PREFIX . self::MENU_GET_URL . 'access_token=' . $this->access_token;
+		$result = $this->http_get($url);
+		if ($this->dubug) {
+			$this->log($result,'查询自定义菜单');
+		}
+		return $this->checkResult($result);
+	}
+
+	//删除自定义菜单
+	public function delMenu()
+	{
+		$url = self::API_URL_PREFIX . self::MENU_DELETE_URL . 'access_token=' . $this->access_token;
+		$result = $this->http_get($url);
+		if ($this->dubug) {
+			$this->log($result,'删除自定义菜单');
+		}
+		return $this->checkResult($result);
+	}
+```
+
+因为开发者服务器与微信服务器之间通过json数据格式传递信息，所以，一切的信息都需要用 json_encode() 将数据编码为json格式，然后使用 `http_post()` 方式传输。
+
+这些方法的用途都可以在开发者文档中可以查阅，功能的测试将留在下一个实验进行。
+
+---
+
+**用户管理**
+
+开发者文档相关部分：[用户管理](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421140837&token=&lang=zh_CN)
+
+这一部分，不能直观的看到效果，但是我们的确可以对用户进行操作，包括标签，备注等操作。我根据开发者文档的接口功能，写了如下方法，大家有兴趣可以看看：
+
+首先添加用户管理的相关API接口地址：
+
+```php
+	//用户管理
+	const TAGS_CREATE_URL = 'tags/create?';
+	const TAGS_GET_URL = 'tags/get?';
+	const TAGS_UPDATE_URL = 'tags/update?';
+	const TAGS_DELETE_URL = 'tags/delete?';
+	const TAGS_FANS_URL = 'user/tag/get?';
+	const TAGS_BATCH_URL = 'tags/members/batchtagging?';
+	const TAGS_CANCLE_URL = 'tags/members/batchuntagging?';
+	const TAGS_LIST_URL = 'tags/getidlist?';
+	const USER_INFO_URL = 'user/info?';
+	const USERS_INFO_URL = 'user/info/batchget?';
+	const USER_LIST_URL = 'user/get?';
+	const USER_UPDATE_URL = 'user/info/updateremark?';
+	const USER_BLACKLIST_URL = 'tags/members/getblacklist?';
+	const USER_BLACK_URL = 'tags/members/batchblacklist?';
+	const USER_UNBLACK_URL = 'tags/members/batchunblacklist?';
+```
+
+```php
+/=================用户管理
+
+	//获取用户基本信息
+	public function getUserInfo($openid)
+	{
+		$url = self::API_URL_PREFIX . self::USER_INFO_URL . 'access_token=' . $this->access_token . '&openid=' . $openid . '&lang=zh_CN';
+		$result = $this->http_get($url);
+		if ($this->dubug) {
+			$this->log($result,'获取用户列表');
+		}
+		return $this->checkResult($result);
+	}
+
+	//获取用户列表
+	public function getUserList()
+	{
+		$url = self::API_URL_PREFIX . self::USER_LIST_URL . 'access_token=' . $this->access_token;
+		$result = $this->http_get($url);
+		if ($this->dubug) {
+			$this->log($result,'获取用户列表');
+		}
+		return $this->checkResult($result);
+	}
+
+	//设置用户备注名
+	public function setUserName($openid,$remark)
+	{
+		$url = self::API_URL_PREFIX . self::USER_UPDATE_URL . 'access_token=' . $this->access_token;
+		$data['openid'] = $openid;
+		$data['remark'] = $remark;
+		$result = $this->http_post($url, json_encode($data));
+		if ($this->dubug) {
+			$this->log($result,'设置用户备注名');
+		}
+		return $this->checkResult($result);
+	}
+
+	//用户标签管理
+	
+	//创建标签
+	public function userTagCreate($tag)
+	{
+		$url = self::API_URL_PREFIX . self::TAGS_CREATE_URL . 'access_token=' . $this->access_token;
+		$result = $this->http_post($url, json_encode($tag,JSON_UNESCAPED_UNICODE));
+		if ($this->dubug) {
+			$this->log($result,'创建标签');
+		}
+		return $this->checkResult($result);
+	}
+
+	//获取已有标签
+	public function userTagGet()
+	{
+		$url = self::API_URL_PREFIX . self::TAGS_GET_URL . 'access_token=' . $this->access_token;
+		$result = $this->http_get($url);
+		if ($this->dubug) {
+			$this->log($result,'获取已有标签');
+		}
+		return $this->checkResult($result);
+	}
+
+	//修改用户标签
+	public function userTagEdit($tagInfo)
+	{
+		$url = self::API_URL_PREFIX . self::TAGS_UPDATE_URL . 'access_token=' . $this->access_token;
+		$result = $this->http_post($url, json_encode($tagInfo,JSON_UNESCAPED_UNICODE));
+		if ($this->dubug) {
+			$this->log($result,'修改用户标签');
+		}
+		return $this->checkResult($result);
+	}
+
+	//删除标签
+	public function userTagDelete($tagInfo)
+	{
+		$url = self::API_URL_PREFIX . self::TAGS_DELETE_URL . 'access_token=' . $this->access_token;
+		$result = $this->http_post($url, json_encode($tagInfo,JSON_UNESCAPED_UNICODE));
+		if ($this->dubug) {
+			$this->log($result,'删除标签');
+		}
+		return $this->checkResult($result);
+	}
+
+	//获取标签下粉丝
+	public function getFansFromTag($tagInfo)
+	{
+		$url = self::API_URL_PREFIX . self::TAGS_FANS_URL . 'access_token=' . $this->access_token;
+		$result = $this->http_post($url, json_encode($tagInfo,JSON_UNESCAPED_UNICODE));
+		if ($this->dubug) {
+			$this->log($result,'获取标签下粉丝');
+		}
+		return $this->checkResult($result);
+	}
+
+	//批量为用户打标签
+	public function userBatchTag($info)
+	{
+		$url = self::API_URL_PREFIX . self::TAGS_BATCH_URL . 'access_token=' . $this->access_token;
+		$result = $this->http_post($url, json_encode($info,JSON_UNESCAPED_UNICODE));
+		if ($this->dubug) {
+			$this->log($result,'批量为用户打标签');
+		}
+		return $this->checkResult($result);
+	}
+
+	//批量为用户取消标签
+	public function userBatchUnTag($info)
+	{
+		$url = self::API_URL_PREFIX . self::TAGS_CANCLE_URL . 'access_token=' . $this->access_token;
+		$result = $this->http_post($url, json_encode($info,JSON_UNESCAPED_UNICODE));
+		if ($this->dubug) {
+			$this->log($result,'批量为用户取消标签');
+		}
+		return $this->checkResult($result);
+	}
+
+	//获取用户已有的标签列表
+	public function userTagList($openid)
+	{
+		$url = self::API_URL_PREFIX . self::TAGS_LIST_URL . 'access_token=' . $this->access_token;
+		$result = $this->http_post($url, json_encode($info,JSON_UNESCAPED_UNICODE));
+		if ($this->dubug) {
+			$this->log($result,'获取用户已有的标签列表');
+		}
+		return $this->checkResult($result);
+	}
+```
+
+---
+
+## 三、实验总结
+
+本次实验带领大家学习了微信公众平台常用API的封装，主要包括消息的管理，用户管理，菜单的管理以及素材的管理，由于代码量过大，我们不可能全部封装所有的接口功能，以上只做了四个方面的接口管理，代码量就接近一千行左右，更不用说其中包括了很多细节处理，所以这门课主要的目的只是带领大家入门，了解常用API接口的功能实现。整个实验都根据开发者文档的讲解制作，所以，如果你有任何不清楚的地方，多查阅微信公众平台的开发者文档，多多了解里面的细节处理，至于代码，只要你的想法到那里了，一切都不是难题。
+
+上面的文档内容比较多，所以难免会有一些错误或不足之处，也可能有些地方写的不完整，如果你在文档中发现了任何问题，请到课程下方给我留言，我会尽快更新文档和代码。

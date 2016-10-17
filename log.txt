@@ -428,3 +428,19 @@
 操作：回复
 内容：<xml><ToUserName><![CDATA[oLA-5v9JKdKz_Unir3urFleTlVj4]]></ToUserName><FromUserName><![CDATA[gh_9ce7b64359dd]]></FromUserName><CreateTime><![CDATA[1476700663]]></CreateTime><MsgType><![CDATA[image]]></MsgType><Image><MediaId><![CDATA[qYbAS56tkvlRh98PDQo9A7K3EINl7iaxTne38rUcPQ7E7QqboVpI8pS_KV1PcIk4]]></MediaId></Image></xml>
  ============================= 
+时间：2016-10-17 21:10:45
+操作：接入验证
+内容：5497897039698456191
+ ============================= 
+时间：2016-10-17 21:10:54
+操作：接收
+内容：
+ ============================= 
+时间：2016-10-17 21:10:54
+操作：回复
+内容：<xml><ToUserName><![CDATA[]]></ToUserName><FromUserName><![CDATA[]]></FromUserName><CreateTime><![CDATA[1476709494]]></CreateTime><MsgType><![CDATA[image]]></MsgType><Image><MediaId><![CDATA[]]></MediaId></Image></xml>
+ ============================= 
+时间：2016-10-17 21:10:07
+操作：接入验证
+内容：6394797875350863261
+ ============================= 
