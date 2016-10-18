@@ -17,8 +17,9 @@ if (isset($_GET["echostr"])) {
 // echo $wechatObj->getToken();
 // 打印接受到的数据
 // var_dump($wechatObj->getRec()->getReceiveDate());
-$wechatObj->getRec();
+// $wechatObj->getRec();
 // $wechatObj->text("你好，我是微信机器人，来自自动回复!")->reply();
+$wechatObj->getRec();
 $imageInfo = $wechatObj->getRecPic();
 $wechatObj->image($imageInfo['mediaid'])->reply();
 die;
@@ -221,7 +222,7 @@ die;
 // $info = $wechatObj->getUserInfo($openid);  //获取用户信息
 // $info = $wechatObj->setUserName($openid,'fuli');  //获取用户信息
 // $info = $wechatObj->userTagCreate(['tag'=>['name'=>'实验楼']]);
-// $info = $wechatObj->userTagGet();104
+$info = $wechatObj->userTagGet();104
 // $data = ['tag'=>['id'=>104,'name'=>'实验楼+1']];
 // $info = $wechatObj->userTagEdit($data);
 // $data = ['tag'=>['id'=>104]];
@@ -279,8 +280,8 @@ switch ($msgType) {
 		break;
 	case 'shortvideo':
 		// $videoInfo = $wechatObj->getRecVideo();
-		$videoInfo['title'] = '适合深夜一个人看的视频！';
-		$videoInfo['description'] = '这是测试时用的一个视频文件，里面有你想要的，你懂的！！';
+		$videoInfo['title'] = '这是一个测试用的视频文件！';
+		$videoInfo['description'] = '这是测试时用的一个视频文件，仅用于测试公众号内容回复！！';
 		$videoInfo['mediaid'] = 'oCmCA6JW8AUym2t9uhqzeKtiYQzppXBMyn6U2k2IMmU';
 		// $wechatObj->text('不要给我发短视频，我分分钟几百万上下，没有时间看！')->reply();
 		$wechatObj->video($videoInfo)->reply();
